@@ -1,0 +1,2726 @@
+!SESSION 2025-02-21 17:45:00.400 -----------------------------------------------
+eclipse.buildId=2022.2
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 4 4 2025-02-21 17:45:48.080
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:45:53.572
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-3: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:45:53.575
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-19
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:45:53.587
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:45:53.957
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-3: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:45:53.958
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-19
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:45:53.958
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-3: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:45:53.958
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:45:53.958
+!MESSAGE XSCT Command: [setws C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application], Thread: Thread-19
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:45:53.977
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, C:/Xilinx/Vitis/2022.2/data]. Thread: Worker-3: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:45:53.978
+!MESSAGE XSCT command with result: [setws C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application], Result: [null, ]. Thread: Thread-19
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-02-21 17:46:13.047
+!MESSAGE Opening file dialog using preferences. Current path: C:\Xilinx\Vitis\2022.2\data\embeddedsw\lib\fixed_hwplatforms, Local preference: scw_hwspec, Group preference: null
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:46:46.402
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/Users/pnevi/AppData/Local/Temp/hwspec_nexysa7fpga13460692290240201784/nexysa7fpga.xsa], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:46:46.624
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/Users/pnevi/AppData/Local/Temp/hwspec_nexysa7fpga13460692290240201784/nexysa7fpga.xsa], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:46:46.662
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json C:/Users/pnevi/AppData/Local/Temp/hwspec_nexysa7fpga13460692290240201784/nexysa7fpga.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:46:46.666
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json C:/Users/pnevi/AppData/Local/Temp/hwspec_nexysa7fpga13460692290240201784/nexysa7fpga.xsa], Result: [null, {"axi_gpio_1": {"hier_name": "axi_gpio_1",
+"type": "axi_gpio",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_iic_0": {"hier_name": "axi_iic_0",
+"type": "axi_iic",
+"version": "2.1",
+"ip_type": "PERIPHERAL",
+},
+"axi_timer_0": {"hier_name": "axi_timer_0",
+"type": "axi_timer",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_uartlite_0": {"hier_name": "axi_uartlite_0",
+"type": "axi_uartlite",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"bidirec_0": {"hier_name": "bidirec_0",
+"type": "bidirec",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"bidirec_1": {"hier_name": "bidirec_1",
+"type": "bidirec",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"clk_wiz_1": {"hier_name": "clk_wiz_1",
+"type": "clk_wiz",
+"version": "6.0",
+"ip_type": "PERIPHERAL",
+},
+"mdm_1": {"hier_name": "mdm_1",
+"type": "mdm",
+"version": "3.2",
+"ip_type": "DEBUG",
+},
+"microblaze_0": {"hier_name": "microblaze_0",
+"type": "microblaze",
+"version": "11.0",
+"ip_type": "PROCESSOR",
+},
+"microblaze_0_axi_intc": {"hier_name": "microblaze_0_axi_intc",
+"type": "axi_intc",
+"version": "4.1",
+"ip_type": "INTERRUPT_CNTLR",
+},
+"microblaze_0_axi_periph": {"hier_name": "microblaze_0_axi_periph",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr": {"hier_name": "microblaze_0_local_memory_dlmb_bram_if_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"microblaze_0_local_memory_dlmb_v10": {"hier_name": "microblaze_0_local_memory_dlmb_v10",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_ilmb_bram_if_cntlr": {"hier_name": "microblaze_0_local_memory_ilmb_bram_if_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"microblaze_0_local_memory_ilmb_v10": {"hier_name": "microblaze_0_local_memory_ilmb_v10",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_lmb_bram": {"hier_name": "microblaze_0_local_memory_lmb_bram",
+"type": "blk_mem_gen",
+"version": "8.4",
+"ip_type": "MEMORY",
+},
+"microblaze_0_xlconcat": {"hier_name": "microblaze_0_xlconcat",
+"type": "xlconcat",
+"version": "2.1",
+"ip_type": "PERIPHERAL",
+},
+"nexys4io_0": {"hier_name": "nexys4io_0",
+"type": "nexys4io",
+"version": "3_0",
+"ip_type": "PERIPHERAL",
+},
+"rst_clk_wiz_1_100M": {"hier_name": "rst_clk_wiz_1_100M",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:46:46.780
+!MESSAGE XSCT Command: [hsi::utils::get_supported_os -json C:/Users/pnevi/AppData/Local/Temp/hwspec_nexysa7fpga13460692290240201784/nexysa7fpga.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:46:46.792
+!MESSAGE XSCT command with result: [hsi::utils::get_supported_os -json C:/Users/pnevi/AppData/Local/Temp/hwspec_nexysa7fpga13460692290240201784/nexysa7fpga.xsa], Result: [null, {"microblaze_0": {"freertos10_xilinx_v1_12": {"name": "freertos10_xilinx",
+"version": "1.12",
+"desc": "This Xilinx FreeRTOS port is based on FreeRTOS kernel version 10.4.6",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group",
+"repo": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/ThirdParty/bsp/freertos10_xilinx_v1_12",
+},
+"standalone_v8_0": {"name": "standalone",
+"version": "8.0",
+"desc": "Standalone is a simple, low-level software layer. It provides access to basic processor features such as caches, interrupts and exceptions as well as the basic features of a hosted environment, such as standard input and output, profiling, abort and exit.",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-lgcc,-lc,--end-group",
+"repo": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/bsp/standalone_v8_0",
+},
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:46:46.795
+!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json C:/Users/pnevi/AppData/Local/Temp/hwspec_nexysa7fpga13460692290240201784/nexysa7fpga.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:46:46.797
+!MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json C:/Users/pnevi/AppData/Local/Temp/hwspec_nexysa7fpga13460692290240201784/nexysa7fpga.xsa], Result: [null, {"device": "7a100t",
+"family": "artix7",
+"timestamp": "Thu Feb 20 09:37:45 2025",
+"vivado_version": "2022.2",
+"part": "xc7a100tcsg324-1",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:46:54.673
+!MESSAGE XSCT Command: [platform create -name {PID_Controller_Platform} -hw {C:\ECE544-EmbeddedSystemsFPGA\ECE544-ACTUAL-Project2\hdl\nexysa7fpga.xsa} -proc {microblaze_0} -os {freertos10_xilinx} -out {C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application};platform write], Thread: ModalContext
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-02-21 17:46:55.032
+!MESSAGE Indexed 'PID_Controller_Platform' (2 sources, 2 headers) in 0.198 sec: 249 declarations; 487 references; 9 unresolved inclusions; 0 syntax errors; 131 unresolved names (15%)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:46:56.005
+!MESSAGE XSCT command with result: [platform create -name {PID_Controller_Platform} -hw {C:\ECE544-EmbeddedSystemsFPGA\ECE544-ACTUAL-Project2\hdl\nexysa7fpga.xsa} -proc {microblaze_0} -os {freertos10_xilinx} -out {C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application};platform write], Result: [null, Successfully saved  the platform at "C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/platform.spr"]. Thread: ModalContext
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2025-02-21 17:46:56.036
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.ui.part.IntroPart.dispose(IntroPart.java:99)
+	at org.eclipse.ui.internal.ViewIntroAdapterPart.dispose(ViewIntroAdapterPart.java:153)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.invalidate(CompatibilityPart.java:260)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.destroy(CompatibilityPart.java:417)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:1002)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:967)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.uninject(InjectorImpl.java:200)
+	at org.eclipse.e4.core.internal.di.Requestor.uninject(Requestor.java:176)
+	at org.eclipse.e4.core.internal.contexts.ContextObjectSupplier$ContextInjectionListener.update(ContextObjectSupplier.java:89)
+	at org.eclipse.e4.core.internal.contexts.TrackableComputationExt.update(TrackableComputationExt.java:105)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.removeListenersTo(EclipseContext.java:491)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.uninject(ContextInjectionFactory.java:184)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:954)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:873)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:868)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:852)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ElementReferenceRenderer.disposeWidget(ElementReferenceRenderer.java:115)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:945)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:873)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:868)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:852)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.subscribeTopicToBeRendered(PartRenderingEngine.java:187)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.di.internal.extensions.EventObjectSupplier$DIEventHandler.handleEvent(EventObjectSupplier.java:92)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:132)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.e4.ui.model.application.ui.impl.UIElementImpl.setToBeRendered(UIElementImpl.java:314)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.hidePart(PartServiceImpl.java:1406)
+	at org.eclipse.ui.internal.WorkbenchPage.hidePart(WorkbenchPage.java:1537)
+	at org.eclipse.ui.internal.WorkbenchPage.hidePart(WorkbenchPage.java:1496)
+	at org.eclipse.ui.internal.WorkbenchPage.hideView(WorkbenchPage.java:2609)
+	at org.eclipse.ui.internal.WorkbenchIntroManager.closeIntro(WorkbenchIntroManager.java:98)
+	at com.xilinx.sdx.ui.utils.SWTUtils.closeWelcomeView(SWTUtils.java:529)
+	at com.xilinx.sdx.scw.project.ScwProjectCreationHandler$1.run(ScwProjectCreationHandler.java:71)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3897)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3527)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.block(ModalContext.java:166)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:368)
+	at org.eclipse.jface.wizard.WizardDialog.run(WizardDialog.java:1033)
+	at com.xilinx.sdx.npw.NewPlatformProjectWizard.createPlatformProject(NewPlatformProjectWizard.java:125)
+	at com.xilinx.sdx.npw.NewPlatformProjectWizard.createPlatformProjectFromDSA(NewPlatformProjectWizard.java:110)
+	at com.xilinx.sdx.npw.NewPlatformProjectWizard.performFinish(NewPlatformProjectWizard.java:80)
+	at org.eclipse.jface.wizard.WizardDialog.finishPressed(WizardDialog.java:832)
+	at org.eclipse.jface.wizard.WizardDialog.buttonPressed(WizardDialog.java:472)
+	at org.eclipse.jface.dialogs.Dialog.lambda$0(Dialog.java:619)
+	at org.eclipse.swt.events.SelectionListener$1.widgetSelected(SelectionListener.java:84)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4105)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3922)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3524)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at com.xilinx.sdx.npw.OpenSCWWizardAction.run(OpenSCWWizardAction.java:23)
+	at com.xilinx.sdx.npw.OpenSCWWizardAction.clicked(OpenSCWWizardAction.java:40)
+	at com.xilinx.ide.product.intro.IDEIntroPart.createPlatformProject(IDEIntroPart.java:479)
+	at com.xilinx.ide.product.intro.IDEIntroPart$4.run(IDEIntroPart.java:279)
+	at com.xilinx.ide.product.intro.IDEIntroPart$12.mouseUp(IDEIntroPart.java:402)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:224)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4105)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3922)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3524)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:658)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:154)
+	at com.xilinx.ide.application.ui.Application.start(Application.java:80)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:46:56.270
+!MESSAGE XSCT Command: [platform read {C:\ECE544-EmbeddedSystemsFPGA\ECE544-ACTUAL-Project2\Vitis_Application\PID_Controller_Platform\platform.spr}], Thread: Worker-2: Initializing the platform to enable editing
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:46:56.278
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa], Thread: Worker-3: Initializing hardware specification UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:46:56.592
+!MESSAGE XSCT command with result: [platform read {C:\ECE544-EmbeddedSystemsFPGA\ECE544-ACTUAL-Project2\Vitis_Application\PID_Controller_Platform\platform.spr}], Result: [null, ]. Thread: Worker-2: Initializing the platform to enable editing
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:46:56.593
+!MESSAGE XSCT Command: [platform active {PID_Controller_Platform}], Thread: Worker-2: Initializing the platform to enable editing
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:46:56.593
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa], Result: [null, ]. Thread: Worker-3: Initializing hardware specification UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:46:56.594
+!MESSAGE XSCT command with result: [platform active {PID_Controller_Platform}], Result: [null, ]. Thread: Worker-2: Initializing the platform to enable editing
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:46:56.650
+!MESSAGE XSCT Command: [::hsi::utils::closehw C:/Users/pnevi/AppData/Local/Temp/hwspec_nexysa7fpga13460692290240201784/nexysa7fpga.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:46:56.660
+!MESSAGE XSCT command with result: [::hsi::utils::closehw C:/Users/pnevi/AppData/Local/Temp/hwspec_nexysa7fpga13460692290240201784/nexysa7fpga.xsa], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:47:19.371
+!MESSAGE XSCT Command: [::hsi::utils::get_all_app_details -json], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:47:19.396
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_app_details -json], Result: [null, {"ddr_self_refresh": {"userdefname": "DDR self refresh",
+"description": "This DDR self refresh application provides a simple demonstration of how to enter to/exit from DDR self refresh mode. This application runs on R5 out of TCM.",
+"supp_proc": "psu_cortexr5",
+"supp_os": "standalone",
+"path": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_apps/ddr_self_refresh",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"dhrystone": {"userdefname": "Dhrystone",
+"description": "Dhrystone synthetic benchmark program for baremetal environment.",
+"supp_proc": "microblaze psu_cortexa53 ps7_cortexa9 psv_cortexa72 psu_cortexr5 psv_cortexr5",
+"supp_os": "standalone",
+"path": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_apps/dhrystone",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "false",
+},
+"empty_application": {"userdefname": "Empty Application(C)",
+"description": "A blank C project.",
+"supp_proc": "microblaze ps7_cortexa9 psu_cortexa53 psu_cortexr5 psu_cortexa72 psv_cortexr5 psv_cortexa72 psxl_cortexa78 psxl_cortexr52 psx_cortexa78 psx_cortexr52",
+"supp_os": "standalone xilkernel freertos10_xilinx",
+"path": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_apps/empty_application",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "false",
+},
+"freertos_hello_world": {"userdefname": "FreeRTOS Hello World",
+"description": " FreeRTOS Hello World application",
+"supp_proc": "psu_cortexr5 psv_cortexr5 ps7_cortexa9 psu_cortexa53 microblaze psv_cortexa72 psxl_cortexr52 psx_cortexr52 psx_cortexa78 psxl_cortexa78",
+"supp_os": "freertos10_xilinx",
+"path": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_apps/freertos_hello_world",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"freertos_lwip_echo_server": {"userdefname": "FreeRTOS lwIP Echo Server",
+"description": "The FreeRTOS lwIP Echo Server application provides a simple demonstration of how to use the light-weight IP stack (lwIP) with FreeRTOS. This application sets up the board to use IP address 192.168.1.10 or IPv6 address FE80:0:0:0:20A:35FF:FE00:102, with MAC address 00:0a:35:00:01:02. The server listens for input at port 7 and simply echoes back whatever data is sent to that port.",
+"supp_proc": "psv_cortexa72 psv_cortexr5 psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "freertos10_xilinx",
+"path": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_apps/freertos_lwip_echo_server",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"freertos_lwip_tcp_perf_client": {"userdefname": "FreeRTOS lwIP TCP Perf Client",
+"description": "The FreeRTOS LwIP TCP Perf Client application is used for creating TCP client and measure TCP uplink performance using light-weight IP stack (lwIP). This application sets up the board to use default IP address 192.168.1.10 and IPv6 link local address whenipv6_enable is true, with MAC address 00:0a:35:00:01:02. This application creates TCP client on board and make connection with TCP server running on host machine. It will display connection information along with interim and average TCP statistics for data transfer.",
+"supp_proc": "psv_cortexa72 psv_cortexr5 psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "freertos10_xilinx",
+"path": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_apps/freertos_lwip_tcp_perf_client",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"freertos_lwip_tcp_perf_server": {"userdefname": "FreeRTOS lwIP TCP Perf Server",
+"description": "The FreeRTOS LwIP TCP Server application is used for creating TCP server using light-weight IP stack (lwIP). This application sets up the board to use default IP address 192.168.1.10 and IPv6 link local address when ipv6_enable is true, with MAC address 00:0a:35:00:01:02. The application creates TCP server on board and starts listening for TCP client connections. It will display client connection info and also display interim and average TCP statistics for data transfer. This application handles only 1 client connection at a time.",
+"supp_proc": "psv_cortexa72 psv_cortexr5 psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "freertos10_xilinx",
+"path": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_apps/freertos_lwip_tcp_perf_server",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"freertos_lwip_udp_perf_client": {"userdefname": "FreeRTOS lwIP UDP Perf Client",
+"description": "The FreeRTOS LwIP UDP Perf Client application is used for creating UDP client and measure UDP uplink performance using light-weight IP stack (lwIP). This application sets up the board to use default IP address 192.168.1.10, with MAC address 00:0a:35:00:01:02. This application creates UDP client on board and make connection with UDP server running on host machine. It will display connection information along with interim and average UDP statistics for data transfer.",
+"supp_proc": "psv_cortexa72 psv_cortexr5 psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "freertos10_xilinx",
+"path": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_apps/freertos_lwip_udp_perf_client",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"freertos_lwip_udp_perf_server": {"userdefname": "FreeRTOS lwIP UDP Perf Server",
+"description": "The FreeRTOS LwIP UDP Perf Server application is used for creating UDP server and measure downlink performance using light-weight IP stack (lwIP). This application sets up the board to use default IP address 192.168.1.10, with MAC address 00:0a:35:00:01:02. The application creates UDP server on board and starts listening for UDP client connections. It will display client connection information with interim and average UDP statistics for data transfer.",
+"supp_proc": "psv_cortexa72 psv_cortexr5 psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "freertos10_xilinx",
+"path": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_apps/freertos_lwip_udp_perf_server",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"hello_world": {"userdefname": "Hello World",
+"description": "Let's say 'Hello World' in C.",
+"supp_proc": "microblaze ps7_cortexa9 psu_cortexa53 psu_cortexr5 psu_cortexa72 psv_cortexr5 psv_cortexa72 psxl_cortexa78 psxl_cortexr52 psx_cortexa78 psx_cortexr52",
+"supp_os": "standalone xilkernel",
+"path": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_apps/hello_world",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "false",
+},
+"imgsel": {"userdefname": "Image Selector",
+"description": "ImgSel for Zynq Ultrascale+ MPSoC. The Image Selector  selects the image based on configuration parameters",
+"supp_proc": "psu_cortexa53",
+"supp_os": "standalone",
+"path": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_apps/imgsel",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"img_rcvry": {"userdefname": "Image Recovery",
+"description": "Image Recovery tool which writes  user selected images on the board.",
+"supp_proc": "psu_cortexa53",
+"supp_os": "standalone",
+"path": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_apps/img_rcvry",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"libmetal_echo_demo": {"userdefname": "Libmetal AMP Demo",
+"description": "Libmetal AMP Application",
+"supp_proc": "psu_cortexr5 psv_cortexr5",
+"supp_os": "freertos10_xilinx standalone",
+"path": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_apps/libmetal_echo_demo",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"lwip_echo_server": {"userdefname": "lwIP Echo Server",
+"description": "The lwIP Echo Server application provides a simple demonstration of how to use the light-weight IP stack (lwIP). This application sets up the board to use IP address 192.168.1.10 or IPv6 FE80:0:0:0:20A:35FF:FE00:102, with MAC address 00:0a:35:00:01:02. The server listens for input at port 7 and simply echoes back whatever data is sent to that port.",
+"supp_proc": "psv_cortexa72 psv_cortexr5 psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "standalone",
+"path": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_apps/lwip_echo_server",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"lwip_tcp_perf_client": {"userdefname": "lwIP TCP Perf Client",
+"description": "The LwIP TCP Perf Client application is used for creating TCP client and measure TCP uplink performance using light-weight IP stack (lwIP). This application sets up the board to use default IP address 192.168.1.10 and IPv6 link local address when ipv6_enable is true, with MAC address 00:0a:35:00:01:02. This application creates TCP client on board and make connection with TCP server running on host machine. It will display connection information along with interim and average TCP statistics for data transfer.",
+"supp_proc": "psv_cortexa72 psv_cortexr5 psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "standalone",
+"path": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_apps/lwip_tcp_perf_client",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"lwip_tcp_perf_server": {"userdefname": "lwIP TCP Perf Server",
+"description": "The LwIP TCP Perf Server application is used for creating TCP server and measure downlink performance using light-weight IP stack (lwIP). This application sets up the board to use default IPv4 address 192.168.1.10 and IPv6 link local address when ipv6_enable is true, with MAC address 00:0a:35:00:01:02. The application creates TCP server on board and starts listening for TCP client connections. It will display client connection information with interim and average TCP statistics for data transfer.",
+"supp_proc": "psv_cortexa72 psv_cortexr5 psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "standalone",
+"path": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_apps/lwip_tcp_perf_server",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"lwip_udp_perf_client": {"userdefname": "lwIP UDP Perf Client",
+"description": "The LwIP UDP Perf Client application is used for creating UDP client and measure UDP uplink performance using light-weight IP stack (lwIP). This application sets up the board to use default IP address 192.168.1.10, with MAC address 00:0a:35:00:01:02. This application creates UDP client on board and make connection with UDP server running on host machine. It will display connection information along with interim and average UDP statistics for data transfer.",
+"supp_proc": "psv_cortexa72 psv_cortexr5 psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "standalone",
+"path": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_apps/lwip_udp_perf_client",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"lwip_udp_perf_server": {"userdefname": "lwIP UDP Perf Server",
+"description": "The LwIP UDP Perf Server application is used for creating UDP server and measure downlink performance using light-weight IP stack (lwIP). This application sets up the board to use default IP address 192.168.1.10, with MAC address 00:0a:35:00:01:02. The application creates UDP server on board and starts listening for UDP client connections. It will display client connection information with interim and average UDP statistics for data transfer.",
+"supp_proc": "psv_cortexa72 psv_cortexr5 psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "standalone",
+"path": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_apps/lwip_udp_perf_server",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"mba_fs_boot": {"userdefname": "mba_fs_boot",
+"description": "fs-boot for microblaze by Xilinx Inc..",
+"supp_proc": "microblaze",
+"supp_os": "standalone",
+"path": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_apps/mba_fs_boot",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"memory_tests": {"userdefname": "Memory Tests",
+"description": "This application tests Memory Regions present in the hardware.",
+"supp_proc": "microblaze ps7_cortexa9 psu_cortexa53 psu_cortexr5 psv_cortexa72 psv_cortexr5 psxl_cortexa78 psxl_cortexr52 psx_cortexa78 psx_cortexr52",
+"supp_os": "standalone",
+"path": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_apps/memory_tests",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "false",
+},
+"openamp_echo_test": {"userdefname": "OpenAMP echo-test",
+"description": " OpenAMP echo-test application ",
+"supp_proc": "psu_cortexr5 psv_cortexr5 ps7_cortexa9",
+"supp_os": "freertos10_xilinx standalone",
+"path": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_apps/openamp_echo_test",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"openamp_matrix_multiply": {"userdefname": "OpenAMP matrix multiplication Demo",
+"description": " OpenAMP matrix multiplication application ",
+"supp_proc": "psu_cortexr5 psv_cortexr5 ps7_cortexa9",
+"supp_os": "freertos10_xilinx standalone",
+"path": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_apps/openamp_matrix_multiply",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"openamp_rpc_demo": {"userdefname": "OpenAMP RPC Demo",
+"description": " OpenAMP rpc-demo application ",
+"supp_proc": "psu_cortexr5 psv_cortexr5 ps7_cortexa9",
+"supp_os": "freertos10_xilinx standalone",
+"path": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_apps/openamp_rpc_demo",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"peripheral_tests": {"userdefname": "Peripheral Tests",
+"description": "Simple test routines for all peripherals in the hardware.",
+"supp_proc": "ps7_cortexa9 psu_cortexa53 psu_cortexr5 microblaze psv_cortexa72 psv_cortexr5 psxl_cortexa78 psxl_cortexr52 psx_cortexa78 psx_cortexr52",
+"supp_os": "standalone xilkernel",
+"path": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_apps/peripheral_tests",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "false",
+},
+"rsa_auth_app": {"userdefname": "RSA Authentication App",
+"description": "Used to RSA authenticate a user application",
+"supp_proc": "ps7_cortexa9",
+"supp_os": "standalone",
+"path": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_apps/rsa_auth_app",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"srec_bootloader": {"userdefname": "SREC Bootloader",
+"description": "Simple bootloader for loading SREC images from non volatile memory. This program assumes that you have an SREC image programmed into BPI flash. The program also assumes that the target SREC image is an application for this processor that does not overlap the bootloader and resides in separate physical memory in the hardware. Typically this application is initialized into BRAM so that it bootloads the SREC image when the FPGA is powered up.
+
+Don't forget to modify blconfig.h to reflect the physical address where your SREC image resides in non-volatile memory!",
+"supp_proc": "microblaze",
+"supp_os": "standalone",
+"path": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_apps/srec_bootloader",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "false",
+},
+"srec_spi_bootloader": {"userdefname": "SREC SPI Bootloader",
+"description": "Simple bootloader for loading SREC images from non volatile memory (SPI). This program assumes that you have an SREC image programmed into SPI flash already. The program also assumes that the target SREC image is an application for this processor that does not overlap the bootloader and resides in separate physical memory in the hardware. Typically this application is initialized into BRAM so that it bootloads the SREC image when the FPGA is powered up.
+
+Don't forget to modify blconfig.h to reflect the offset where your SREC image resides in non-volatile memory!",
+"supp_proc": "microblaze",
+"supp_os": "standalone",
+"path": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_apps/srec_spi_bootloader",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"versal_plm": {"userdefname": "versal PLM",
+"description": "Platform Loader and Manager for versal.",
+"supp_proc": "psu_pmc psv_pmc psxl_pmc psx_pmc",
+"supp_os": "standalone",
+"path": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_apps/versal_plm",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"versal_psmfw": {"userdefname": "versal PSM Firmware",
+"description": "Processing System Management Unit Firmware for versal.",
+"supp_proc": "psu_psm psv_psm psxl_psm psx_psm",
+"supp_os": "standalone",
+"path": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_apps/versal_psmfw",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"zynqmp_dram_test": {"userdefname": "Zynq MP DRAM tests",
+"description": "This application runs out of OCM and performs memory tests on Zynq MP DRAM.  For more information about the test, refer to ZYNQMP_DRAM_DIAGNOSTICS_TEST.docx, in the src directory of the application",
+"supp_proc": "psu_cortexa53",
+"supp_os": "standalone",
+"path": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_apps/zynqmp_dram_test",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "false",
+},
+"zynqmp_fsbl": {"userdefname": "Zynq MP FSBL",
+"description": "First Stage Bootloader (FSBL) for Zynq Ultrascale+ MPSoC. The FSBL configures the FPGA with HW bit stream (if it exists)  and loads the Operating System (OS) Image or Standalone (SA) Image or 2nd Stage Boot Loader image from the  non-volatile memory (NAND/SD/QSPI) to RAM (DDR) and takes A53/R5 out of reset.  It supports multiple partitions,  and each partition can be a code image or a bit stream.",
+"supp_proc": "psu_cortexa53 psu_cortexr5",
+"supp_os": "standalone",
+"path": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_apps/zynqmp_fsbl",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"zynqmp_pmufw": {"userdefname": "ZynqMP PMU Firmware",
+"description": "Platform Management Unit Firmware for ZynqMP.",
+"supp_proc": "psu_pmu",
+"supp_os": "standalone",
+"path": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_apps/zynqmp_pmufw",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"zynq_dram_test": {"userdefname": "Zynq DRAM tests",
+"description": "This application runs out of OCM and performs memory tests and read/write eye measurements on Zynq DRAM.  For more information about the test, refer to ZYNQ_DRAM_DIAGNOSTICS_TEST.docx, in the src directory of the application",
+"supp_proc": "ps7_cortexa9",
+"supp_os": "standalone",
+"path": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_apps/zynq_dram_test",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "false",
+},
+"zynq_fsbl": {"userdefname": "Zynq FSBL",
+"description": "First Stage Bootloader (FSBL) for Zynq. The FSBL configures the FPGA with HW bit stream (if it exists)  and loads the Operating System (OS) Image or Standalone (SA) Image or 2nd Stage Boot Loader image from the  non-volatile memory (NAND/NOR/QSPI) to RAM (DDR) and starts executing it.  It supports multiple partitions,  and each partition can be a code image or a bit stream.",
+"supp_proc": "ps7_cortexa9",
+"supp_os": "standalone",
+"path": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_apps/zynq_fsbl",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"linux_empty_app": {"userdefname": "Linux Empty Application",
+"description": "A blank Linux C project.",
+"supp_proc": "ps7_cortexa9 psu_cortexa53 microblaze psv_cortexa72",
+"supp_os": "linux",
+"path": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_apps_linux/linux_empty_app",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "false",
+},
+"linux_hello_world": {"userdefname": "Linux Hello World",
+"description": "Let's say 'Hello World' in C.",
+"supp_proc": "ps7_cortexa9 psu_cortexa53 microblaze psv_cortexa72",
+"supp_os": "linux",
+"path": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_apps_linux/linux_hello_world",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "false",
+},
+}]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:47:19.400
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/Users/pnevi/AppData/Local/Temp/hwspec_nexysa7fpga11461677065665512518/nexysa7fpga.xsa], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:47:19.577
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/Users/pnevi/AppData/Local/Temp/hwspec_nexysa7fpga11461677065665512518/nexysa7fpga.xsa], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:47:19.578
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json C:/Users/pnevi/AppData/Local/Temp/hwspec_nexysa7fpga11461677065665512518/nexysa7fpga.xsa], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:47:19.581
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json C:/Users/pnevi/AppData/Local/Temp/hwspec_nexysa7fpga11461677065665512518/nexysa7fpga.xsa], Result: [null, {"axi_gpio_1": {"hier_name": "axi_gpio_1",
+"type": "axi_gpio",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_iic_0": {"hier_name": "axi_iic_0",
+"type": "axi_iic",
+"version": "2.1",
+"ip_type": "PERIPHERAL",
+},
+"axi_timer_0": {"hier_name": "axi_timer_0",
+"type": "axi_timer",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_uartlite_0": {"hier_name": "axi_uartlite_0",
+"type": "axi_uartlite",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"bidirec_0": {"hier_name": "bidirec_0",
+"type": "bidirec",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"bidirec_1": {"hier_name": "bidirec_1",
+"type": "bidirec",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"clk_wiz_1": {"hier_name": "clk_wiz_1",
+"type": "clk_wiz",
+"version": "6.0",
+"ip_type": "PERIPHERAL",
+},
+"mdm_1": {"hier_name": "mdm_1",
+"type": "mdm",
+"version": "3.2",
+"ip_type": "DEBUG",
+},
+"microblaze_0": {"hier_name": "microblaze_0",
+"type": "microblaze",
+"version": "11.0",
+"ip_type": "PROCESSOR",
+},
+"microblaze_0_axi_intc": {"hier_name": "microblaze_0_axi_intc",
+"type": "axi_intc",
+"version": "4.1",
+"ip_type": "INTERRUPT_CNTLR",
+},
+"microblaze_0_axi_periph": {"hier_name": "microblaze_0_axi_periph",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr": {"hier_name": "microblaze_0_local_memory_dlmb_bram_if_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"microblaze_0_local_memory_dlmb_v10": {"hier_name": "microblaze_0_local_memory_dlmb_v10",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_ilmb_bram_if_cntlr": {"hier_name": "microblaze_0_local_memory_ilmb_bram_if_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"microblaze_0_local_memory_ilmb_v10": {"hier_name": "microblaze_0_local_memory_ilmb_v10",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_lmb_bram": {"hier_name": "microblaze_0_local_memory_lmb_bram",
+"type": "blk_mem_gen",
+"version": "8.4",
+"ip_type": "MEMORY",
+},
+"microblaze_0_xlconcat": {"hier_name": "microblaze_0_xlconcat",
+"type": "xlconcat",
+"version": "2.1",
+"ip_type": "PERIPHERAL",
+},
+"nexys4io_0": {"hier_name": "nexys4io_0",
+"type": "nexys4io",
+"version": "3_0",
+"ip_type": "PERIPHERAL",
+},
+"rst_clk_wiz_1_100M": {"hier_name": "rst_clk_wiz_1_100M",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:47:19.628
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/export/PID_Controller_Platform/hw/nexysa7fpga.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:47:19.808
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/export/PID_Controller_Platform/hw/nexysa7fpga.xsa], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:47:19.809
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/export/PID_Controller_Platform/hw/nexysa7fpga.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:47:19.812
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/export/PID_Controller_Platform/hw/nexysa7fpga.xsa], Result: [null, {"axi_gpio_1": {"hier_name": "axi_gpio_1",
+"type": "axi_gpio",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_iic_0": {"hier_name": "axi_iic_0",
+"type": "axi_iic",
+"version": "2.1",
+"ip_type": "PERIPHERAL",
+},
+"axi_timer_0": {"hier_name": "axi_timer_0",
+"type": "axi_timer",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_uartlite_0": {"hier_name": "axi_uartlite_0",
+"type": "axi_uartlite",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"bidirec_0": {"hier_name": "bidirec_0",
+"type": "bidirec",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"bidirec_1": {"hier_name": "bidirec_1",
+"type": "bidirec",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"clk_wiz_1": {"hier_name": "clk_wiz_1",
+"type": "clk_wiz",
+"version": "6.0",
+"ip_type": "PERIPHERAL",
+},
+"mdm_1": {"hier_name": "mdm_1",
+"type": "mdm",
+"version": "3.2",
+"ip_type": "DEBUG",
+},
+"microblaze_0": {"hier_name": "microblaze_0",
+"type": "microblaze",
+"version": "11.0",
+"ip_type": "PROCESSOR",
+},
+"microblaze_0_axi_intc": {"hier_name": "microblaze_0_axi_intc",
+"type": "axi_intc",
+"version": "4.1",
+"ip_type": "INTERRUPT_CNTLR",
+},
+"microblaze_0_axi_periph": {"hier_name": "microblaze_0_axi_periph",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr": {"hier_name": "microblaze_0_local_memory_dlmb_bram_if_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"microblaze_0_local_memory_dlmb_v10": {"hier_name": "microblaze_0_local_memory_dlmb_v10",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_ilmb_bram_if_cntlr": {"hier_name": "microblaze_0_local_memory_ilmb_bram_if_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"microblaze_0_local_memory_ilmb_v10": {"hier_name": "microblaze_0_local_memory_ilmb_v10",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_lmb_bram": {"hier_name": "microblaze_0_local_memory_lmb_bram",
+"type": "blk_mem_gen",
+"version": "8.4",
+"ip_type": "MEMORY",
+},
+"microblaze_0_xlconcat": {"hier_name": "microblaze_0_xlconcat",
+"type": "xlconcat",
+"version": "2.1",
+"ip_type": "PERIPHERAL",
+},
+"nexys4io_0": {"hier_name": "nexys4io_0",
+"type": "nexys4io",
+"version": "3_0",
+"ip_type": "PERIPHERAL",
+},
+"rst_clk_wiz_1_100M": {"hier_name": "rst_clk_wiz_1_100M",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:47:19.813
+!MESSAGE XSCT Command: [::hsi::utils::is_app_supported_on_hw_sw  -hw C:/Users/pnevi/AppData/Local/Temp/hwspec_nexysa7fpga11461677065665512518/nexysa7fpga.xsa -os freertos10_xilinx -processor microblaze_0 -app freertos_hello_world -sw C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/export/PID_Controller_Platform/sw/PID_Controller_Platform/freertos10_xilinx_domain/system.mss -arch {}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:47:19.816
+!MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw C:/Users/pnevi/AppData/Local/Temp/hwspec_nexysa7fpga11461677065665512518/nexysa7fpga.xsa -os freertos10_xilinx -processor microblaze_0 -app freertos_hello_world -sw C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/export/PID_Controller_Platform/sw/PID_Controller_Platform/freertos10_xilinx_domain/system.mss -arch {}], Result: [null, 1]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:47:19.818
+!MESSAGE XSCT Command: [::hsi::utils::is_app_supported_on_hw_sw  -hw C:/Users/pnevi/AppData/Local/Temp/hwspec_nexysa7fpga11461677065665512518/nexysa7fpga.xsa -os freertos10_xilinx -processor microblaze_0 -app freertos_hello_world -sw C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/export/PID_Controller_Platform/sw/PID_Controller_Platform/freertos10_xilinx_domain/system.mss -arch {}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:47:19.821
+!MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw C:/Users/pnevi/AppData/Local/Temp/hwspec_nexysa7fpga11461677065665512518/nexysa7fpga.xsa -os freertos10_xilinx -processor microblaze_0 -app freertos_hello_world -sw C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/export/PID_Controller_Platform/sw/PID_Controller_Platform/freertos10_xilinx_domain/system.mss -arch {}], Result: [null, 1]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:47:22.826
+!MESSAGE XSCT Command: [::hsi::utils::is_app_supported_on_hw_sw  -hw C:/Users/pnevi/AppData/Local/Temp/hwspec_nexysa7fpga11461677065665512518/nexysa7fpga.xsa -os freertos10_xilinx -processor microblaze_0 -app empty_application -sw C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/export/PID_Controller_Platform/sw/PID_Controller_Platform/freertos10_xilinx_domain/system.mss -arch {}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:47:22.830
+!MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw C:/Users/pnevi/AppData/Local/Temp/hwspec_nexysa7fpga11461677065665512518/nexysa7fpga.xsa -os freertos10_xilinx -processor microblaze_0 -app empty_application -sw C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/export/PID_Controller_Platform/sw/PID_Controller_Platform/freertos10_xilinx_domain/system.mss -arch {}], Result: [null, 1]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:47:28.940
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/export/PID_Controller_Platform/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Application/system.mss ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:47:28.942
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/export/PID_Controller_Platform/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Application/system.mss ], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:47:28.943
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/export/PID_Controller_Platform/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Application/system.mss], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:47:28.946
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/export/PID_Controller_Platform/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Application/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "freertos10_xilinx",
+"osver": "1.12",
+}]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:47:29.787
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/export/PID_Controller_Platform/hw/nexysa7fpga.xsa microblaze_0 C_USE_REORDER_INSTR], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:47:29.789
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/export/PID_Controller_Platform/hw/nexysa7fpga.xsa microblaze_0 C_USE_REORDER_INSTR], Result: [null, 1]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:47:29.789
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/export/PID_Controller_Platform/hw/nexysa7fpga.xsa microblaze_0 C_ENDIANNESS], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:47:29.797
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/export/PID_Controller_Platform/hw/nexysa7fpga.xsa microblaze_0 C_ENDIANNESS], Result: [null, 1]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:47:29.798
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/export/PID_Controller_Platform/hw/nexysa7fpga.xsa microblaze_0 C_USE_BARREL], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:47:29.799
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/export/PID_Controller_Platform/hw/nexysa7fpga.xsa microblaze_0 C_USE_BARREL], Result: [null, 0]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:47:29.799
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/export/PID_Controller_Platform/hw/nexysa7fpga.xsa microblaze_0 C_USE_PCMP_INSTR], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:47:29.801
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/export/PID_Controller_Platform/hw/nexysa7fpga.xsa microblaze_0 C_USE_PCMP_INSTR], Result: [null, 0]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:47:29.813
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/export/PID_Controller_Platform/hw/nexysa7fpga.xsa microblaze_0 C_USE_DIV], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:47:29.815
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/export/PID_Controller_Platform/hw/nexysa7fpga.xsa microblaze_0 C_USE_DIV], Result: [null, 0]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:47:29.816
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/export/PID_Controller_Platform/hw/nexysa7fpga.xsa microblaze_0 C_USE_FPU], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:47:29.828
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/export/PID_Controller_Platform/hw/nexysa7fpga.xsa microblaze_0 C_USE_FPU], Result: [null, 1]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:47:29.829
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/export/PID_Controller_Platform/hw/nexysa7fpga.xsa microblaze_0 C_USE_HW_MUL], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:47:29.830
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/export/PID_Controller_Platform/hw/nexysa7fpga.xsa microblaze_0 C_USE_HW_MUL], Result: [null, 0]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:47:29.831
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/export/PID_Controller_Platform/hw/nexysa7fpga.xsa microblaze_0 C_AREA_OPTIMIZED], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:47:29.843
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/export/PID_Controller_Platform/hw/nexysa7fpga.xsa microblaze_0 C_AREA_OPTIMIZED], Result: [null, 0]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:47:29.851
+!MESSAGE XSCT Command: [hsi::utils::get_supported_os -json C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/export/PID_Controller_Platform/hw/nexysa7fpga.xsa], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:47:29.855
+!MESSAGE XSCT command with result: [hsi::utils::get_supported_os -json C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/export/PID_Controller_Platform/hw/nexysa7fpga.xsa], Result: [null, {"microblaze_0": {"freertos10_xilinx_v1_12": {"name": "freertos10_xilinx",
+"version": "1.12",
+"desc": "This Xilinx FreeRTOS port is based on FreeRTOS kernel version 10.4.6",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group",
+"repo": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/ThirdParty/bsp/freertos10_xilinx_v1_12",
+},
+"standalone_v8_0": {"name": "standalone",
+"version": "8.0",
+"desc": "Standalone is a simple, low-level software layer. It provides access to basic processor features such as caches, interrupts and exceptions as well as the basic features of a hosted environment, such as standard input and output, profiling, abort and exit.",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-lgcc,-lc,--end-group",
+"repo": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/bsp/standalone_v8_0",
+},
+},
+}]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:47:29.856
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/export/PID_Controller_Platform/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Application/system.mss], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:47:29.857
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/export/PID_Controller_Platform/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Application/system.mss], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:47:29.858
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/export/PID_Controller_Platform/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Application/system.mss], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:47:29.874
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/export/PID_Controller_Platform/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Application/system.mss], Result: [null, {}]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:47:29.875
+!MESSAGE XSCT Command: [::hsi::utils::get_connected_periphs C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/export/PID_Controller_Platform/hw/nexysa7fpga.xsa microblaze_0], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:47:29.877
+!MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/export/PID_Controller_Platform/hw/nexysa7fpga.xsa microblaze_0], Result: [null, axi_gpio_1 axi_iic_0 axi_timer_0 axi_uartlite_0 mdm_1 microblaze_0_axi_intc microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr nexys4io_0]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:47:29.877
+!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/export/PID_Controller_Platform/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Application/system.mss], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:47:29.889
+!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/export/PID_Controller_Platform/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Application/system.mss], Result: [null, {"axi_gpio_1": {"name": "gpio",
+"ver": "4.9",
+},
+"axi_iic_0": {"name": "iic",
+"ver": "3.9",
+},
+"axi_timer_0": {"name": "tmrctr",
+"ver": "4.9",
+},
+"axi_uartlite_0": {"name": "uartlite",
+"ver": "3.7",
+},
+"mdm_1": {"name": "uartlite",
+"ver": "3.7",
+},
+"microblaze_0_axi_intc": {"name": "intc",
+"ver": "3.15",
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr": {"name": "bram",
+"ver": "4.8",
+},
+"microblaze_0_local_memory_ilmb_bram_if_cntlr": {"name": "bram",
+"ver": "4.8",
+},
+"nexys4io_0": {"name": "nexys4io",
+"ver": "1.0",
+},
+"microblaze_0": {"name": "cpu",
+"ver": "2.16",
+},
+}]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:47:29.890
+!MESSAGE XSCT Command: [hsi::utils::get_drivers_for_hw -json C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/export/PID_Controller_Platform/hw/nexysa7fpga.xsa], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:47:29.935
+!MESSAGE XSCT command with result: [hsi::utils::get_drivers_for_hw -json C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/export/PID_Controller_Platform/hw/nexysa7fpga.xsa], Result: [null, {"axi_gpio_1": {"version": "2.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "{C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0} {C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1}",
+},
+"gpio_v4_9": {"name": "gpio",
+"version": "4.9",
+"repo": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/gpio_v4_9",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"axi_iic_0": {"version": "2.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "{C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0} {C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1}",
+},
+"iic_v3_9": {"name": "iic",
+"version": "3.9",
+"repo": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/iic_v3_9",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"axi_timer_0": {"version": "2.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "{C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0} {C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1}",
+},
+"tmrctr_v4_9": {"name": "tmrctr",
+"version": "4.9",
+"repo": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/tmrctr_v4_9",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"axi_uartlite_0": {"version": "2.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "{C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0} {C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1}",
+},
+"uartlite_v3_7": {"name": "uartlite",
+"version": "3.7",
+"repo": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/uartlite_v3_7",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"bidirec_0": {"version": "1.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "{C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0} {C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1}",
+},
+},
+},
+"bidirec_1": {"version": "1.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "{C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0} {C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1}",
+},
+},
+},
+"clk_wiz_1": {"version": "6.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "{C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0} {C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1}",
+},
+"clk_wiz_v1_5": {"name": "clk_wiz",
+"version": "1.5",
+"repo": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/clk_wiz_v1_5",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"mdm_1": {"version": "3.2",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "{C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0} {C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1}",
+},
+"uartlite_v3_7": {"name": "uartlite",
+"version": "3.7",
+"repo": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/uartlite_v3_7",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"microblaze_0": {"version": "11.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "{C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0} {C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1}",
+},
+"cpu_v2_16": {"name": "cpu",
+"version": "2.16",
+"repo": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/cpu_v2_16",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"microblaze_0_axi_intc": {"version": "4.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "{C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0} {C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1}",
+},
+"intc_v3_15": {"name": "intc",
+"version": "3.15",
+"repo": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/intc_v3_15",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"microblaze_0_axi_periph": {"version": "2.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "{C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0} {C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1}",
+},
+},
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr": {"version": "4.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "{C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0} {C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1}",
+},
+"bram_v4_8": {"name": "bram",
+"version": "4.8",
+"repo": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/bram_v4_8",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"microblaze_0_local_memory_dlmb_v10": {"version": "3.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "{C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0} {C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1}",
+},
+},
+},
+"microblaze_0_local_memory_ilmb_bram_if_cntlr": {"version": "4.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "{C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0} {C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1}",
+},
+"bram_v4_8": {"name": "bram",
+"version": "4.8",
+"repo": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/bram_v4_8",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"microblaze_0_local_memory_ilmb_v10": {"version": "3.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "{C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0} {C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1}",
+},
+},
+},
+"microblaze_0_local_memory_lmb_bram": {"version": "8.4",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "{C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0} {C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1}",
+},
+},
+},
+"microblaze_0_xlconcat": {"version": "2.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "{C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0} {C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1}",
+},
+},
+},
+"nexys4io_0": {"version": "3_0",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "{C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0} {C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1}",
+},
+"nexys4io_v1_0": {"name": "nexys4io",
+"version": "1.0",
+"repo": "C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/export/PID_Controller_Platform/hw/drivers/nexys4io_v1_0",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"rst_clk_wiz_1_100M": {"version": "5.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "{C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0} {C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1}",
+},
+},
+},
+}]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:47:29.942
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/export/PID_Controller_Platform/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Application/system.mss], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:47:29.945
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/export/PID_Controller_Platform/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Application/system.mss], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:47:29.945
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/export/PID_Controller_Platform/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Application/system.mss], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:47:29.947
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/export/PID_Controller_Platform/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Application/system.mss], Result: [null, {}]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:47:29.964
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/export/PID_Controller_Platform/hw/nexysa7fpga.xsa], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:47:29.966
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/export/PID_Controller_Platform/hw/nexysa7fpga.xsa], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:47:29.966
+!MESSAGE XSCT Command: [::hsi::utils::opensw C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Application/system.mss], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:47:29.982
+!MESSAGE XSCT command with result: [::hsi::utils::opensw C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Application/system.mss], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:47:29.982
+!MESSAGE XSCT Command: [::hsi::utils::generate_app_template -hw C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/export/PID_Controller_Platform/hw/nexysa7fpga.xsa -sw C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Application/system.mss -app empty_application -processor microblaze_0 -os freertos10_xilinx -dir C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Application/src], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:47:30.029
+!MESSAGE XSCT command with result: [::hsi::utils::generate_app_template -hw C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/export/PID_Controller_Platform/hw/nexysa7fpga.xsa -sw C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Application/system.mss -app empty_application -processor microblaze_0 -os freertos10_xilinx -dir C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Application/src], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:47:30.058
+!MESSAGE XSCT Command: [hsi::internal::extract_hw_files -quiet bit mmi bmm -dir {C:\ECE544-EmbeddedSystemsFPGA\ECE544-ACTUAL-Project2\Vitis_Application\PID_Controller_Application\_ide\bitstream}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:47:30.090
+!MESSAGE XSCT command with result: [hsi::internal::extract_hw_files -quiet bit mmi bmm -dir {C:\ECE544-EmbeddedSystemsFPGA\ECE544-ACTUAL-Project2\Vitis_Application\PID_Controller_Application\_ide\bitstream}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:47:30.090
+!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/export/PID_Controller_Platform/hw/nexysa7fpga.xsa], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:47:30.092
+!MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/export/PID_Controller_Platform/hw/nexysa7fpga.xsa], Result: [null, {"device": "7a100t",
+"family": "artix7",
+"timestamp": "Thu Feb 20 09:37:45 2025",
+"vivado_version": "2022.2",
+"part": "xc7a100tcsg324-1",
+}]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:47:30.132
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Application/system.mss], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:47:30.135
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Application/system.mss], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-02-21 17:47:30.157
+!MESSAGE Generating MD5 hash for file: C:\ECE544-EmbeddedSystemsFPGA\ECE544-ACTUAL-Project2\Vitis_Application\PID_Controller_Platform\export\PID_Controller_Platform\sw\PID_Controller_Platform\freertos10_xilinx_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:47:30.406
+!MESSAGE XSCT Command: [::hsi::utils::closehw C:/Users/pnevi/AppData/Local/Temp/hwspec_nexysa7fpga11461677065665512518/nexysa7fpga.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:47:30.408
+!MESSAGE XSCT command with result: [::hsi::utils::closehw C:/Users/pnevi/AppData/Local/Temp/hwspec_nexysa7fpga11461677065665512518/nexysa7fpga.xsa], Result: [null, ]. Thread: main
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-02-21 17:47:30.439
+!MESSAGE Indexed 'PID_Controller_Application' (0 sources, 0 headers) in 0.001 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-02-21 17:47:30.441
+!MESSAGE Indexed 'PID_Controller_Application_system' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:49:36.157
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_tag_info -json C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/export/PID_Controller_Platform/hw/nexysa7fpga.xsa ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 17:49:36.159
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_tag_info -json C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/export/PID_Controller_Platform/hw/nexysa7fpga.xsa ], Result: [null, {"microblaze_0": "embsys_i/microblaze_0:embsys_i/microblaze_0",
+}]. Thread: main
+
+!ENTRY org.eclipse.launchbar.core 2 0 2025-02-21 17:49:47.241
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2025-02-21 17:49:47.242
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2025-02-21 17:49:47.242
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 18:03:22.242
+!MESSAGE XSCT Command: [::scw::get_hw_path], Thread: Worker-8: Initializing 'freertos10_xilinx_domain' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 18:03:22.243
+!MESSAGE XSCT command with result: [::scw::get_hw_path], Result: [null, C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa]. Thread: Worker-8: Initializing 'freertos10_xilinx_domain' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 18:03:22.243
+!MESSAGE XSCT Command: [::scw::regenerate_psinit C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa], Thread: Worker-8: Initializing 'freertos10_xilinx_domain' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 18:03:22.244
+!MESSAGE XSCT command with result: [::scw::regenerate_psinit C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa], Result: [null, ]. Thread: Worker-8: Initializing 'freertos10_xilinx_domain' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 18:03:22.244
+!MESSAGE XSCT Command: [::scw::get_mss_path], Thread: Worker-8: Initializing 'freertos10_xilinx_domain' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 18:03:22.249
+!MESSAGE XSCT command with result: [::scw::get_mss_path], Result: [null, C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss]. Thread: Worker-8: Initializing 'freertos10_xilinx_domain' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 18:03:22.250
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss ], Thread: Worker-8: Initializing 'freertos10_xilinx_domain' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 18:03:22.251
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss ], Result: [null, ]. Thread: Worker-8: Initializing 'freertos10_xilinx_domain' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 18:03:22.252
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss], Thread: Worker-8: Initializing 'freertos10_xilinx_domain' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 18:03:22.254
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "freertos10_xilinx",
+"osver": "1.12",
+}]. Thread: Worker-8: Initializing 'freertos10_xilinx_domain' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 18:03:22.271
+!MESSAGE XSCT Command: [hsi::utils::get_supported_os -json C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 18:03:22.276
+!MESSAGE XSCT command with result: [hsi::utils::get_supported_os -json C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa], Result: [null, {"microblaze_0": {"freertos10_xilinx_v1_12": {"name": "freertos10_xilinx",
+"version": "1.12",
+"desc": "This Xilinx FreeRTOS port is based on FreeRTOS kernel version 10.4.6",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group",
+"repo": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/ThirdParty/bsp/freertos10_xilinx_v1_12",
+},
+"standalone_v8_0": {"name": "standalone",
+"version": "8.0",
+"desc": "Standalone is a simple, low-level software layer. It provides access to basic processor features such as caches, interrupts and exceptions as well as the basic features of a hosted environment, such as standard input and output, profiling, abort and exit.",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-lgcc,-lc,--end-group",
+"repo": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/bsp/standalone_v8_0",
+},
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 18:03:22.306
+!MESSAGE XSCT Command: [::hsi::utils::get_connected_periphs C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa microblaze_0], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 18:03:22.308
+!MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa microblaze_0], Result: [null, axi_gpio_1 axi_iic_0 axi_timer_0 axi_uartlite_0 mdm_1 microblaze_0_axi_intc microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr nexys4io_0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 18:03:22.308
+!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 18:03:22.310
+!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss], Result: [null, {"axi_gpio_1": {"name": "gpio",
+"ver": "4.9",
+},
+"axi_iic_0": {"name": "iic",
+"ver": "3.9",
+},
+"axi_timer_0": {"name": "tmrctr",
+"ver": "4.9",
+},
+"axi_uartlite_0": {"name": "uartlite",
+"ver": "3.7",
+},
+"mdm_1": {"name": "uartlite",
+"ver": "3.7",
+},
+"microblaze_0_axi_intc": {"name": "intc",
+"ver": "3.15",
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr": {"name": "bram",
+"ver": "4.8",
+},
+"microblaze_0_local_memory_ilmb_bram_if_cntlr": {"name": "bram",
+"ver": "4.8",
+},
+"nexys4io_0": {"name": "nexys4io",
+"ver": "1.0",
+},
+"microblaze_0": {"name": "cpu",
+"ver": "2.16",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 18:03:22.311
+!MESSAGE XSCT Command: [hsi::utils::get_drivers_for_hw -json C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 18:03:22.354
+!MESSAGE XSCT command with result: [hsi::utils::get_drivers_for_hw -json C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa], Result: [null, {"axi_gpio_1": {"version": "2.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "{C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0} {C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1}",
+},
+"gpio_v4_9": {"name": "gpio",
+"version": "4.9",
+"repo": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/gpio_v4_9",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"axi_iic_0": {"version": "2.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "{C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0} {C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1}",
+},
+"iic_v3_9": {"name": "iic",
+"version": "3.9",
+"repo": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/iic_v3_9",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"axi_timer_0": {"version": "2.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "{C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0} {C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1}",
+},
+"tmrctr_v4_9": {"name": "tmrctr",
+"version": "4.9",
+"repo": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/tmrctr_v4_9",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"axi_uartlite_0": {"version": "2.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "{C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0} {C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1}",
+},
+"uartlite_v3_7": {"name": "uartlite",
+"version": "3.7",
+"repo": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/uartlite_v3_7",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"bidirec_0": {"version": "1.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "{C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0} {C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1}",
+},
+},
+},
+"bidirec_1": {"version": "1.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "{C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0} {C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1}",
+},
+},
+},
+"clk_wiz_1": {"version": "6.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "{C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0} {C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1}",
+},
+"clk_wiz_v1_5": {"name": "clk_wiz",
+"version": "1.5",
+"repo": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/clk_wiz_v1_5",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"mdm_1": {"version": "3.2",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "{C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0} {C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1}",
+},
+"uartlite_v3_7": {"name": "uartlite",
+"version": "3.7",
+"repo": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/uartlite_v3_7",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"microblaze_0": {"version": "11.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "{C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0} {C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1}",
+},
+"cpu_v2_16": {"name": "cpu",
+"version": "2.16",
+"repo": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/cpu_v2_16",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"microblaze_0_axi_intc": {"version": "4.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "{C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0} {C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1}",
+},
+"intc_v3_15": {"name": "intc",
+"version": "3.15",
+"repo": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/intc_v3_15",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"microblaze_0_axi_periph": {"version": "2.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "{C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0} {C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1}",
+},
+},
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr": {"version": "4.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "{C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0} {C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1}",
+},
+"bram_v4_8": {"name": "bram",
+"version": "4.8",
+"repo": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/bram_v4_8",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"microblaze_0_local_memory_dlmb_v10": {"version": "3.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "{C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0} {C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1}",
+},
+},
+},
+"microblaze_0_local_memory_ilmb_bram_if_cntlr": {"version": "4.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "{C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0} {C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1}",
+},
+"bram_v4_8": {"name": "bram",
+"version": "4.8",
+"repo": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/bram_v4_8",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"microblaze_0_local_memory_ilmb_v10": {"version": "3.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "{C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0} {C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1}",
+},
+},
+},
+"microblaze_0_local_memory_lmb_bram": {"version": "8.4",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "{C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0} {C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1}",
+},
+},
+},
+"microblaze_0_xlconcat": {"version": "2.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "{C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0} {C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1}",
+},
+},
+},
+"nexys4io_0": {"version": "3_0",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "{C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0} {C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1}",
+},
+"nexys4io_v1_0": {"name": "nexys4io",
+"version": "1.0",
+"repo": "C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/drivers/nexys4io_v1_0",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"rst_clk_wiz_1_100M": {"version": "5.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "{C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0} {C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1}",
+},
+},
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 18:03:22.383
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 18:03:22.385
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 18:03:22.385
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 18:03:22.387
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss], Result: [null, {}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 18:03:22.403
+!MESSAGE XSCT Command: [bsp reload], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 18:03:22.421
+!MESSAGE XSCT command with result: [bsp reload], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 18:03:24.328
+!MESSAGE XSCT Command: [::scw::get_hw_path], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 18:03:24.329
+!MESSAGE XSCT command with result: [::scw::get_hw_path], Result: [null, C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 18:03:24.329
+!MESSAGE XSCT Command: [::scw::regenerate_psinit C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 18:03:24.330
+!MESSAGE XSCT command with result: [::scw::regenerate_psinit C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 18:03:24.330
+!MESSAGE XSCT Command: [::scw::get_mss_path], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 18:03:24.350
+!MESSAGE XSCT command with result: [::scw::get_mss_path], Result: [null, C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 18:03:24.351
+!MESSAGE XSCT Command: [::scw::get_target], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 18:03:24.352
+!MESSAGE XSCT command with result: [::scw::get_target], Result: [null, microblaze_0]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 18:03:24.360
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 18:03:24.362
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 18:03:24.363
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 18:03:24.365
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 18:03:24.365
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 18:03:24.367
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "freertos10_xilinx",
+"osver": "1.12",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 18:03:24.426
+!MESSAGE XSCT Command: [::hsi::utils::get_config_params_for_sw -json C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 18:03:24.439
+!MESSAGE XSCT command with result: [::hsi::utils::get_config_params_for_sw -json C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss], Result: [null, {"microblaze_0": {"archiver": {"category": "",
+"value": "mb-ar",
+"default": "mb-ar",
+"type": "string",
+"desc": "Archiver used to archive libraries for both BSP generation as well as for applications",
+"permit": "",
+"options": {},
+"range": "",
+},
+"assembler": {"category": "",
+"value": "mb-as",
+"default": "mb-as",
+"type": "string",
+"desc": "Assembler used to assemble both BSP/Libraries and Applications.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler": {"category": "",
+"value": "mb-gcc",
+"default": "mb-gcc",
+"type": "string",
+"desc": "Compiler used to compile both BSP/Libraries and Applications.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler_flags": {"category": "",
+"value": "-O2 -c",
+"default": "-O2 -c",
+"type": "string",
+"desc": "Compiler flags used in BSP and library generation. '-c' flag stands for 'compile and assemble, but do not link'. Without this flag, gcc tries to link the code, which will fail because there is no application involved during libgen. '-O2' can be overwritten by extra compiler flags",
+"permit": "none",
+"options": {},
+"range": "",
+},
+"dependency_flags": {"category": "",
+"value": "-MMD -MP",
+"default": "-MMD -MP",
+"type": "string",
+"desc": "Flags used by compiler to generate dependency files",
+"permit": "",
+"options": {},
+"range": "",
+},
+"extra_compiler_flags": {"category": "",
+"value": "-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns",
+"default": "-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns",
+"type": "string",
+"desc": "Extra compiler flags used in BSP and library generation.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"xmdstub_peripheral": {"category": "",
+"value": "none",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "Debug peripheral to be used with xmdstub",
+"permit": "",
+"options": {},
+"range": "mdm_1",
+},
+},
+"freertos10_xilinx": {"PSU_TTC0_Select": {"category": "tick_setup",
+"value": "true",
+"default": "true",
+"type": "bool",
+"desc": "psu_cortexr5 only: Set it to true to use TTC0 for tick interrupt generation",
+"permit": "",
+"options": {},
+"range": "",
+},
+"PSU_TTC0_Select_Cntr": {"category": "tick_setup",
+"value": "0",
+"default": "0",
+"type": "int",
+"desc": "psu_cortexr5 only: Selects the TTC0 counter to be used for tick generation. Allowed range is 0-2",
+"permit": "",
+"options": {},
+"range": "",
+},
+"PSU_TTC1_Select": {"category": "tick_setup",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "psu_cortexr5 only: Set it to true to use TTC1 for tick interrupt generation",
+"permit": "",
+"options": {},
+"range": "",
+},
+"PSU_TTC1_Select_Cntr": {"category": "tick_setup",
+"value": "0",
+"default": "0",
+"type": "int",
+"desc": "psu_cortexr5 only: Selects the TTC1 counter to be used for tick generation. Allowed range is 0-2",
+"permit": "",
+"options": {},
+"range": "",
+},
+"PSU_TTC2_Select": {"category": "tick_setup",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "psu_cortexr5 only: Set it to true to use TTC2 for tick interrupt generation",
+"permit": "",
+"options": {},
+"range": "",
+},
+"PSU_TTC2_Select_Cntr": {"category": "tick_setup",
+"value": "0",
+"default": "0",
+"type": "int",
+"desc": "psu_cortexr5 only: Selects the TTC2 counter to be used for tick generation. Allowed range is 0-2",
+"permit": "",
+"options": {},
+"range": "",
+},
+"PSU_TTC3_Select": {"category": "tick_setup",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "psu_cortexr5 only: Set it to true to use TTC3 for tick interrupt generation",
+"permit": "",
+"options": {},
+"range": "",
+},
+"PSU_TTC3_Select_Cntr": {"category": "tick_setup",
+"value": "0",
+"default": "0",
+"type": "int",
+"desc": "psu_cortexr5 only: Selects the TTC3 counter to be used for tick generation. Allowed range is 0-2",
+"permit": "",
+"options": {},
+"range": "",
+},
+"SYSINTC_SPEC": {"category": "",
+"value": "*",
+"default": "",
+"type": "",
+"desc": "",
+"permit": "",
+"options": {},
+"range": "",
+},
+"SYSTMR_DEV": {"category": "",
+"value": "*",
+"default": "",
+"type": "",
+"desc": "",
+"permit": "",
+"options": {},
+"range": "",
+},
+"SYSTMR_SPEC": {"category": "",
+"value": "true",
+"default": "",
+"type": "",
+"desc": "",
+"permit": "",
+"options": {},
+"range": "",
+},
+"check_for_stack_overflow": {"category": "kernel_features",
+"value": "2",
+"default": "2",
+"type": "int",
+"desc": "Set to 0 for no overflow checking.  Set to 1 to include basic run time task stack checking.  Set to 2 to include more comprehensive run time task stack checking.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"clocking": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable clocking support",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"enable_stm_event_trace": {"category": "enable_stm_event_trace",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable event tracing through System Trace Macrocell available on Zynq MPSoC. This is supported only for Cortex A53 and R5 processors",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"enable_timer_tick_trace": {"category": "enable_stm_event_trace",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable tracing of timer tick events",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"generate_runtime_stats": {"category": "kernel_features",
+"value": "0",
+"default": "0",
+"type": "int",
+"desc": "Set to 1 generate runtime stats for tasks.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"hook_functions": {"category": "hook_functions",
+"value": "true",
+"default": "true",
+"type": "bool",
+"desc": "Include or exclude application defined hook (callback) functions.  Callback functions must be defined by the application that is using FreeRTOS",
+"permit": "none",
+"options": {},
+"range": "",
+},
+"hypervisor_guest": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable hypervisor guest support for A53 64bit EL1 Non-Secure. If hypervisor_guest is not selected, BSP will be built for EL3.",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"idle_yield": {"category": "kernel_behavior",
+"value": "true",
+"default": "true",
+"type": "bool",
+"desc": "Set to true if the Idle task should yield if another idle priority task is able to run, or false if the idle task should always use its entire time slice unless it is preempted.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"kernel_behavior": {"category": "kernel_behavior",
+"value": "true",
+"default": "true",
+"type": "bool",
+"desc": "Parameters relating to the kernel behavior",
+"permit": "none",
+"options": {},
+"range": "",
+},
+"kernel_features": {"category": "kernel_features",
+"value": "true",
+"default": "true",
+"type": "bool",
+"desc": "Include or exclude kernel features",
+"permit": "none",
+"options": {},
+"range": "",
+},
+"max_api_call_interrupt_priority": {"category": "kernel_behavior",
+"value": "18",
+"default": "18",
+"type": "int",
+"desc": "The maximum interrupt priority from which interrupt safe FreeRTOS API calls can be made.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"max_priorities": {"category": "kernel_behavior",
+"value": "8",
+"default": "8",
+"type": "int",
+"desc": "The number of task priorities that will be available.  Priorities can be assigned from zero to (max_priorities - 1)",
+"permit": "",
+"options": {},
+"range": "",
+},
+"max_task_name_len": {"category": "kernel_behavior",
+"value": "10",
+"default": "10",
+"type": "int",
+"desc": "The maximum number of characters that can be in the name of a task.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"message_buffer": {"category": "kernel_features",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Set to true to include message buffer functionality, or false to exclude message buffer functionality.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"minimal_stack_size": {"category": "kernel_behavior",
+"value": "200",
+"default": "200",
+"type": "int",
+"desc": "The size of the stack allocated to the Idle task. Also used by standard demo and test tasks found in the main FreeRTOS download.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"num_thread_local_storage_pointers": {"category": "kernel_features",
+"value": "0",
+"default": "0",
+"type": "int",
+"desc": "Sets the number of pointers each task has to store thread local values.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"queue_registry_size": {"category": "kernel_features",
+"value": "10",
+"default": "10",
+"type": "int",
+"desc": "The maximum number of queues that can be registered at any one time. Only registered queues can be viewed in the Eclipse/GDB kernel aware debugger plug-in.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"software_timers": {"category": "software_timers",
+"value": "true",
+"default": "true",
+"type": "bool",
+"desc": "Options relating to the software timers functionality",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"stdin": {"category": "",
+"value": "axi_uartlite_0",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdin peripheral",
+"permit": "",
+"options": {},
+"range": "axi_uartlite_0 mdm_1",
+},
+"stdout": {"category": "",
+"value": "axi_uartlite_0",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdout peripheral",
+"permit": "",
+"options": {},
+"range": "axi_uartlite_0 mdm_1",
+},
+"stm_channel": {"category": "enable_stm_event_trace",
+"value": "0",
+"default": "0",
+"type": "int",
+"desc": "STM channel to use for trace. Valid channels are 0-65535",
+"permit": "",
+"options": {},
+"range": "",
+},
+"stream_buffer": {"category": "kernel_features",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Set to true to include stream buffer functionality, or false to exclude stream buffer functionality.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"support_static_allocation": {"category": "kernel_features",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Set to true to allocate memory statically, or false to allocate memory dynamically.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"tick_rate": {"category": "kernel_behavior",
+"value": "100",
+"default": "100",
+"type": "int",
+"desc": "Number of RTOS ticks per sec",
+"permit": "",
+"options": {},
+"range": "",
+},
+"tick_setup": {"category": "tick_setup",
+"value": "true",
+"default": "true",
+"type": "bool",
+"desc": "Configuration for enabling tick timer",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"timer_command_queue_length": {"category": "software_timers",
+"value": "10",
+"default": "10",
+"type": "int",
+"desc": "The number of commands the timer command queue can hold at any one time.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"timer_task_priority": {"category": "software_timers",
+"value": "(configMAX_PRIORITIES - 1)",
+"default": "(configMAX_PRIORITIES - 1)",
+"type": "string",
+"desc": "The priority at which the software timer service/daemon task will execute.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"timer_task_stack_depth": {"category": "software_timers",
+"value": "(configMINIMAL_STACK_SIZE)",
+"default": "(configMINIMAL_STACK_SIZE)",
+"type": "string",
+"desc": "The size of the stack allocated to the timer service/daemon task.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"total_heap_size": {"category": "kernel_behavior",
+"value": "65536",
+"default": "65536",
+"type": "int",
+"desc": "Sets the amount of RAM reserved for use by FreeRTOS - used when tasks, queues, semaphores and event groups are created.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"use_counting_semaphores": {"category": "kernel_features",
+"value": "true",
+"default": "true",
+"type": "bool",
+"desc": "Set to true to include counting semaphore functionality, or false to exclude recursive mutex functionality.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"use_daemon_task_startup_hook": {"category": "hook_functions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Set true for kernel to call vApplicationDaemonTaskStartupHook on first iteration of RTOS daemon task. The application must provide an implementation of vApplicationDaemonTaskStartupHook().",
+"permit": "",
+"options": {},
+"range": "",
+},
+"use_freertos_asserts": {"category": "kernel_features",
+"value": "true",
+"default": "true",
+"type": "bool",
+"desc": "Defines configASSERT() to assist development and debugging.  The application can override the default implementation of vApplicationAssert( char *pcFile, uint32_t ulLine )",
+"permit": "",
+"options": {},
+"range": "",
+},
+"use_getmutex_holder": {"category": "kernel_features",
+"value": "true",
+"default": "true",
+"type": "bool",
+"desc": "Set to true to use mutex xSemaphoreGetMutexHolder API, or false to exclude it.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"use_idle_hook": {"category": "hook_functions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Set to true for the kernel to call vApplicationIdleHook() on each iteration of the idle task.  The application must provide an implementation of vApplicationIdleHook().",
+"permit": "",
+"options": {},
+"range": "",
+},
+"use_malloc_failed_hook": {"category": "hook_functions",
+"value": "true",
+"default": "true",
+"type": "bool",
+"desc": "Only used if a FreeRTOS memory manager (heap_n.c) is included in the project.  Set to true for the kernel to call vApplicationMallocFailedHookHook() if there is insufficient FreeRTOS heap available for a task, queue or semaphore to be created.  The application can override the default implementation of vApplicationMallocFailedHook().",
+"permit": "",
+"options": {},
+"range": "",
+},
+"use_mutexes": {"category": "kernel_features",
+"value": "true",
+"default": "true",
+"type": "bool",
+"desc": "Set to true to include mutex functionality, or false to exclude mutex functionality.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"use_newlib_reent": {"category": "kernel_features",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "When true each task will have its own Newlib reent structure.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"use_port_optimized_task_selection": {"category": "kernel_behavior",
+"value": "true",
+"default": "true",
+"type": "bool",
+"desc": "When true task selection will be faster at the cost of limiting the maximum number of unique priorities to 32.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"use_preemption": {"category": "kernel_behavior",
+"value": "true",
+"default": "true",
+"type": "bool",
+"desc": "Set to true to use the preemptive scheduler, or false to use the cooperative scheduler.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"use_queue_sets": {"category": "kernel_features",
+"value": "true",
+"default": "true",
+"type": "bool",
+"desc": "Set to true to include queue set functionality.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"use_recursive_mutexes": {"category": "kernel_features",
+"value": "true",
+"default": "true",
+"type": "bool",
+"desc": "Set to true to include recursive mutex functionality, or false to exclude recursive mutex functionality.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"use_stats_formatting_functions": {"category": "kernel_features",
+"value": "true",
+"default": "true",
+"type": "bool",
+"desc": "Set to 1 to include the vTaskList() and vTaskGetRunTimeStats() functions, which format run-time data into human readable text.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"use_task_fpu_support": {"category": "kernel_features",
+"value": "1",
+"default": "1",
+"type": "int",
+"desc": "Set to 1 to create tasks without FPU context, set to 2 to have tasks with FPU context by default.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"use_task_notifications": {"category": "kernel_features",
+"value": "true",
+"default": "true",
+"type": "bool",
+"desc": "Set to true to include direct to task notification functionality.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"use_tick_hook": {"category": "hook_functions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Set to true for the kernel to call vApplicationTickHook() during each tick interrupt.  The application must provide an implementation of vApplicationTickHook().",
+"permit": "",
+"options": {},
+"range": "",
+},
+"use_timers": {"category": "software_timers",
+"value": "true",
+"default": "true",
+"type": "bool",
+"desc": "Set to true to include software timer functionality, or false to exclude software timer functionality",
+"permit": "",
+"options": {},
+"range": "",
+},
+"use_timeslicing": {"category": "kernel_behavior",
+"value": "true",
+"default": "true",
+"type": "bool",
+"desc": "When true equal priority ready tasks will share CPU time with a context switch on each tick interrupt.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"use_trace_facility": {"category": "kernel_features",
+"value": "true",
+"default": "true",
+"type": "bool",
+"desc": "Set to true to include the legacy trace functionality, and a few other features.  traceMACROS are the preferred method of tracing now.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"xil_interrupt": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable xilinx interrupt wrapper API support",
+"permit": "user",
+"options": {},
+"range": "",
+},
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 18:03:24.642
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 18:03:24.646
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa], Result: [null, {"axi_gpio_1": {"hier_name": "axi_gpio_1",
+"type": "axi_gpio",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_iic_0": {"hier_name": "axi_iic_0",
+"type": "axi_iic",
+"version": "2.1",
+"ip_type": "PERIPHERAL",
+},
+"axi_timer_0": {"hier_name": "axi_timer_0",
+"type": "axi_timer",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_uartlite_0": {"hier_name": "axi_uartlite_0",
+"type": "axi_uartlite",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"bidirec_0": {"hier_name": "bidirec_0",
+"type": "bidirec",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"bidirec_1": {"hier_name": "bidirec_1",
+"type": "bidirec",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"clk_wiz_1": {"hier_name": "clk_wiz_1",
+"type": "clk_wiz",
+"version": "6.0",
+"ip_type": "PERIPHERAL",
+},
+"mdm_1": {"hier_name": "mdm_1",
+"type": "mdm",
+"version": "3.2",
+"ip_type": "DEBUG",
+},
+"microblaze_0": {"hier_name": "microblaze_0",
+"type": "microblaze",
+"version": "11.0",
+"ip_type": "PROCESSOR",
+},
+"microblaze_0_axi_intc": {"hier_name": "microblaze_0_axi_intc",
+"type": "axi_intc",
+"version": "4.1",
+"ip_type": "INTERRUPT_CNTLR",
+},
+"microblaze_0_axi_periph": {"hier_name": "microblaze_0_axi_periph",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr": {"hier_name": "microblaze_0_local_memory_dlmb_bram_if_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"microblaze_0_local_memory_dlmb_v10": {"hier_name": "microblaze_0_local_memory_dlmb_v10",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_ilmb_bram_if_cntlr": {"hier_name": "microblaze_0_local_memory_ilmb_bram_if_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"microblaze_0_local_memory_ilmb_v10": {"hier_name": "microblaze_0_local_memory_ilmb_v10",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_lmb_bram": {"hier_name": "microblaze_0_local_memory_lmb_bram",
+"type": "blk_mem_gen",
+"version": "8.4",
+"ip_type": "MEMORY",
+},
+"microblaze_0_xlconcat": {"hier_name": "microblaze_0_xlconcat",
+"type": "xlconcat",
+"version": "2.1",
+"ip_type": "PERIPHERAL",
+},
+"nexys4io_0": {"hier_name": "nexys4io_0",
+"type": "nexys4io",
+"version": "3_0",
+"ip_type": "PERIPHERAL",
+},
+"rst_clk_wiz_1_100M": {"hier_name": "rst_clk_wiz_1_100M",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 18:03:24.648
+!MESSAGE XSCT Command: [hsi::utils::get_all_libs -json], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 18:03:24.653
+!MESSAGE XSCT command with result: [hsi::utils::get_all_libs -json], Result: [null, {"libmetal_v2_4": {"name": "libmetal",
+"version": "2.4",
+"desc": "Libmetal Library",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-lmetal,-lgcc,-lc,--end-group",
+"repo": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/ThirdParty/sw_services/libmetal_v2_4",
+"os": "standalone freertos10_xilinx",
+"proc": "ps7_cortexa9 psu_cortexa53 psu_cortexr5 psv_cortexr5 psu_pmu microblaze psu_cortexa72 psv_cortexa72 psv_psm psv_pmc",
+},
+"lwip211_v1_8": {"name": "lwip211",
+"version": "1.8",
+"desc": "lwip211 library: lwIP (light weight IP) is an open source TCP/IP stack configured for Xilinx hard and soft Ethernet MACs",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group",
+"repo": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/ThirdParty/sw_services/lwip211_v1_8",
+"os": "standalone freertos10_xilinx",
+"proc": "ps7_cortexa9 psu_cortexa53 psu_cortexr5 psv_cortexr5 psu_pmu microblaze psu_cortexa72 psv_cortexa72 psv_psm psv_pmc",
+},
+"openamp_v1_7": {"name": "openamp",
+"version": "1.7",
+"desc": "OpenAmp Library",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-lmetal,-lopen_amp,-lgcc,-lc,--end-group",
+"repo": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/ThirdParty/sw_services/openamp_v1_7",
+"os": "standalone freertos10_xilinx",
+"proc": "ps7_cortexa9 psu_cortexr5 psv_cortexr5",
+},
+"xilffs_v4_8": {"name": "xilffs",
+"version": "4.8",
+"desc": "Generic Fat File System Library",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group",
+"repo": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_services/xilffs_v4_8",
+"os": "standalone freertos10_xilinx",
+"proc": "ps7_cortexa9 psu_cortexa53 psu_cortexr5 psv_cortexr5 psu_pmu microblaze psu_cortexa72 psv_cortexa72 psv_psm psv_pmc",
+},
+"xilflash_v4_9": {"name": "xilflash",
+"version": "4.9",
+"desc": "Xilinx Flash library for Intel/AMD CFI compliant parallel flash",
+"compilerflags": "",
+"linkerflags": "-lxilflash",
+"repo": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_services/xilflash_v4_9",
+"os": "standalone xilkernel freertos10_xilinx",
+"proc": "ps7_cortexa9 psu_cortexa53 psu_cortexr5 psv_cortexr5 psu_pmu microblaze psu_cortexa72 psv_cortexa72 psv_psm psv_pmc",
+},
+"xilfpga_v6_3": {"name": "xilfpga",
+"version": "6.3",
+"desc": "XilFPGA library provides an interface to the Linux or bare-metal users for configuring the PL over PCAP from PS",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxilfpga,-lxil,-lgcc,-lc,--end-group",
+"repo": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_services/xilfpga_v6_3",
+"os": "standalone freertos10_xilinx",
+"proc": "psv_cortexa72 psv_cortexr5 psu_cortexa53 psu_cortexr5 psu_pmu",
+},
+"xilloader_v1_7": {"name": "xilloader",
+"version": "1.7",
+"desc": "Xilinx Versal Platform Loader Library",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxilloader,-lxilpm,-lxilplmi,-lxilffs,-lxilpdi,-lxil,-lgcc,-lc,--end-group",
+"repo": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_services/xilloader_v1_7",
+"os": "standalone",
+"proc": "psv_pmc psv_psm",
+},
+"xilmailbox_v1_6": {"name": "xilmailbox",
+"version": "1.6",
+"desc": "Xilinx IPI Mailbox Library",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxilmailbox,-lxil,-lgcc,-lc,--end-group",
+"repo": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_services/xilmailbox_v1_6",
+"os": "standalone freertos10_xilinx",
+"proc": "psv_cortexa72 psv_cortexr5 psu_cortexa72 psu_cortexa53 psu_cortexr5 psu_pmu psv_pmc microblaze",
+},
+"xilnvm_v3_0": {"name": "xilnvm",
+"version": "3.0",
+"desc": "Xilinx NVM Library provides interface to accessing eFUSE and BBRAM of Versal",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxilnvm,-lxil,-lgcc,-lc,--end-group",
+"repo": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_services/xilnvm_v3_0",
+"os": "standalone freertos10_xilinx",
+"proc": "psu_cortexa72 psv_pmc psv_cortexa72 psv_cortexr5 microblaze",
+},
+"xilocp_v1_0": {"name": "xilocp",
+"version": "1.0",
+"desc": "Xilinx Open Compute Platform(OCP) support Library",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxilocp,-lxilplmi,-lxilsecure,-lxil,-lgcc,-lc,--end-group",
+"repo": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_services/xilocp_v1_0",
+"os": "standalone",
+"proc": "ps7_cortexa9 psu_cortexa53 psu_cortexr5 psv_cortexr5 psu_pmu microblaze psu_cortexa72 psv_cortexa72 psv_psm psv_pmc",
+},
+"xilpdi_v1_6": {"name": "xilpdi",
+"version": "1.6",
+"desc": "Xilinx Programmable Device Image (PDI) Library",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxilpdi,-lxil,-lgcc,-lc,--end-group",
+"repo": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_services/xilpdi_v1_6",
+"os": "standalone",
+"proc": "psv_cortexa72 psv_cortexr5 psu_cortexa72 psu_cortexr5 psv_pmc",
+},
+"xilplmi_v1_7": {"name": "xilplmi",
+"version": "1.7",
+"desc": "Xilinx Versal Platform Loader and Manager Interface Library",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxilplmi,-lxil,-lgcc,-lc,--end-group",
+"repo": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_services/xilplmi_v1_7",
+"os": "standalone",
+"proc": "psv_pmc",
+},
+"xilpm_v4_1": {"name": "xilpm",
+"version": "4.1",
+"desc": "Platform Management API Library for ZynqMP and Versal",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxilpm,-lxil,-lgcc,-lc,--end-group",
+"repo": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_services/xilpm_v4_1",
+"os": "standalone freertos10_xilinx",
+"proc": "ps7_cortexa9 psu_cortexa53 psu_cortexr5 psv_cortexr5 psu_pmu microblaze psu_cortexa72 psv_cortexa72 psv_psm psv_pmc",
+},
+"xilpuf_v2_0": {"name": "xilpuf",
+"version": "2.0",
+"desc": "Xilinx PUF Library provides interface for registration and regeneration",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxilpuf,-lxil,-lgcc,-lc,--end-group",
+"repo": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_services/xilpuf_v2_0",
+"os": "standalone freertos10_xilinx",
+"proc": "psv_pmc psv_cortexa72 psv_cortexr5 microblaze",
+},
+"xilrsa_v1_6": {"name": "xilrsa",
+"version": "1.6",
+"desc": "Xilinx RSA Library to access RSA and SHA software algorithms on Zynq",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group",
+"repo": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_services/xilrsa_v1_6",
+"os": "standalone freertos10_xilinx",
+"proc": "ps7_cortexa9",
+},
+"xilsecure_v5_0": {"name": "xilsecure",
+"version": "5.0",
+"desc": "Xilinx Secure Library provides interface to AES, RSA and SHA hardware engines on ZynqMP Soc and Versal",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxilsecure,-lxil,-lgcc,-lc,--end-group",
+"repo": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_services/xilsecure_v5_0",
+"os": "standalone freertos10_xilinx",
+"proc": "psu_cortexa53 psu_cortexr5 psu_pmu psu_cortexa72 psv_pmc psv_cortexa72 psv_cortexr5 microblaze",
+},
+"xilsem_v1_6": {"name": "xilsem",
+"version": "1.6",
+"desc": "Xilinx Versal Soft Error Mitigation Library",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxilsem,-lxil,-lgcc,-lc,--end-group",
+"repo": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_services/xilsem_v1_6",
+"os": "standalone",
+"proc": "psv_pmc psv_cortexr5",
+},
+"xilskey_v7_3": {"name": "xilskey",
+"version": "7.3",
+"desc": "Xilinx Secure Key Library supports programming efuse and bbram",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxilskey,-lxil,-lgcc,-lc,--end-group",
+"repo": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_services/xilskey_v7_3",
+"os": "standalone freertos10_xilinx",
+"proc": "ps7_cortexa9 psu_cortexa53 psu_cortexr5 psv_cortexr5 psu_pmu microblaze psu_cortexa72 psv_cortexa72 psv_psm psv_pmc",
+},
+"xiltimer_v1_1": {"name": "xiltimer",
+"version": "1.1",
+"desc": "Xiltimer library provides generic timer interface for the timer IP's",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxiltimer,-lxil,-lgcc,-lc,--end-group",
+"repo": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_services/xiltimer_v1_1",
+"os": "standalone freertos10_xilinx",
+"proc": "ps7_cortexa9 psu_cortexa53 psu_cortexr5 psv_cortexr5 psu_pmu microblaze psu_cortexa72 psv_cortexa72 psv_psm psv_pmc",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 18:03:24.655
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 18:03:24.656
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 18:03:24.657
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 18:03:24.658
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss], Result: [null, {}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 18:03:24.720
+!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 18:03:24.722
+!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss], Result: [null, {"axi_gpio_1": {"name": "gpio",
+"ver": "4.9",
+},
+"axi_iic_0": {"name": "iic",
+"ver": "3.9",
+},
+"axi_timer_0": {"name": "tmrctr",
+"ver": "4.9",
+},
+"axi_uartlite_0": {"name": "uartlite",
+"ver": "3.7",
+},
+"mdm_1": {"name": "uartlite",
+"ver": "3.7",
+},
+"microblaze_0_axi_intc": {"name": "intc",
+"ver": "3.15",
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr": {"name": "bram",
+"ver": "4.8",
+},
+"microblaze_0_local_memory_ilmb_bram_if_cntlr": {"name": "bram",
+"ver": "4.8",
+},
+"nexys4io_0": {"name": "nexys4io",
+"ver": "1.0",
+},
+"microblaze_0": {"name": "cpu",
+"ver": "2.16",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 18:03:24.735
+!MESSAGE XSCT Command: [::hsi::utils::get_connected_periphs C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa microblaze_0], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 18:03:24.737
+!MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa microblaze_0], Result: [null, axi_gpio_1 axi_iic_0 axi_timer_0 axi_uartlite_0 mdm_1 microblaze_0_axi_intc microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr nexys4io_0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 18:03:31.297
+!MESSAGE XSCT Command: [bsp config stdin "mdm_1"], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 18:03:31.311
+!MESSAGE XSCT command with result: [bsp config stdin "mdm_1"], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 18:03:31.759
+!MESSAGE XSCT Command: [bsp config enable_stm_event_trace "false"], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 18:03:31.775
+!MESSAGE XSCT command with result: [bsp config enable_stm_event_trace "false"], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 18:03:34.282
+!MESSAGE XSCT Command: [bsp config stdout "mdm_1"], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 18:03:34.295
+!MESSAGE XSCT command with result: [bsp config stdout "mdm_1"], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 18:03:34.443
+!MESSAGE XSCT Command: [bsp write], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 18:03:34.452
+!MESSAGE XSCT command with result: [bsp write], Result: [null, Successfully saved  the platform at "C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/platform.spr"]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 18:03:34.455
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 18:03:34.457
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 18:03:34.457
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 18:03:34.459
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "freertos10_xilinx",
+"osver": "1.12",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 18:03:34.460
+!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 18:03:34.462
+!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss], Result: [null, {"axi_gpio_1": {"name": "gpio",
+"ver": "4.9",
+},
+"axi_iic_0": {"name": "iic",
+"ver": "3.9",
+},
+"axi_timer_0": {"name": "tmrctr",
+"ver": "4.9",
+},
+"axi_uartlite_0": {"name": "uartlite",
+"ver": "3.7",
+},
+"mdm_1": {"name": "uartlite",
+"ver": "3.7",
+},
+"microblaze_0_axi_intc": {"name": "intc",
+"ver": "3.15",
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr": {"name": "bram",
+"ver": "4.8",
+},
+"microblaze_0_local_memory_ilmb_bram_if_cntlr": {"name": "bram",
+"ver": "4.8",
+},
+"nexys4io_0": {"name": "nexys4io",
+"ver": "1.0",
+},
+"microblaze_0": {"name": "cpu",
+"ver": "2.16",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 18:03:34.481
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 18:03:34.483
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 18:03:34.484
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 18:03:34.485
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss], Result: [null, {}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 18:03:34.493
+!MESSAGE XSCT Command: [bsp reload], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 18:03:34.533
+!MESSAGE XSCT command with result: [bsp reload], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 18:03:34.593
+!MESSAGE XSCT Command: [bsp regenerate], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-21 18:03:35.249
+!MESSAGE XSCT command with result: [bsp regenerate], Result: [null, ]. Thread: ModalContext

@@ -1,0 +1,1306 @@
+TRACE::2025-02-21.17:46:54::SCWPlatform::Trying to open the hw design at C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:54::SCWPlatform::DSA given C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:54::SCWPlatform::DSA absoulate path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:54::SCWPlatform::DSA directory C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw
+TRACE::2025-02-21.17:46:54::SCWPlatform:: Platform Path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:54::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-02-21.17:46:54::SCWPlatform::Do not have an existing db opened. 
+TRACE::2025-02-21.17:46:54::SCWPlatform::Opened new HwDB with name nexysa7fpga_0
+TRACE::2025-02-21.17:46:54::SCWWriter::formatted JSON is {
+	"platformName":	"PID_Controller_Platform",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"PID_Controller_Platform",
+	"platHandOff":	"C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/hdl/nexysa7fpga.xsa",
+	"platIntHandOff":	"<platformDir>/hw/nexysa7fpga.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	""
+}
+TRACE::2025-02-21.17:46:54::SCWWriter::formatted JSON is {
+	"platformName":	"PID_Controller_Platform",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"PID_Controller_Platform",
+	"platHandOff":	"C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/hdl/nexysa7fpga.xsa",
+	"platIntHandOff":	"<platformDir>/hw/nexysa7fpga.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"PID_Controller_Platform",
+	"systems":	[{
+			"systemName":	"PID_Controller_Platform",
+			"systemDesc":	"PID_Controller_Platform",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"PID_Controller_Platform"
+		}]
+}
+TRACE::2025-02-21.17:46:54::SCWPlatform::Boot application domains not present, creating them
+TRACE::2025-02-21.17:46:54::SCWPlatform::Pure FPGA device, no boot application will be created.
+TRACE::2025-02-21.17:46:54::SCWWriter::formatted JSON is {
+	"platformName":	"PID_Controller_Platform",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"PID_Controller_Platform",
+	"platHandOff":	"C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/hdl/nexysa7fpga.xsa",
+	"platIntHandOff":	"<platformDir>/hw/nexysa7fpga.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"PID_Controller_Platform",
+	"systems":	[{
+			"systemName":	"PID_Controller_Platform",
+			"systemDesc":	"PID_Controller_Platform",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"PID_Controller_Platform"
+		}]
+}
+TRACE::2025-02-21.17:46:54::SCWPlatform::Trying to open the hw design at C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:54::SCWPlatform::DSA given C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:54::SCWPlatform::DSA absoulate path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:54::SCWPlatform::DSA directory C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw
+TRACE::2025-02-21.17:46:54::SCWPlatform:: Platform Path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:54::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-02-21.17:46:54::SCWPlatform::Trying to set the existing hwdb with name nexysa7fpga_0
+TRACE::2025-02-21.17:46:54::SCWPlatform::Opened existing hwdb nexysa7fpga_0
+TRACE::2025-02-21.17:46:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-21.17:46:54::SCWPlatform::Trying to open the hw design at C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:54::SCWPlatform::DSA given C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:54::SCWPlatform::DSA absoulate path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:54::SCWPlatform::DSA directory C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw
+TRACE::2025-02-21.17:46:54::SCWPlatform:: Platform Path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:54::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-02-21.17:46:54::SCWPlatform::Trying to set the existing hwdb with name nexysa7fpga_0
+TRACE::2025-02-21.17:46:54::SCWPlatform::Opened existing hwdb nexysa7fpga_0
+TRACE::2025-02-21.17:46:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-21.17:46:54::SCWPlatform::Trying to open the hw design at C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:54::SCWPlatform::DSA given C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:54::SCWPlatform::DSA absoulate path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:54::SCWPlatform::DSA directory C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw
+TRACE::2025-02-21.17:46:54::SCWPlatform:: Platform Path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:54::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-02-21.17:46:54::SCWPlatform::Trying to set the existing hwdb with name nexysa7fpga_0
+TRACE::2025-02-21.17:46:54::SCWPlatform::Opened existing hwdb nexysa7fpga_0
+TRACE::2025-02-21.17:46:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-21.17:46:54::SCWDomain::checking for install qemu data   : 
+TRACE::2025-02-21.17:46:54::SCWPlatform::Trying to open the hw design at C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:54::SCWPlatform::DSA given C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:54::SCWPlatform::DSA absoulate path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:54::SCWPlatform::DSA directory C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw
+TRACE::2025-02-21.17:46:54::SCWPlatform:: Platform Path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:54::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-02-21.17:46:54::SCWPlatform::Trying to set the existing hwdb with name nexysa7fpga_0
+TRACE::2025-02-21.17:46:54::SCWPlatform::Opened existing hwdb nexysa7fpga_0
+TRACE::2025-02-21.17:46:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-21.17:46:54::SCWPlatform::Trying to open the hw design at C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:54::SCWPlatform::DSA given C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:54::SCWPlatform::DSA absoulate path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:54::SCWPlatform::DSA directory C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw
+TRACE::2025-02-21.17:46:54::SCWPlatform:: Platform Path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:54::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-02-21.17:46:54::SCWPlatform::Trying to set the existing hwdb with name nexysa7fpga_0
+TRACE::2025-02-21.17:46:54::SCWPlatform::Opened existing hwdb nexysa7fpga_0
+TRACE::2025-02-21.17:46:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-21.17:46:54::SCWPlatform::Trying to open the hw design at C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:54::SCWPlatform::DSA given C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:54::SCWPlatform::DSA absoulate path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:54::SCWPlatform::DSA directory C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw
+TRACE::2025-02-21.17:46:54::SCWPlatform:: Platform Path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:54::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-02-21.17:46:54::SCWPlatform::Trying to set the existing hwdb with name nexysa7fpga_0
+TRACE::2025-02-21.17:46:54::SCWPlatform::Opened existing hwdb nexysa7fpga_0
+TRACE::2025-02-21.17:46:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-21.17:46:54::SCWMssOS::Checking the sw design at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.17:46:54::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2025-02-21.17:46:54::SCWMssOS::No sw design opened at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.17:46:54::SCWMssOS::mss does not exists at C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.17:46:54::SCWMssOS::Creating sw design at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.17:46:54::SCWMssOS::Adding the swdes entry, created swdb C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss with des name C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.17:46:54::SCWMssOS::updating the scw layer changes to swdes at   C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.17:46:54::SCWMssOS::Writing mss at C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.17:46:54::SCWMssOS::Completed writing the mss file at C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp
+TRACE::2025-02-21.17:46:54::SCWMssOS::Picking up changes from newly written mss file into SCW Layer. 
+TRACE::2025-02-21.17:46:54::SCWMssOS::Updated the changes from newly written mss file into SCW Layer. 
+TRACE::2025-02-21.17:46:54::SCWMssOS::Completed writing the mss file at C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp
+TRACE::2025-02-21.17:46:54::SCWMssOS::Forcing BSP Sources regeneration.
+TRACE::2025-02-21.17:46:55::SCWMssOS::Saving the mss changes C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.17:46:55::SCWMssOS::Adding the swdes entry, mss present, able to open swdb C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss with des name system
+TRACE::2025-02-21.17:46:55::SCWMssOS::Writing the mss file completed C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.17:46:55::SCWMssOS::Commit changes completed.
+TRACE::2025-02-21.17:46:55::SCWPlatform::Trying to open the hw design at C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:55::SCWPlatform::DSA given C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:55::SCWPlatform::DSA absoulate path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:55::SCWPlatform::DSA directory C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw
+TRACE::2025-02-21.17:46:55::SCWPlatform:: Platform Path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:55::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-02-21.17:46:55::SCWPlatform::Trying to set the existing hwdb with name nexysa7fpga_0
+TRACE::2025-02-21.17:46:55::SCWPlatform::Opened existing hwdb nexysa7fpga_0
+TRACE::2025-02-21.17:46:55::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-21.17:46:55::SCWMssOS::Checking the sw design at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.17:46:55::SCWMssOS::DEBUG:  swdes dump  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system||
+
+TRACE::2025-02-21.17:46:55::SCWMssOS::Sw design exists and opened at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.17:46:55::SCWPlatform::Trying to open the hw design at C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:55::SCWPlatform::DSA given C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:55::SCWPlatform::DSA absoulate path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:55::SCWPlatform::DSA directory C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw
+TRACE::2025-02-21.17:46:55::SCWPlatform:: Platform Path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:55::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-02-21.17:46:55::SCWPlatform::Trying to set the existing hwdb with name nexysa7fpga_0
+TRACE::2025-02-21.17:46:55::SCWPlatform::Opened existing hwdb nexysa7fpga_0
+TRACE::2025-02-21.17:46:55::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-21.17:46:55::SCWMssOS::Checking the sw design at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.17:46:55::SCWMssOS::DEBUG:  swdes dump  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system||
+
+TRACE::2025-02-21.17:46:55::SCWMssOS::Sw design exists and opened at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.17:46:55::SCWPlatform::Trying to open the hw design at C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:55::SCWPlatform::DSA given C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:55::SCWPlatform::DSA absoulate path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:55::SCWPlatform::DSA directory C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw
+TRACE::2025-02-21.17:46:55::SCWPlatform:: Platform Path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:55::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-02-21.17:46:55::SCWPlatform::Trying to set the existing hwdb with name nexysa7fpga_0
+TRACE::2025-02-21.17:46:55::SCWPlatform::Opened existing hwdb nexysa7fpga_0
+TRACE::2025-02-21.17:46:55::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-21.17:46:55::SCWMssOS::Checking the sw design at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.17:46:55::SCWMssOS::DEBUG:  swdes dump  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system||
+
+TRACE::2025-02-21.17:46:55::SCWMssOS::Sw design exists and opened at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.17:46:55::SCWWriter::formatted JSON is {
+	"platformName":	"PID_Controller_Platform",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"PID_Controller_Platform",
+	"platHandOff":	"C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/hdl/nexysa7fpga.xsa",
+	"platIntHandOff":	"<platformDir>/hw/nexysa7fpga.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"PID_Controller_Platform",
+	"systems":	[{
+			"systemName":	"PID_Controller_Platform",
+			"systemDesc":	"PID_Controller_Platform",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"PID_Controller_Platform",
+			"sysActiveDom":	"freertos10_xilinx_domain",
+			"sysDefaultDom":	"freertos10_xilinx_domain",
+			"domains":	[{
+					"domainName":	"freertos10_xilinx_domain",
+					"domainDispName":	"freertos10_xilinx_domain",
+					"domainDesc":	"freertos10_xilinx_domain",
+					"processors":	"microblaze_0",
+					"os":	"freertos10_xilinx",
+					"sdxOs":	"freertos10_xilinx",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"1.12",
+					"mssFile":	"",
+					"md5Digest":	"3ccd7f077ac2979b0fa0dc337d900c3d",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+LOG::2025-02-21.17:46:55::SCWPlatform::Started generating the artifacts platform PID_Controller_Platform
+TRACE::2025-02-21.17:46:55::SCWPlatform::Sanity checking of platform is completed
+LOG::2025-02-21.17:46:55::SCWPlatform::Started generating the artifacts for system configuration PID_Controller_Platform
+LOG::2025-02-21.17:46:55::SCWSystem::Checking the domain freertos10_xilinx_domain
+LOG::2025-02-21.17:46:55::SCWSystem::Not a boot domain 
+LOG::2025-02-21.17:46:55::SCWSystem::Started Processing the domain freertos10_xilinx_domain
+TRACE::2025-02-21.17:46:55::SCWDomain::Generating domain artifcats
+TRACE::2025-02-21.17:46:55::SCWMssOS::Generating standalone artifcats
+TRACE::2025-02-21.17:46:55::SCWMssOS:: Copying the user libraries. 
+TRACE::2025-02-21.17:46:55::SCWPlatform::Trying to open the hw design at C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:55::SCWPlatform::DSA given C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:55::SCWPlatform::DSA absoulate path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:55::SCWPlatform::DSA directory C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw
+TRACE::2025-02-21.17:46:55::SCWPlatform:: Platform Path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:55::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-02-21.17:46:55::SCWPlatform::Trying to set the existing hwdb with name nexysa7fpga_0
+TRACE::2025-02-21.17:46:55::SCWPlatform::Opened existing hwdb nexysa7fpga_0
+TRACE::2025-02-21.17:46:55::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-21.17:46:55::SCWMssOS::Checking the sw design at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.17:46:55::SCWMssOS::DEBUG:  swdes dump  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system||
+
+TRACE::2025-02-21.17:46:55::SCWMssOS::Sw design exists and opened at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.17:46:55::SCWMssOS::Completed writing the mss file at C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp
+TRACE::2025-02-21.17:46:55::SCWMssOS::Mss edits present, copying mssfile into export location C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.17:46:55::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2025-02-21.17:46:55::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2025-02-21.17:46:55::SCWDomain::Skipping the build for domain :  freertos10_xilinx_domain
+TRACE::2025-02-21.17:46:55::SCWMssOS::skipping the bsp build ... 
+TRACE::2025-02-21.17:46:55::SCWMssOS::Copying to export directory.
+TRACE::2025-02-21.17:46:55::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2025-02-21.17:46:55::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2025-02-21.17:46:55::SCWSystem::Completed Processing the domain freertos10_xilinx_domain
+LOG::2025-02-21.17:46:55::SCWSystem::Completed Processing the sysconfig PID_Controller_Platform
+LOG::2025-02-21.17:46:55::SCWPlatform::Completed generating the artifacts for system configuration PID_Controller_Platform
+TRACE::2025-02-21.17:46:55::SCWPlatform::Started preparing the platform 
+TRACE::2025-02-21.17:46:55::SCWSystem::Writing the bif file for system config PID_Controller_Platform
+TRACE::2025-02-21.17:46:55::SCWSystem::dir created 
+TRACE::2025-02-21.17:46:55::SCWSystem::Writing the bif 
+TRACE::2025-02-21.17:46:55::SCWPlatform::Started writing the spfm file 
+TRACE::2025-02-21.17:46:55::SCWPlatform::Started writing the xpfm file 
+TRACE::2025-02-21.17:46:55::SCWPlatform::Completed generating the platform
+TRACE::2025-02-21.17:46:55::SCWMssOS::Saving the mss changes C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.17:46:55::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2025-02-21.17:46:55::SCWMssOS::Completed writemss as part of save.
+TRACE::2025-02-21.17:46:55::SCWMssOS::Commit changes completed.
+TRACE::2025-02-21.17:46:55::SCWPlatform::Trying to open the hw design at C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:55::SCWPlatform::DSA given C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:55::SCWPlatform::DSA absoulate path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:55::SCWPlatform::DSA directory C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw
+TRACE::2025-02-21.17:46:55::SCWPlatform:: Platform Path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:55::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-02-21.17:46:55::SCWPlatform::Trying to set the existing hwdb with name nexysa7fpga_0
+TRACE::2025-02-21.17:46:55::SCWPlatform::Opened existing hwdb nexysa7fpga_0
+TRACE::2025-02-21.17:46:55::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-21.17:46:55::SCWMssOS::Checking the sw design at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.17:46:55::SCWMssOS::DEBUG:  swdes dump  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system||
+
+TRACE::2025-02-21.17:46:55::SCWMssOS::Sw design exists and opened at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.17:46:55::SCWPlatform::Trying to open the hw design at C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:55::SCWPlatform::DSA given C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:55::SCWPlatform::DSA absoulate path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:55::SCWPlatform::DSA directory C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw
+TRACE::2025-02-21.17:46:55::SCWPlatform:: Platform Path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:55::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-02-21.17:46:55::SCWPlatform::Trying to set the existing hwdb with name nexysa7fpga_0
+TRACE::2025-02-21.17:46:55::SCWPlatform::Opened existing hwdb nexysa7fpga_0
+TRACE::2025-02-21.17:46:55::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-21.17:46:55::SCWMssOS::Checking the sw design at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.17:46:55::SCWMssOS::DEBUG:  swdes dump  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system||
+
+TRACE::2025-02-21.17:46:55::SCWMssOS::Sw design exists and opened at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.17:46:55::SCWPlatform::Trying to open the hw design at C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:55::SCWPlatform::DSA given C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:55::SCWPlatform::DSA absoulate path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:55::SCWPlatform::DSA directory C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw
+TRACE::2025-02-21.17:46:55::SCWPlatform:: Platform Path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:55::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-02-21.17:46:55::SCWPlatform::Trying to set the existing hwdb with name nexysa7fpga_0
+TRACE::2025-02-21.17:46:55::SCWPlatform::Opened existing hwdb nexysa7fpga_0
+TRACE::2025-02-21.17:46:55::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-21.17:46:55::SCWMssOS::Checking the sw design at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.17:46:55::SCWMssOS::DEBUG:  swdes dump  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system||
+
+TRACE::2025-02-21.17:46:55::SCWMssOS::Sw design exists and opened at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.17:46:55::SCWWriter::formatted JSON is {
+	"platformName":	"PID_Controller_Platform",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"PID_Controller_Platform",
+	"platHandOff":	"C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/hdl/nexysa7fpga.xsa",
+	"platIntHandOff":	"<platformDir>/hw/nexysa7fpga.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"PID_Controller_Platform",
+	"systems":	[{
+			"systemName":	"PID_Controller_Platform",
+			"systemDesc":	"PID_Controller_Platform",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"PID_Controller_Platform",
+			"sysActiveDom":	"freertos10_xilinx_domain",
+			"sysDefaultDom":	"freertos10_xilinx_domain",
+			"domains":	[{
+					"domainName":	"freertos10_xilinx_domain",
+					"domainDispName":	"freertos10_xilinx_domain",
+					"domainDesc":	"freertos10_xilinx_domain",
+					"processors":	"microblaze_0",
+					"os":	"freertos10_xilinx",
+					"sdxOs":	"freertos10_xilinx",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"1.12",
+					"mssFile":	"",
+					"md5Digest":	"3ccd7f077ac2979b0fa0dc337d900c3d",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2025-02-21.17:46:55::SCWPlatform::updated the xpfm file.
+TRACE::2025-02-21.17:46:55::SCWPlatform::Trying to open the hw design at C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:55::SCWPlatform::DSA given C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:55::SCWPlatform::DSA absoulate path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:55::SCWPlatform::DSA directory C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw
+TRACE::2025-02-21.17:46:55::SCWPlatform:: Platform Path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:55::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-02-21.17:46:55::SCWPlatform::Trying to set the existing hwdb with name nexysa7fpga_0
+TRACE::2025-02-21.17:46:55::SCWPlatform::Opened existing hwdb nexysa7fpga_0
+TRACE::2025-02-21.17:46:55::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-21.17:46:55::SCWMssOS::Checking the sw design at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.17:46:55::SCWMssOS::DEBUG:  swdes dump  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system||
+
+TRACE::2025-02-21.17:46:55::SCWMssOS::Sw design exists and opened at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.17:46:55::SCWMssOS::Saving the mss changes C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.17:46:55::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2025-02-21.17:46:55::SCWMssOS::Completed writemss as part of save.
+TRACE::2025-02-21.17:46:55::SCWMssOS::Commit changes completed.
+TRACE::2025-02-21.17:46:55::SCWPlatform::Trying to open the hw design at C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:55::SCWPlatform::DSA given C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:55::SCWPlatform::DSA absoulate path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:55::SCWPlatform::DSA directory C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw
+TRACE::2025-02-21.17:46:55::SCWPlatform:: Platform Path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:55::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-02-21.17:46:55::SCWPlatform::Trying to set the existing hwdb with name nexysa7fpga_0
+TRACE::2025-02-21.17:46:55::SCWPlatform::Opened existing hwdb nexysa7fpga_0
+TRACE::2025-02-21.17:46:55::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-21.17:46:55::SCWMssOS::Checking the sw design at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.17:46:55::SCWMssOS::DEBUG:  swdes dump  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system||
+
+TRACE::2025-02-21.17:46:55::SCWMssOS::Sw design exists and opened at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.17:46:55::SCWPlatform::Trying to open the hw design at C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:55::SCWPlatform::DSA given C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:55::SCWPlatform::DSA absoulate path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:55::SCWPlatform::DSA directory C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw
+TRACE::2025-02-21.17:46:55::SCWPlatform:: Platform Path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:55::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-02-21.17:46:55::SCWPlatform::Trying to set the existing hwdb with name nexysa7fpga_0
+TRACE::2025-02-21.17:46:55::SCWPlatform::Opened existing hwdb nexysa7fpga_0
+TRACE::2025-02-21.17:46:55::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-21.17:46:55::SCWMssOS::Checking the sw design at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.17:46:55::SCWMssOS::DEBUG:  swdes dump  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system||
+
+TRACE::2025-02-21.17:46:55::SCWMssOS::Sw design exists and opened at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.17:46:55::SCWPlatform::Trying to open the hw design at C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:55::SCWPlatform::DSA given C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:55::SCWPlatform::DSA absoulate path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:55::SCWPlatform::DSA directory C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw
+TRACE::2025-02-21.17:46:55::SCWPlatform:: Platform Path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:55::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-02-21.17:46:55::SCWPlatform::Trying to set the existing hwdb with name nexysa7fpga_0
+TRACE::2025-02-21.17:46:55::SCWPlatform::Opened existing hwdb nexysa7fpga_0
+TRACE::2025-02-21.17:46:55::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-21.17:46:55::SCWMssOS::Checking the sw design at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.17:46:55::SCWMssOS::DEBUG:  swdes dump  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system||
+
+TRACE::2025-02-21.17:46:55::SCWMssOS::Sw design exists and opened at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.17:46:55::SCWWriter::formatted JSON is {
+	"platformName":	"PID_Controller_Platform",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"PID_Controller_Platform",
+	"platHandOff":	"C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/hdl/nexysa7fpga.xsa",
+	"platIntHandOff":	"<platformDir>/hw/nexysa7fpga.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"PID_Controller_Platform",
+	"systems":	[{
+			"systemName":	"PID_Controller_Platform",
+			"systemDesc":	"PID_Controller_Platform",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"PID_Controller_Platform",
+			"sysActiveDom":	"freertos10_xilinx_domain",
+			"sysDefaultDom":	"freertos10_xilinx_domain",
+			"domains":	[{
+					"domainName":	"freertos10_xilinx_domain",
+					"domainDispName":	"freertos10_xilinx_domain",
+					"domainDesc":	"freertos10_xilinx_domain",
+					"processors":	"microblaze_0",
+					"os":	"freertos10_xilinx",
+					"sdxOs":	"freertos10_xilinx",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"1.12",
+					"mssFile":	"",
+					"md5Digest":	"3ccd7f077ac2979b0fa0dc337d900c3d",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2025-02-21.17:46:55::SCWPlatform::Trying to open the hw design at C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:55::SCWPlatform::DSA given C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:55::SCWPlatform::DSA absoulate path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:55::SCWPlatform::DSA directory C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw
+TRACE::2025-02-21.17:46:55::SCWPlatform:: Platform Path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:55::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-02-21.17:46:55::SCWPlatform::Trying to set the existing hwdb with name nexysa7fpga_0
+TRACE::2025-02-21.17:46:55::SCWPlatform::Opened existing hwdb nexysa7fpga_0
+TRACE::2025-02-21.17:46:55::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-21.17:46:55::SCWMssOS::Checking the sw design at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.17:46:55::SCWMssOS::DEBUG:  swdes dump  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system||
+
+TRACE::2025-02-21.17:46:55::SCWMssOS::Sw design exists and opened at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.17:46:55::SCWPlatform::Trying to open the hw design at C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:55::SCWPlatform::DSA given C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:55::SCWPlatform::DSA absoulate path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:55::SCWPlatform::DSA directory C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw
+TRACE::2025-02-21.17:46:55::SCWPlatform:: Platform Path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:55::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-02-21.17:46:55::SCWPlatform::Trying to set the existing hwdb with name nexysa7fpga_0
+TRACE::2025-02-21.17:46:55::SCWPlatform::Opened existing hwdb nexysa7fpga_0
+TRACE::2025-02-21.17:46:55::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-21.17:46:55::SCWMssOS::Checking the sw design at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.17:46:55::SCWMssOS::DEBUG:  swdes dump  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system||
+
+TRACE::2025-02-21.17:46:55::SCWMssOS::Sw design exists and opened at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.17:46:55::SCWPlatform::Trying to open the hw design at C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:55::SCWPlatform::DSA given C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:55::SCWPlatform::DSA absoulate path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:55::SCWPlatform::DSA directory C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw
+TRACE::2025-02-21.17:46:55::SCWPlatform:: Platform Path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:55::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-02-21.17:46:55::SCWPlatform::Trying to set the existing hwdb with name nexysa7fpga_0
+TRACE::2025-02-21.17:46:55::SCWPlatform::Opened existing hwdb nexysa7fpga_0
+TRACE::2025-02-21.17:46:55::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-21.17:46:55::SCWMssOS::Checking the sw design at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.17:46:55::SCWMssOS::DEBUG:  swdes dump  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system||
+
+TRACE::2025-02-21.17:46:55::SCWMssOS::Sw design exists and opened at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.17:46:55::SCWMssOS::Saving the mss changes C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.17:46:55::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2025-02-21.17:46:55::SCWMssOS::Completed writemss as part of save.
+TRACE::2025-02-21.17:46:55::SCWMssOS::Commit changes completed.
+TRACE::2025-02-21.17:46:55::SCWPlatform::Trying to open the hw design at C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:55::SCWPlatform::DSA given C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:55::SCWPlatform::DSA absoulate path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:55::SCWPlatform::DSA directory C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw
+TRACE::2025-02-21.17:46:55::SCWPlatform:: Platform Path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:55::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-02-21.17:46:55::SCWPlatform::Trying to set the existing hwdb with name nexysa7fpga_0
+TRACE::2025-02-21.17:46:55::SCWPlatform::Opened existing hwdb nexysa7fpga_0
+TRACE::2025-02-21.17:46:55::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-21.17:46:55::SCWMssOS::Checking the sw design at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.17:46:55::SCWMssOS::DEBUG:  swdes dump  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system||
+
+TRACE::2025-02-21.17:46:55::SCWMssOS::Sw design exists and opened at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.17:46:55::SCWPlatform::Trying to open the hw design at C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:55::SCWPlatform::DSA given C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:55::SCWPlatform::DSA absoulate path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:55::SCWPlatform::DSA directory C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw
+TRACE::2025-02-21.17:46:55::SCWPlatform:: Platform Path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:55::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-02-21.17:46:55::SCWPlatform::Trying to set the existing hwdb with name nexysa7fpga_0
+TRACE::2025-02-21.17:46:55::SCWPlatform::Opened existing hwdb nexysa7fpga_0
+TRACE::2025-02-21.17:46:55::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-21.17:46:55::SCWMssOS::Checking the sw design at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.17:46:55::SCWMssOS::DEBUG:  swdes dump  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system||
+
+TRACE::2025-02-21.17:46:55::SCWMssOS::Sw design exists and opened at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.17:46:55::SCWPlatform::Trying to open the hw design at C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:55::SCWPlatform::DSA given C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:55::SCWPlatform::DSA absoulate path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:55::SCWPlatform::DSA directory C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw
+TRACE::2025-02-21.17:46:55::SCWPlatform:: Platform Path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:55::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-02-21.17:46:55::SCWPlatform::Trying to set the existing hwdb with name nexysa7fpga_0
+TRACE::2025-02-21.17:46:55::SCWPlatform::Opened existing hwdb nexysa7fpga_0
+TRACE::2025-02-21.17:46:55::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-21.17:46:55::SCWMssOS::Checking the sw design at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.17:46:55::SCWMssOS::DEBUG:  swdes dump  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system||
+
+TRACE::2025-02-21.17:46:55::SCWMssOS::Sw design exists and opened at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.17:46:55::SCWWriter::formatted JSON is {
+	"platformName":	"PID_Controller_Platform",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"PID_Controller_Platform",
+	"platHandOff":	"C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/hdl/nexysa7fpga.xsa",
+	"platIntHandOff":	"<platformDir>/hw/nexysa7fpga.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"PID_Controller_Platform",
+	"systems":	[{
+			"systemName":	"PID_Controller_Platform",
+			"systemDesc":	"PID_Controller_Platform",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"PID_Controller_Platform",
+			"sysActiveDom":	"freertos10_xilinx_domain",
+			"sysDefaultDom":	"freertos10_xilinx_domain",
+			"domains":	[{
+					"domainName":	"freertos10_xilinx_domain",
+					"domainDispName":	"freertos10_xilinx on microblaze_0",
+					"domainDesc":	"freertos10_xilinx_domain",
+					"processors":	"microblaze_0",
+					"os":	"freertos10_xilinx",
+					"sdxOs":	"freertos10_xilinx",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"1.12",
+					"mssFile":	"",
+					"md5Digest":	"3ccd7f077ac2979b0fa0dc337d900c3d",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2025-02-21.17:46:55::SCWMssOS::Saving the mss changes C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.17:46:55::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2025-02-21.17:46:55::SCWMssOS::Completed writemss as part of save.
+TRACE::2025-02-21.17:46:55::SCWMssOS::Commit changes completed.
+TRACE::2025-02-21.17:46:55::SCWPlatform::Trying to open the hw design at C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:55::SCWPlatform::DSA given C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:55::SCWPlatform::DSA absoulate path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:55::SCWPlatform::DSA directory C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw
+TRACE::2025-02-21.17:46:55::SCWPlatform:: Platform Path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:55::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-02-21.17:46:55::SCWPlatform::Trying to set the existing hwdb with name nexysa7fpga_0
+TRACE::2025-02-21.17:46:56::SCWPlatform::Opened existing hwdb nexysa7fpga_0
+TRACE::2025-02-21.17:46:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-21.17:46:56::SCWMssOS::Checking the sw design at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.17:46:56::SCWMssOS::DEBUG:  swdes dump  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system||
+
+TRACE::2025-02-21.17:46:56::SCWMssOS::Sw design exists and opened at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.17:46:56::SCWPlatform::Trying to open the hw design at C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:56::SCWPlatform::DSA given C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:56::SCWPlatform::DSA absoulate path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:56::SCWPlatform::DSA directory C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw
+TRACE::2025-02-21.17:46:56::SCWPlatform:: Platform Path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:56::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-02-21.17:46:56::SCWPlatform::Trying to set the existing hwdb with name nexysa7fpga_0
+TRACE::2025-02-21.17:46:56::SCWPlatform::Opened existing hwdb nexysa7fpga_0
+TRACE::2025-02-21.17:46:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-21.17:46:56::SCWMssOS::Checking the sw design at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.17:46:56::SCWMssOS::DEBUG:  swdes dump  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system||
+
+TRACE::2025-02-21.17:46:56::SCWMssOS::Sw design exists and opened at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.17:46:56::SCWPlatform::Trying to open the hw design at C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:56::SCWPlatform::DSA given C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:56::SCWPlatform::DSA absoulate path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:56::SCWPlatform::DSA directory C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw
+TRACE::2025-02-21.17:46:56::SCWPlatform:: Platform Path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:56::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-02-21.17:46:56::SCWPlatform::Trying to set the existing hwdb with name nexysa7fpga_0
+TRACE::2025-02-21.17:46:56::SCWPlatform::Opened existing hwdb nexysa7fpga_0
+TRACE::2025-02-21.17:46:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-21.17:46:56::SCWMssOS::Checking the sw design at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.17:46:56::SCWMssOS::DEBUG:  swdes dump  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system||
+
+TRACE::2025-02-21.17:46:56::SCWMssOS::Sw design exists and opened at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.17:46:56::SCWWriter::formatted JSON is {
+	"platformName":	"PID_Controller_Platform",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"PID_Controller_Platform",
+	"platHandOff":	"C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/hdl/nexysa7fpga.xsa",
+	"platIntHandOff":	"<platformDir>/hw/nexysa7fpga.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"PID_Controller_Platform",
+	"systems":	[{
+			"systemName":	"PID_Controller_Platform",
+			"systemDesc":	"PID_Controller_Platform",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"PID_Controller_Platform",
+			"sysActiveDom":	"freertos10_xilinx_domain",
+			"sysDefaultDom":	"freertos10_xilinx_domain",
+			"domains":	[{
+					"domainName":	"freertos10_xilinx_domain",
+					"domainDispName":	"freertos10_xilinx on microblaze_0",
+					"domainDesc":	"freertos10_xilinx_domain",
+					"processors":	"microblaze_0",
+					"os":	"freertos10_xilinx",
+					"sdxOs":	"freertos10_xilinx",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"1.12",
+					"mssFile":	"",
+					"md5Digest":	"3ccd7f077ac2979b0fa0dc337d900c3d",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2025-02-21.17:46:56::SCWPlatform::Clearing the existing platform
+TRACE::2025-02-21.17:46:56::SCWSystem::Clearing the existing sysconfig
+TRACE::2025-02-21.17:46:56::SCWMssOS::Removing the swdes entry for  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.17:46:56::SCWSystem::Clearing the domains completed.
+TRACE::2025-02-21.17:46:56::SCWPlatform::Clearing the opened hw db.
+TRACE::2025-02-21.17:46:56::SCWPlatform::DSA given C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:56::SCWPlatform::DSA absoulate path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:56::SCWPlatform:: Platform location is C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw
+TRACE::2025-02-21.17:46:56::SCWPlatform:: Platform Path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:56::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-02-21.17:46:56::SCWPlatform::Removing the HwDB with name C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:56::SCWPlatform::Trying to open the hw design at C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:56::SCWPlatform::DSA given C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:56::SCWPlatform::DSA absoulate path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:56::SCWPlatform::DSA directory C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw
+TRACE::2025-02-21.17:46:56::SCWPlatform:: Platform Path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:56::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-02-21.17:46:56::SCWPlatform::Do not have an existing db opened. 
+TRACE::2025-02-21.17:46:56::SCWPlatform::Opened new HwDB with name nexysa7fpga_1
+TRACE::2025-02-21.17:46:56::SCWReader::Active system found as  PID_Controller_Platform
+TRACE::2025-02-21.17:46:56::SCWReader::Handling sysconfig PID_Controller_Platform
+TRACE::2025-02-21.17:46:56::SCWDomain::checking for install qemu data   : 
+TRACE::2025-02-21.17:46:56::SCWPlatform::Trying to open the hw design at C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:56::SCWPlatform::DSA given C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:56::SCWPlatform::DSA absoulate path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:56::SCWPlatform::DSA directory C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw
+TRACE::2025-02-21.17:46:56::SCWPlatform:: Platform Path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:56::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-02-21.17:46:56::SCWPlatform::Trying to set the existing hwdb with name nexysa7fpga_1
+TRACE::2025-02-21.17:46:56::SCWPlatform::Opened existing hwdb nexysa7fpga_1
+TRACE::2025-02-21.17:46:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-21.17:46:56::SCWPlatform::Trying to open the hw design at C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:56::SCWPlatform::DSA given C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:56::SCWPlatform::DSA absoulate path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:56::SCWPlatform::DSA directory C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw
+TRACE::2025-02-21.17:46:56::SCWPlatform:: Platform Path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:56::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-02-21.17:46:56::SCWPlatform::Trying to set the existing hwdb with name nexysa7fpga_1
+TRACE::2025-02-21.17:46:56::SCWPlatform::Opened existing hwdb nexysa7fpga_1
+TRACE::2025-02-21.17:46:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-21.17:46:56::SCWPlatform::Trying to open the hw design at C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:56::SCWPlatform::DSA given C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:56::SCWPlatform::DSA absoulate path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:56::SCWPlatform::DSA directory C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw
+TRACE::2025-02-21.17:46:56::SCWPlatform:: Platform Path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:56::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-02-21.17:46:56::SCWPlatform::Trying to set the existing hwdb with name nexysa7fpga_1
+TRACE::2025-02-21.17:46:56::SCWPlatform::Opened existing hwdb nexysa7fpga_1
+TRACE::2025-02-21.17:46:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-21.17:46:56::SCWPlatform::Trying to open the hw design at C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:56::SCWPlatform::DSA given C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:56::SCWPlatform::DSA absoulate path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:56::SCWPlatform::DSA directory C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw
+TRACE::2025-02-21.17:46:56::SCWPlatform:: Platform Path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:56::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-02-21.17:46:56::SCWPlatform::Trying to set the existing hwdb with name nexysa7fpga_1
+TRACE::2025-02-21.17:46:56::SCWPlatform::Opened existing hwdb nexysa7fpga_1
+TRACE::2025-02-21.17:46:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-21.17:46:56::SCWMssOS::Checking the sw design at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.17:46:56::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2025-02-21.17:46:56::SCWMssOS::No sw design opened at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.17:46:56::SCWMssOS::mss exists loading the mss file  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.17:46:56::SCWMssOS::Opened the sw design from mss  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.17:46:56::SCWMssOS::Adding the swdes entry C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss with des name system
+TRACE::2025-02-21.17:46:56::SCWMssOS::updating the scw layer about changes
+TRACE::2025-02-21.17:46:56::SCWMssOS::Opened the sw design.  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.17:46:56::SCWMssOS::Saving the mss changes C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.17:46:56::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2025-02-21.17:46:56::SCWMssOS::Completed writemss as part of save.
+TRACE::2025-02-21.17:46:56::SCWMssOS::Commit changes completed.
+TRACE::2025-02-21.17:46:56::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2025-02-21.17:46:56::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2025-02-21.17:46:56::SCWPlatform::Trying to open the hw design at C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:56::SCWPlatform::DSA given C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:56::SCWPlatform::DSA absoulate path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:56::SCWPlatform::DSA directory C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw
+TRACE::2025-02-21.17:46:56::SCWPlatform:: Platform Path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.17:46:56::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-02-21.17:46:56::SCWPlatform::Trying to set the existing hwdb with name nexysa7fpga_1
+TRACE::2025-02-21.17:46:56::SCWPlatform::Opened existing hwdb nexysa7fpga_1
+TRACE::2025-02-21.17:46:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-21.17:46:56::SCWMssOS::Checking the sw design at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.17:46:56::SCWMssOS::DEBUG:  swdes dump  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system||
+
+TRACE::2025-02-21.17:46:56::SCWMssOS::Sw design exists and opened at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.17:46:56::SCWReader::No isolation master present  
+TRACE::2025-02-21.18:03:22::SCWPlatform::Trying to open the hw design at C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:22::SCWPlatform::DSA given C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:22::SCWPlatform::DSA absoulate path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:22::SCWPlatform::DSA directory C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw
+TRACE::2025-02-21.18:03:22::SCWPlatform:: Platform Path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:22::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-02-21.18:03:22::SCWPlatform::Trying to set the existing hwdb with name nexysa7fpga_1
+TRACE::2025-02-21.18:03:22::SCWPlatform::Opened existing hwdb nexysa7fpga_1
+TRACE::2025-02-21.18:03:22::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-21.18:03:22::SCWMssOS::Checking the sw design at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.18:03:22::SCWMssOS::DEBUG:  swdes dump  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system||
+
+TRACE::2025-02-21.18:03:22::SCWMssOS::Sw design exists and opened at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.18:03:22::SCWMssOS::In reload Mss file.
+TRACE::2025-02-21.18:03:22::SCWPlatform::Trying to open the hw design at C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:22::SCWPlatform::DSA given C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:22::SCWPlatform::DSA absoulate path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:22::SCWPlatform::DSA directory C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw
+TRACE::2025-02-21.18:03:22::SCWPlatform:: Platform Path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:22::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-02-21.18:03:22::SCWPlatform::Trying to set the existing hwdb with name nexysa7fpga_1
+TRACE::2025-02-21.18:03:22::SCWPlatform::Opened existing hwdb nexysa7fpga_1
+TRACE::2025-02-21.18:03:22::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-21.18:03:22::SCWMssOS::Checking the sw design at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.18:03:22::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2025-02-21.18:03:22::SCWMssOS::No sw design opened at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.18:03:22::SCWMssOS::mss exists loading the mss file  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.18:03:22::SCWMssOS::Opened the sw design from mss  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.18:03:22::SCWMssOS::Adding the swdes entry C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss with des name system
+TRACE::2025-02-21.18:03:22::SCWMssOS::updating the scw layer about changes
+TRACE::2025-02-21.18:03:22::SCWMssOS::Opened the sw design.  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.18:03:22::SCWMssOS::Saving the mss changes C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.18:03:22::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2025-02-21.18:03:22::SCWMssOS::Completed writemss as part of save.
+TRACE::2025-02-21.18:03:22::SCWMssOS::Commit changes completed.
+TRACE::2025-02-21.18:03:22::SCWPlatform::Trying to open the hw design at C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:22::SCWPlatform::DSA given C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:22::SCWPlatform::DSA absoulate path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:22::SCWPlatform::DSA directory C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw
+TRACE::2025-02-21.18:03:22::SCWPlatform:: Platform Path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:22::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-02-21.18:03:22::SCWPlatform::Trying to set the existing hwdb with name nexysa7fpga_1
+TRACE::2025-02-21.18:03:22::SCWPlatform::Opened existing hwdb nexysa7fpga_1
+TRACE::2025-02-21.18:03:22::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-21.18:03:22::SCWMssOS::Checking the sw design at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.18:03:22::SCWMssOS::DEBUG:  swdes dump  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system||
+
+TRACE::2025-02-21.18:03:22::SCWMssOS::Sw design exists and opened at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.18:03:22::SCWMssOS::Removing the swdes entry for  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.18:03:24::SCWPlatform::Trying to open the hw design at C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:24::SCWPlatform::DSA given C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:24::SCWPlatform::DSA absoulate path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:24::SCWPlatform::DSA directory C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw
+TRACE::2025-02-21.18:03:24::SCWPlatform:: Platform Path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:24::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-02-21.18:03:24::SCWPlatform::Trying to set the existing hwdb with name nexysa7fpga_1
+TRACE::2025-02-21.18:03:24::SCWPlatform::Opened existing hwdb nexysa7fpga_1
+TRACE::2025-02-21.18:03:24::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-21.18:03:24::SCWMssOS::Checking the sw design at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.18:03:24::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2025-02-21.18:03:24::SCWMssOS::No sw design opened at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.18:03:24::SCWMssOS::mss exists loading the mss file  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.18:03:24::SCWMssOS::Opened the sw design from mss  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.18:03:24::SCWMssOS::Adding the swdes entry C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss with des name system
+TRACE::2025-02-21.18:03:24::SCWMssOS::updating the scw layer about changes
+TRACE::2025-02-21.18:03:24::SCWMssOS::Opened the sw design.  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.18:03:31::SCWPlatform::Trying to open the hw design at C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:31::SCWPlatform::DSA given C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:31::SCWPlatform::DSA absoulate path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:31::SCWPlatform::DSA directory C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw
+TRACE::2025-02-21.18:03:31::SCWPlatform:: Platform Path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:31::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-02-21.18:03:31::SCWPlatform::Trying to set the existing hwdb with name nexysa7fpga_1
+TRACE::2025-02-21.18:03:31::SCWPlatform::Opened existing hwdb nexysa7fpga_1
+TRACE::2025-02-21.18:03:31::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-21.18:03:31::SCWMssOS::Checking the sw design at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.18:03:31::SCWMssOS::DEBUG:  swdes dump  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system||
+
+TRACE::2025-02-21.18:03:31::SCWMssOS::Sw design exists and opened at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.18:03:31::SCWPlatform::Trying to open the hw design at C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:31::SCWPlatform::DSA given C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:31::SCWPlatform::DSA absoulate path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:31::SCWPlatform::DSA directory C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw
+TRACE::2025-02-21.18:03:31::SCWPlatform:: Platform Path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:31::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-02-21.18:03:31::SCWPlatform::Trying to set the existing hwdb with name nexysa7fpga_1
+TRACE::2025-02-21.18:03:31::SCWPlatform::Opened existing hwdb nexysa7fpga_1
+TRACE::2025-02-21.18:03:31::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-21.18:03:31::SCWMssOS::Checking the sw design at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.18:03:31::SCWMssOS::DEBUG:  swdes dump  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system||
+
+TRACE::2025-02-21.18:03:31::SCWMssOS::Sw design exists and opened at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.18:03:31::SCWPlatform::Trying to open the hw design at C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:31::SCWPlatform::DSA given C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:31::SCWPlatform::DSA absoulate path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:31::SCWPlatform::DSA directory C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw
+TRACE::2025-02-21.18:03:31::SCWPlatform:: Platform Path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:31::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-02-21.18:03:31::SCWPlatform::Trying to set the existing hwdb with name nexysa7fpga_1
+TRACE::2025-02-21.18:03:31::SCWPlatform::Opened existing hwdb nexysa7fpga_1
+TRACE::2025-02-21.18:03:31::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-21.18:03:31::SCWMssOS::Checking the sw design at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.18:03:31::SCWMssOS::DEBUG:  swdes dump  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system||
+
+TRACE::2025-02-21.18:03:31::SCWMssOS::Sw design exists and opened at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.18:03:31::SCWPlatform::Trying to open the hw design at C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:31::SCWPlatform::DSA given C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:31::SCWPlatform::DSA absoulate path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:31::SCWPlatform::DSA directory C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw
+TRACE::2025-02-21.18:03:31::SCWPlatform:: Platform Path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:31::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-02-21.18:03:31::SCWPlatform::Trying to set the existing hwdb with name nexysa7fpga_1
+TRACE::2025-02-21.18:03:31::SCWPlatform::Opened existing hwdb nexysa7fpga_1
+TRACE::2025-02-21.18:03:31::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-21.18:03:31::SCWMssOS::Checking the sw design at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.18:03:31::SCWMssOS::DEBUG:  swdes dump  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system||
+
+TRACE::2025-02-21.18:03:31::SCWMssOS::Sw design exists and opened at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.18:03:31::SCWPlatform::Trying to open the hw design at C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:31::SCWPlatform::DSA given C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:31::SCWPlatform::DSA absoulate path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:31::SCWPlatform::DSA directory C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw
+TRACE::2025-02-21.18:03:31::SCWPlatform:: Platform Path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:31::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-02-21.18:03:31::SCWPlatform::Trying to set the existing hwdb with name nexysa7fpga_1
+TRACE::2025-02-21.18:03:31::SCWPlatform::Opened existing hwdb nexysa7fpga_1
+TRACE::2025-02-21.18:03:31::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-21.18:03:31::SCWMssOS::Checking the sw design at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.18:03:31::SCWMssOS::DEBUG:  swdes dump  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system||
+
+TRACE::2025-02-21.18:03:31::SCWMssOS::Sw design exists and opened at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.18:03:31::SCWPlatform::Trying to open the hw design at C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:31::SCWPlatform::DSA given C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:31::SCWPlatform::DSA absoulate path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:31::SCWPlatform::DSA directory C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw
+TRACE::2025-02-21.18:03:31::SCWPlatform:: Platform Path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:31::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-02-21.18:03:31::SCWPlatform::Trying to set the existing hwdb with name nexysa7fpga_1
+TRACE::2025-02-21.18:03:31::SCWPlatform::Opened existing hwdb nexysa7fpga_1
+TRACE::2025-02-21.18:03:31::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-21.18:03:31::SCWMssOS::Checking the sw design at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.18:03:31::SCWMssOS::DEBUG:  swdes dump  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system||
+
+TRACE::2025-02-21.18:03:31::SCWMssOS::Sw design exists and opened at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.18:03:31::SCWPlatform::Trying to open the hw design at C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:31::SCWPlatform::DSA given C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:31::SCWPlatform::DSA absoulate path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:31::SCWPlatform::DSA directory C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw
+TRACE::2025-02-21.18:03:31::SCWPlatform:: Platform Path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:31::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-02-21.18:03:31::SCWPlatform::Trying to set the existing hwdb with name nexysa7fpga_1
+TRACE::2025-02-21.18:03:31::SCWPlatform::Opened existing hwdb nexysa7fpga_1
+TRACE::2025-02-21.18:03:31::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-21.18:03:31::SCWMssOS::Checking the sw design at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.18:03:31::SCWMssOS::DEBUG:  swdes dump  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system||
+
+TRACE::2025-02-21.18:03:31::SCWMssOS::Sw design exists and opened at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.18:03:31::SCWPlatform::Trying to open the hw design at C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:31::SCWPlatform::DSA given C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:31::SCWPlatform::DSA absoulate path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:31::SCWPlatform::DSA directory C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw
+TRACE::2025-02-21.18:03:31::SCWPlatform:: Platform Path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:31::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-02-21.18:03:31::SCWPlatform::Trying to set the existing hwdb with name nexysa7fpga_1
+TRACE::2025-02-21.18:03:31::SCWPlatform::Opened existing hwdb nexysa7fpga_1
+TRACE::2025-02-21.18:03:31::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-21.18:03:31::SCWMssOS::Checking the sw design at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.18:03:31::SCWMssOS::DEBUG:  swdes dump  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system||
+
+TRACE::2025-02-21.18:03:31::SCWMssOS::Sw design exists and opened at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.18:03:31::SCWPlatform::Trying to open the hw design at C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:31::SCWPlatform::DSA given C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:31::SCWPlatform::DSA absoulate path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:31::SCWPlatform::DSA directory C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw
+TRACE::2025-02-21.18:03:31::SCWPlatform:: Platform Path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:31::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-02-21.18:03:31::SCWPlatform::Trying to set the existing hwdb with name nexysa7fpga_1
+TRACE::2025-02-21.18:03:31::SCWPlatform::Opened existing hwdb nexysa7fpga_1
+TRACE::2025-02-21.18:03:31::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-21.18:03:31::SCWMssOS::Checking the sw design at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.18:03:31::SCWMssOS::DEBUG:  swdes dump  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system||
+
+TRACE::2025-02-21.18:03:31::SCWMssOS::Sw design exists and opened at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.18:03:31::SCWPlatform::Trying to open the hw design at C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:31::SCWPlatform::DSA given C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:31::SCWPlatform::DSA absoulate path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:31::SCWPlatform::DSA directory C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw
+TRACE::2025-02-21.18:03:31::SCWPlatform:: Platform Path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:31::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-02-21.18:03:31::SCWPlatform::Trying to set the existing hwdb with name nexysa7fpga_1
+TRACE::2025-02-21.18:03:31::SCWPlatform::Opened existing hwdb nexysa7fpga_1
+TRACE::2025-02-21.18:03:31::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-21.18:03:31::SCWMssOS::Checking the sw design at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.18:03:31::SCWMssOS::DEBUG:  swdes dump  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system||
+
+TRACE::2025-02-21.18:03:31::SCWMssOS::Sw design exists and opened at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.18:03:34::SCWPlatform::Trying to open the hw design at C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:34::SCWPlatform::DSA given C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:34::SCWPlatform::DSA absoulate path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:34::SCWPlatform::DSA directory C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw
+TRACE::2025-02-21.18:03:34::SCWPlatform:: Platform Path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:34::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-02-21.18:03:34::SCWPlatform::Trying to set the existing hwdb with name nexysa7fpga_1
+TRACE::2025-02-21.18:03:34::SCWPlatform::Opened existing hwdb nexysa7fpga_1
+TRACE::2025-02-21.18:03:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-21.18:03:34::SCWMssOS::Checking the sw design at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.18:03:34::SCWMssOS::DEBUG:  swdes dump  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system||
+
+TRACE::2025-02-21.18:03:34::SCWMssOS::Sw design exists and opened at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.18:03:34::SCWPlatform::Trying to open the hw design at C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:34::SCWPlatform::DSA given C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:34::SCWPlatform::DSA absoulate path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:34::SCWPlatform::DSA directory C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw
+TRACE::2025-02-21.18:03:34::SCWPlatform:: Platform Path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:34::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-02-21.18:03:34::SCWPlatform::Trying to set the existing hwdb with name nexysa7fpga_1
+TRACE::2025-02-21.18:03:34::SCWPlatform::Opened existing hwdb nexysa7fpga_1
+TRACE::2025-02-21.18:03:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-21.18:03:34::SCWMssOS::Checking the sw design at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.18:03:34::SCWMssOS::DEBUG:  swdes dump  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system||
+
+TRACE::2025-02-21.18:03:34::SCWMssOS::Sw design exists and opened at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.18:03:34::SCWPlatform::Trying to open the hw design at C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:34::SCWPlatform::DSA given C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:34::SCWPlatform::DSA absoulate path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:34::SCWPlatform::DSA directory C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw
+TRACE::2025-02-21.18:03:34::SCWPlatform:: Platform Path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:34::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-02-21.18:03:34::SCWPlatform::Trying to set the existing hwdb with name nexysa7fpga_1
+TRACE::2025-02-21.18:03:34::SCWPlatform::Opened existing hwdb nexysa7fpga_1
+TRACE::2025-02-21.18:03:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-21.18:03:34::SCWMssOS::Checking the sw design at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.18:03:34::SCWMssOS::DEBUG:  swdes dump  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system||
+
+TRACE::2025-02-21.18:03:34::SCWMssOS::Sw design exists and opened at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.18:03:34::SCWPlatform::Trying to open the hw design at C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:34::SCWPlatform::DSA given C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:34::SCWPlatform::DSA absoulate path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:34::SCWPlatform::DSA directory C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw
+TRACE::2025-02-21.18:03:34::SCWPlatform:: Platform Path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:34::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-02-21.18:03:34::SCWPlatform::Trying to set the existing hwdb with name nexysa7fpga_1
+TRACE::2025-02-21.18:03:34::SCWPlatform::Opened existing hwdb nexysa7fpga_1
+TRACE::2025-02-21.18:03:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-21.18:03:34::SCWMssOS::Checking the sw design at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.18:03:34::SCWMssOS::DEBUG:  swdes dump  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system||
+
+TRACE::2025-02-21.18:03:34::SCWMssOS::Sw design exists and opened at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.18:03:34::SCWPlatform::Trying to open the hw design at C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:34::SCWPlatform::DSA given C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:34::SCWPlatform::DSA absoulate path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:34::SCWPlatform::DSA directory C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw
+TRACE::2025-02-21.18:03:34::SCWPlatform:: Platform Path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:34::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-02-21.18:03:34::SCWPlatform::Trying to set the existing hwdb with name nexysa7fpga_1
+TRACE::2025-02-21.18:03:34::SCWPlatform::Opened existing hwdb nexysa7fpga_1
+TRACE::2025-02-21.18:03:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-21.18:03:34::SCWMssOS::Checking the sw design at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.18:03:34::SCWMssOS::DEBUG:  swdes dump  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system||
+
+TRACE::2025-02-21.18:03:34::SCWMssOS::Sw design exists and opened at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.18:03:34::SCWMssOS::Saving the mss changes C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.18:03:34::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2025-02-21.18:03:34::SCWMssOS::Completed writemss as part of save.
+TRACE::2025-02-21.18:03:34::SCWMssOS::Commit changes completed.
+TRACE::2025-02-21.18:03:34::SCWPlatform::Trying to open the hw design at C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:34::SCWPlatform::DSA given C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:34::SCWPlatform::DSA absoulate path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:34::SCWPlatform::DSA directory C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw
+TRACE::2025-02-21.18:03:34::SCWPlatform:: Platform Path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:34::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-02-21.18:03:34::SCWPlatform::Trying to set the existing hwdb with name nexysa7fpga_1
+TRACE::2025-02-21.18:03:34::SCWPlatform::Opened existing hwdb nexysa7fpga_1
+TRACE::2025-02-21.18:03:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-21.18:03:34::SCWMssOS::Checking the sw design at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.18:03:34::SCWMssOS::DEBUG:  swdes dump  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system||
+
+TRACE::2025-02-21.18:03:34::SCWMssOS::Sw design exists and opened at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.18:03:34::SCWWriter::formatted JSON is {
+	"platformName":	"PID_Controller_Platform",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"PID_Controller_Platform",
+	"platHandOff":	"C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/hdl/nexysa7fpga.xsa",
+	"platIntHandOff":	"<platformDir>/hw/nexysa7fpga.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"PID_Controller_Platform",
+	"systems":	[{
+			"systemName":	"PID_Controller_Platform",
+			"systemDesc":	"PID_Controller_Platform",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"PID_Controller_Platform",
+			"sysActiveDom":	"freertos10_xilinx_domain",
+			"sysDefaultDom":	"freertos10_xilinx_domain",
+			"domains":	[{
+					"domainName":	"freertos10_xilinx_domain",
+					"domainDispName":	"freertos10_xilinx on microblaze_0",
+					"domainDesc":	"freertos10_xilinx_domain",
+					"processors":	"microblaze_0",
+					"os":	"freertos10_xilinx",
+					"sdxOs":	"freertos10_xilinx",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"1.12",
+					"mssFile":	"",
+					"md5Digest":	"3ccd7f077ac2979b0fa0dc337d900c3d",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"freertos10_xilinx":	{
+							"enable_stm_event_trace":	"false",
+							"stdin":	"mdm_1",
+							"stdout":	"mdm_1",
+							"libOptionNames":	["enable_stm_event_trace", "stdin", "stdout"]
+						},
+						"libsContainingOptions":	["freertos10_xilinx"]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2025-02-21.18:03:34::SCWMssOS::Saving the mss changes C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.18:03:34::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2025-02-21.18:03:34::SCWMssOS::Completed writemss as part of save.
+TRACE::2025-02-21.18:03:34::SCWMssOS::Commit changes completed.
+TRACE::2025-02-21.18:03:34::SCWPlatform::Trying to open the hw design at C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:34::SCWPlatform::DSA given C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:34::SCWPlatform::DSA absoulate path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:34::SCWPlatform::DSA directory C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw
+TRACE::2025-02-21.18:03:34::SCWPlatform:: Platform Path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:34::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-02-21.18:03:34::SCWPlatform::Trying to set the existing hwdb with name nexysa7fpga_1
+TRACE::2025-02-21.18:03:34::SCWPlatform::Opened existing hwdb nexysa7fpga_1
+TRACE::2025-02-21.18:03:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-21.18:03:34::SCWMssOS::Checking the sw design at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.18:03:34::SCWMssOS::DEBUG:  swdes dump  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system||
+
+TRACE::2025-02-21.18:03:34::SCWMssOS::Sw design exists and opened at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.18:03:34::SCWMssOS::Removing the swdes entry for  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.18:03:34::SCWMssOS::In reload Mss file.
+TRACE::2025-02-21.18:03:34::SCWPlatform::Trying to open the hw design at C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:34::SCWPlatform::DSA given C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:34::SCWPlatform::DSA absoulate path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:34::SCWPlatform::DSA directory C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw
+TRACE::2025-02-21.18:03:34::SCWPlatform:: Platform Path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:34::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-02-21.18:03:34::SCWPlatform::Trying to set the existing hwdb with name nexysa7fpga_1
+TRACE::2025-02-21.18:03:34::SCWPlatform::Opened existing hwdb nexysa7fpga_1
+TRACE::2025-02-21.18:03:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-21.18:03:34::SCWMssOS::Checking the sw design at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.18:03:34::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2025-02-21.18:03:34::SCWMssOS::No sw design opened at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.18:03:34::SCWMssOS::mss exists loading the mss file  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.18:03:34::SCWMssOS::Opened the sw design from mss  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.18:03:34::SCWMssOS::Adding the swdes entry C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss with des name system
+TRACE::2025-02-21.18:03:34::SCWMssOS::updating the scw layer about changes
+TRACE::2025-02-21.18:03:34::SCWMssOS::Opened the sw design.  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.18:03:34::SCWPlatform::Trying to open the hw design at C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:34::SCWPlatform::DSA given C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:34::SCWPlatform::DSA absoulate path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:34::SCWPlatform::DSA directory C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw
+TRACE::2025-02-21.18:03:34::SCWPlatform:: Platform Path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:34::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-02-21.18:03:34::SCWPlatform::Trying to set the existing hwdb with name nexysa7fpga_1
+TRACE::2025-02-21.18:03:34::SCWPlatform::Opened existing hwdb nexysa7fpga_1
+TRACE::2025-02-21.18:03:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-21.18:03:34::SCWMssOS::Checking the sw design at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.18:03:34::SCWMssOS::DEBUG:  swdes dump  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system||
+
+TRACE::2025-02-21.18:03:34::SCWMssOS::Sw design exists and opened at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.18:03:34::SCWPlatform::Trying to open the hw design at C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:34::SCWPlatform::DSA given C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:34::SCWPlatform::DSA absoulate path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:34::SCWPlatform::DSA directory C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw
+TRACE::2025-02-21.18:03:34::SCWPlatform:: Platform Path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:34::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-02-21.18:03:34::SCWPlatform::Trying to set the existing hwdb with name nexysa7fpga_1
+TRACE::2025-02-21.18:03:34::SCWPlatform::Opened existing hwdb nexysa7fpga_1
+TRACE::2025-02-21.18:03:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-21.18:03:34::SCWMssOS::Checking the sw design at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.18:03:34::SCWMssOS::DEBUG:  swdes dump  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system||
+
+TRACE::2025-02-21.18:03:34::SCWMssOS::Sw design exists and opened at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.18:03:34::SCWPlatform::Trying to open the hw design at C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:34::SCWPlatform::DSA given C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:34::SCWPlatform::DSA absoulate path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:34::SCWPlatform::DSA directory C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw
+TRACE::2025-02-21.18:03:34::SCWPlatform:: Platform Path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:34::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-02-21.18:03:34::SCWPlatform::Trying to set the existing hwdb with name nexysa7fpga_1
+TRACE::2025-02-21.18:03:34::SCWPlatform::Opened existing hwdb nexysa7fpga_1
+TRACE::2025-02-21.18:03:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-21.18:03:34::SCWMssOS::Checking the sw design at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.18:03:34::SCWMssOS::DEBUG:  swdes dump  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system||
+
+TRACE::2025-02-21.18:03:34::SCWMssOS::Sw design exists and opened at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.18:03:34::SCWPlatform::Trying to open the hw design at C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:34::SCWPlatform::DSA given C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:34::SCWPlatform::DSA absoulate path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:34::SCWPlatform::DSA directory C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw
+TRACE::2025-02-21.18:03:34::SCWPlatform:: Platform Path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:34::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-02-21.18:03:34::SCWPlatform::Trying to set the existing hwdb with name nexysa7fpga_1
+TRACE::2025-02-21.18:03:34::SCWPlatform::Opened existing hwdb nexysa7fpga_1
+TRACE::2025-02-21.18:03:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-21.18:03:34::SCWMssOS::Checking the sw design at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.18:03:34::SCWMssOS::DEBUG:  swdes dump  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system||
+
+TRACE::2025-02-21.18:03:34::SCWMssOS::Sw design exists and opened at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.18:03:34::SCWPlatform::Trying to open the hw design at C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:34::SCWPlatform::DSA given C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:34::SCWPlatform::DSA absoulate path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:34::SCWPlatform::DSA directory C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw
+TRACE::2025-02-21.18:03:34::SCWPlatform:: Platform Path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:34::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-02-21.18:03:34::SCWPlatform::Trying to set the existing hwdb with name nexysa7fpga_1
+TRACE::2025-02-21.18:03:34::SCWPlatform::Opened existing hwdb nexysa7fpga_1
+TRACE::2025-02-21.18:03:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-21.18:03:34::SCWMssOS::Checking the sw design at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.18:03:34::SCWMssOS::DEBUG:  swdes dump  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system||
+
+TRACE::2025-02-21.18:03:34::SCWMssOS::Sw design exists and opened at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.18:03:34::SCWPlatform::Trying to open the hw design at C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:34::SCWPlatform::DSA given C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:34::SCWPlatform::DSA absoulate path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:34::SCWPlatform::DSA directory C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw
+TRACE::2025-02-21.18:03:34::SCWPlatform:: Platform Path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:34::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-02-21.18:03:34::SCWPlatform::Trying to set the existing hwdb with name nexysa7fpga_1
+TRACE::2025-02-21.18:03:34::SCWPlatform::Opened existing hwdb nexysa7fpga_1
+TRACE::2025-02-21.18:03:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-21.18:03:34::SCWMssOS::Checking the sw design at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.18:03:34::SCWMssOS::DEBUG:  swdes dump  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system||
+
+TRACE::2025-02-21.18:03:34::SCWMssOS::Sw design exists and opened at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.18:03:34::SCWMssOS::Saving the mss changes C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.18:03:34::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2025-02-21.18:03:34::SCWMssOS::Completed writemss as part of save.
+TRACE::2025-02-21.18:03:34::SCWMssOS::Commit changes completed.
+TRACE::2025-02-21.18:03:34::SCWPlatform::Trying to open the hw design at C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:34::SCWPlatform::DSA given C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:34::SCWPlatform::DSA absoulate path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:34::SCWPlatform::DSA directory C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw
+TRACE::2025-02-21.18:03:34::SCWPlatform:: Platform Path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:34::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-02-21.18:03:34::SCWPlatform::Trying to set the existing hwdb with name nexysa7fpga_1
+TRACE::2025-02-21.18:03:34::SCWPlatform::Opened existing hwdb nexysa7fpga_1
+TRACE::2025-02-21.18:03:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-21.18:03:34::SCWMssOS::Checking the sw design at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.18:03:34::SCWMssOS::DEBUG:  swdes dump  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system||
+
+TRACE::2025-02-21.18:03:34::SCWMssOS::Sw design exists and opened at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.18:03:34::SCWMssOS::Removing the swdes entry for  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.18:03:34::SCWPlatform::Trying to open the hw design at C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:34::SCWPlatform::DSA given C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:34::SCWPlatform::DSA absoulate path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:34::SCWPlatform::DSA directory C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw
+TRACE::2025-02-21.18:03:34::SCWPlatform:: Platform Path C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/hw/nexysa7fpga.xsa
+TRACE::2025-02-21.18:03:34::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-02-21.18:03:34::SCWPlatform::Trying to set the existing hwdb with name nexysa7fpga_1
+TRACE::2025-02-21.18:03:34::SCWPlatform::Opened existing hwdb nexysa7fpga_1
+TRACE::2025-02-21.18:03:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-21.18:03:34::SCWMssOS::Checking the sw design at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.18:03:34::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2025-02-21.18:03:34::SCWMssOS::No sw design opened at  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.18:03:34::SCWMssOS::mss exists loading the mss file  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.18:03:34::SCWMssOS::Opened the sw design from mss  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.18:03:34::SCWMssOS::Adding the swdes entry C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss with des name system
+TRACE::2025-02-21.18:03:34::SCWMssOS::updating the scw layer about changes
+TRACE::2025-02-21.18:03:34::SCWMssOS::Opened the sw design.  C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2025-02-21.18:03:34::SCWMssOS::Completed writing the mss file at C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/microblaze_0/freertos10_xilinx_domain/bsp
+TRACE::2025-02-21.18:03:34::SCWMssOS::Forcing BSP Sources regeneration.
