@@ -22,3 +22,7 @@ bsp config stdout "mdm_1"
 bsp write
 bsp reload
 catch {bsp regenerate}
+platform generate
+platform active {PID_Controller_Platform}
+platform config -updatehw {C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/hdl/nexysa7fpga.xsa}
+platform generate -domains 

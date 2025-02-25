@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;PID_Controller_Platform&apos;" deleteContents="false" description="Delete resource &apos;PID_Controller_Platform&apos;" element1="/PID_Controller_Platform" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1740458932936"/>
+</session>

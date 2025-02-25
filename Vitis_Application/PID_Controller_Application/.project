@@ -3,7 +3,7 @@
 	<name>PID_Controller_Application</name>
 	<comment>Created by Vitis v2022.2</comment>
 	<projects>
-		<project>PID_Controller_Platform</project>
+		<project>platform</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

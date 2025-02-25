@@ -9,3 +9,41 @@
 17:45:53 INFO  : Successfully done setting workspace for the tool. 
 17:46:55 INFO  : Result from executing command 'getProjects': PID_Controller_Platform
 17:46:55 INFO  : Result from executing command 'getPlatforms': xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+20:38:47 DEBUG : Logs will be stored at 'C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/IDE.log'.
+20:38:48 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\ECE544-EmbeddedSystemsFPGA\ECE544-ACTUAL-Project2\Vitis_Application\temp_xsdb_launch_script.tcl
+20:38:50 INFO  : XSCT server has started successfully.
+20:38:50 INFO  : plnx-install-location is set to ''
+20:38:50 INFO  : Successfully done setting XSCT server connection channel  
+20:38:50 INFO  : Successfully done setting workspace for the tool. 
+20:38:51 INFO  : Successfully done query RDI_DATADIR 
+20:38:51 INFO  : Registering command handlers for Vitis TCF services
+20:38:51 INFO  : Platform repository initialization has completed.
+20:43:51 INFO  : Result from executing command 'getProjects': PID_Controller_Platform
+20:43:51 INFO  : Result from executing command 'getPlatforms': PID_Controller_Platform|C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/export/PID_Controller_Platform/PID_Controller_Platform.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+20:43:51 INFO  : Checking for BSP changes to sync application flags for project 'PID_Controller_Application'...
+20:43:52 INFO  : Updating application flags with new BSP settings...
+20:43:52 INFO  : Successfully updated application flags for project PID_Controller_Application.
+20:46:40 INFO  : Hardware specification for platform project 'PID_Controller_Platform' is updated.
+20:46:51 INFO  : Result from executing command 'getProjects': PID_Controller_Platform
+20:46:51 INFO  : Result from executing command 'getPlatforms': PID_Controller_Platform|C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/export/PID_Controller_Platform/PID_Controller_Platform.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+20:47:12 INFO  : Checking for BSP changes to sync application flags for project 'PID_Controller_Application'...
+20:48:27 INFO  : Result from executing command 'getProjects': PID_Controller_Platform;platform
+20:48:27 INFO  : Result from executing command 'getPlatforms': PID_Controller_Platform|C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/PID_Controller_Platform/export/PID_Controller_Platform/PID_Controller_Platform.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+20:49:01 INFO  : Result from executing command 'getProjects': platform
+20:49:01 INFO  : Result from executing command 'getPlatforms': platform|C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/platform/export/platform/platform.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+20:49:05 INFO  : Checking for BSP changes to sync application flags for project 'PID_Controller_Application'...
+20:49:05 ERROR : Failed to get platform details for the project 'PID_Controller_Application'. Cannot sync application flags.
+20:49:54 INFO  : Checking for BSP changes to sync application flags for project 'PID_Controller_Application'...
+20:49:54 INFO  : Updating application flags with new BSP settings...
+20:49:54 INFO  : Successfully updated application flags for project PID_Controller_Application.
+20:50:32 INFO  : Result from executing command 'getProjects': platform
+20:50:32 INFO  : Result from executing command 'getPlatforms': platform|C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/platform/export/platform/platform.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+20:50:57 INFO  : Checking for BSP changes to sync application flags for project 'PID_Controller_Application'...
+20:51:21 INFO  : Checking for BSP changes to sync application flags for project 'PID_Controller_Application'...
+20:51:25 INFO  : Result from executing command 'removePlatformRepo': 
+20:51:30 INFO  : Result from executing command 'getProjects': platform
+20:51:31 INFO  : Result from executing command 'getPlatforms': xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+20:51:31 INFO  : Checking for BSP changes to sync application flags for project 'PID_Controller_Application'...
+20:51:50 INFO  : Checking for BSP changes to sync application flags for project 'PID_Controller_Application'...
+20:57:06 INFO  : Checking for BSP changes to sync application flags for project 'PID_Controller_Application'...
+20:57:37 INFO  : Checking for BSP changes to sync application flags for project 'PID_Controller_Application'...
