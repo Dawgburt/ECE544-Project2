@@ -24,3 +24,126 @@ timestamp=[2025-02-24 20:51:50], mode=BUILD, duration=0:00:00.104, duration_ms=1
 timestamp=[2025-02-24 20:51:50], mode=BUILD, duration=0:00:00.224, duration_ms=224, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
 timestamp=[2025-02-24 20:57:07], mode=BUILD, duration=0:00:01.254, duration_ms=1254, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
 timestamp=[2025-02-24 20:57:38], mode=BUILD, duration=0:00:00.527, duration_ms=527, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 17:58:54], mode=WORKBENCH_START, duration=0:00:05.355, duration_ms=5355, data={}
+timestamp=[2025-02-27 17:58:55], mode=WORKBENCH_UI_INIT, duration=0:00:00.626, duration_ms=626, data={editors_count=8, platform_editors_count=2, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=PID_Controller_Application,PID_Controller_Application_system,RemoteSystemsTempFiles,platform}
+timestamp=[2025-02-27 17:58:56], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.317, duration_ms=317, data={}
+timestamp=[2025-02-27 17:59:52], mode=BUILD, duration=0:00:00.786, duration_ms=786, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:00:37], mode=BUILD, duration=0:00:00.222, duration_ms=222, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:01:22], mode=BUILD, duration=0:00:00.242, duration_ms=242, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:03:00], mode=WORKBENCH_START, duration=0:00:04.699, duration_ms=4699, data={}
+timestamp=[2025-02-27 18:03:01], mode=WORKBENCH_UI_INIT, duration=0:00:00.685, duration_ms=685, data={editors_count=8, platform_editors_count=2, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=PID_Controller_Application,PID_Controller_Application_system,RemoteSystemsTempFiles,platform}
+timestamp=[2025-02-27 18:03:02], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.271, duration_ms=271, data={}
+timestamp=[2025-02-27 18:03:11], mode=BUILD, duration=0:00:00.205, duration_ms=205, data={name=PID_Controller_Application, configuration=Debug, clean_build=true}
+timestamp=[2025-02-27 18:03:20], mode=BUILD, duration=0:00:00.229, duration_ms=229, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:03:27], mode=BUILD, duration=0:00:01.103, duration_ms=1103, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:03:43], mode=BUILD, duration=0:00:00.430, duration_ms=430, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:03:57], mode=BUILD, duration=0:00:00.161, duration_ms=161, data={name=PID_Controller_Application, configuration=Debug, clean_build=true}
+timestamp=[2025-02-27 18:03:57], mode=BUILD, duration=0:00:00.106, duration_ms=106, data={name=PID_Controller_Application_system, configuration=Debug, clean_build=true}
+timestamp=[2025-02-27 18:04:00], mode=PLATFORM_GENERATION, duration=0:00:02.851, duration_ms=2851, data={name=platform}
+timestamp=[2025-02-27 18:04:05], mode=PLATFORM_GENERATION, duration=0:00:05.023, duration_ms=5023, data={name=platform}
+timestamp=[2025-02-27 18:04:06], mode=BUILD, duration=0:00:00.899, duration_ms=899, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:04:43], mode=BUILD, duration=0:00:00.482, duration_ms=482, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:05:54], mode=BUILD, duration=0:00:00.288, duration_ms=288, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:06:21], mode=BUILD, duration=0:00:00.237, duration_ms=237, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:07:07], mode=BUILD, duration=0:00:00.218, duration_ms=218, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:08:05], mode=BUILD, duration=0:00:00.305, duration_ms=305, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:08:43], mode=BUILD, duration=0:00:00.229, duration_ms=229, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:09:30], mode=BUILD, duration=0:00:00.105, duration_ms=105, data={name=PID_Controller_Application, configuration=Debug, clean_build=true}
+timestamp=[2025-02-27 18:09:31], mode=BUILD, duration=0:00:00.530, duration_ms=530, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:10:53], mode=BUILD, duration=0:00:00.175, duration_ms=175, data={name=PID_Controller_Application, configuration=Debug, clean_build=true}
+timestamp=[2025-02-27 18:10:54], mode=BUILD, duration=0:00:00.713, duration_ms=713, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:11:31], mode=BUILD, duration=0:00:00.218, duration_ms=218, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:13:30], mode=BUILD, duration=0:00:00.227, duration_ms=227, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:13:48], mode=BUILD, duration=0:00:00.221, duration_ms=221, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:14:42], mode=BUILD, duration=0:00:00.230, duration_ms=230, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:15:40], mode=BUILD, duration=0:00:00.231, duration_ms=231, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:16:25], mode=BUILD, duration=0:00:00.221, duration_ms=221, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:16:38], mode=BUILD, duration=0:00:00.218, duration_ms=218, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:17:03], mode=BUILD, duration=0:00:00.212, duration_ms=212, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:17:19], mode=BUILD, duration=0:00:00.344, duration_ms=344, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:17:35], mode=BUILD, duration=0:00:00.220, duration_ms=220, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:17:46], mode=BUILD, duration=0:00:00.222, duration_ms=222, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:18:57], mode=BUILD, duration=0:00:00.217, duration_ms=217, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:19:35], mode=BUILD, duration=0:00:00.249, duration_ms=249, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:20:26], mode=BUILD, duration=0:00:00.237, duration_ms=237, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:20:32], mode=BUILD, duration=0:00:00.224, duration_ms=224, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:20:50], mode=BUILD, duration=0:00:00.156, duration_ms=156, data={name=PID_Controller_Application, configuration=Debug, clean_build=true}
+timestamp=[2025-02-27 18:20:51], mode=BUILD, duration=0:00:00.651, duration_ms=651, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:21:02], mode=BUILD, duration=0:00:00.229, duration_ms=229, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:22:59], mode=BUILD, duration=0:00:00.235, duration_ms=235, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:24:49], mode=BUILD, duration=0:00:00.229, duration_ms=229, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:25:02], mode=BUILD, duration=0:00:00.273, duration_ms=273, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:27:56], mode=PLATFORM_GENERATION, duration=0:00:01.871, duration_ms=1871, data={name=platform}
+timestamp=[2025-02-27 18:27:56], mode=BUILD, duration=0:00:00.229, duration_ms=229, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:28:06], mode=BUILD, duration=0:00:00.219, duration_ms=219, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:28:20], mode=BUILD, duration=0:00:00.236, duration_ms=236, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:28:30], mode=BUILD, duration=0:00:00.403, duration_ms=403, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:28:44], mode=BUILD, duration=0:00:00.106, duration_ms=106, data={name=PID_Controller_Application, configuration=Debug, clean_build=true}
+timestamp=[2025-02-27 18:28:44], mode=BUILD, duration=0:00:00.103, duration_ms=103, data={name=PID_Controller_Application_system, configuration=Debug, clean_build=true}
+timestamp=[2025-02-27 18:28:46], mode=PLATFORM_GENERATION, duration=0:00:02.524, duration_ms=2524, data={name=platform}
+timestamp=[2025-02-27 18:28:51], mode=PLATFORM_GENERATION, duration=0:00:04.386, duration_ms=4386, data={name=platform}
+timestamp=[2025-02-27 18:28:52], mode=BUILD, duration=0:00:01.146, duration_ms=1146, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:29:04], mode=BUILD, duration=0:00:00.215, duration_ms=215, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:29:37], mode=BUILD, duration=0:00:00.373, duration_ms=373, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:29:51], mode=BUILD, duration=0:00:00.416, duration_ms=416, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:32:08], mode=BUILD, duration=0:00:00.408, duration_ms=408, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:32:30], mode=BUILD, duration=0:00:00.218, duration_ms=218, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:32:41], mode=BUILD, duration=0:00:00.291, duration_ms=291, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:32:50], mode=BUILD, duration=0:00:00.409, duration_ms=409, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:34:28], mode=PLATFORM_CREATION, duration=0:00:01.601, duration_ms=1601, data={platform_source=dsa, os=freertos10_xilinx, processor=microblaze, platform=null}
+timestamp=[2025-02-27 18:34:32], mode=BUILD, duration=0:00:00.231, duration_ms=231, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:34:38], mode=PLATFORM_GENERATION, duration=0:00:05.940, duration_ms=5940, data={name=platform}
+timestamp=[2025-02-27 18:34:44], mode=BUILD, duration=0:00:00.780, duration_ms=780, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:34:55], mode=BUILD, duration=0:00:00.223, duration_ms=223, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:35:27], mode=BUILD, duration=0:00:00.228, duration_ms=228, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:35:31], mode=BUILD, duration=0:00:00.217, duration_ms=217, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:39:03], mode=BUILD, duration=0:00:00.411, duration_ms=411, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:39:14], mode=BUILD, duration=0:00:00.173, duration_ms=173, data={name=PID_Controller_Application, configuration=Debug, clean_build=true}
+timestamp=[2025-02-27 18:39:15], mode=BUILD, duration=0:00:00.104, duration_ms=104, data={name=PID_Controller_Application_system, configuration=Debug, clean_build=true}
+timestamp=[2025-02-27 18:39:17], mode=PLATFORM_GENERATION, duration=0:00:02.528, duration_ms=2528, data={name=platform}
+timestamp=[2025-02-27 18:39:22], mode=PLATFORM_GENERATION, duration=0:00:04.414, duration_ms=4414, data={name=platform}
+timestamp=[2025-02-27 18:39:57], mode=BUILD, duration=0:00:00.646, duration_ms=646, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:41:10], mode=BUILD, duration=0:00:00.180, duration_ms=180, data={name=PID_Controller_Application, configuration=Debug, clean_build=true}
+timestamp=[2025-02-27 18:41:11], mode=BUILD, duration=0:00:00.658, duration_ms=658, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:43:53], mode=BUILD, duration=0:00:00.289, duration_ms=289, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:44:54], mode=BUILD, duration=0:00:00.408, duration_ms=408, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:44:56], mode=BUILD, duration=0:00:00.226, duration_ms=226, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:45:08], mode=BUILD, duration=0:00:00.230, duration_ms=230, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:45:56], mode=BUILD, duration=0:00:00.431, duration_ms=431, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:47:14], mode=BUILD, duration=0:00:00.401, duration_ms=401, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:47:43], mode=BUILD, duration=0:00:00.409, duration_ms=409, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:47:53], mode=BUILD, duration=0:00:00.409, duration_ms=409, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:47:56], mode=BUILD, duration=0:00:00.225, duration_ms=225, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:48:30], mode=BUILD, duration=0:00:00.480, duration_ms=480, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:48:38], mode=BUILD, duration=0:00:00.341, duration_ms=341, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:48:45], mode=BUILD, duration=0:00:00.220, duration_ms=220, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:48:53], mode=BUILD, duration=0:00:00.228, duration_ms=228, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:49:28], mode=BUILD, duration=0:00:00.225, duration_ms=225, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:49:49], mode=BUILD, duration=0:00:00.223, duration_ms=223, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:50:03], mode=BUILD, duration=0:00:00.226, duration_ms=226, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:50:09], mode=BUILD, duration=0:00:00.401, duration_ms=401, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:50:16], mode=BUILD, duration=0:00:00.090, duration_ms=90, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:50:53], mode=PLATFORM_CREATION, duration=0:00:01.327, duration_ms=1327, data={platform_source=dsa, os=freertos10_xilinx, processor=microblaze, platform=null}
+timestamp=[2025-02-27 18:50:57], mode=BUILD, duration=0:00:00.220, duration_ms=220, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:51:03], mode=PLATFORM_GENERATION, duration=0:00:05.680, duration_ms=5680, data={name=platform}
+timestamp=[2025-02-27 18:51:07], mode=BUILD, duration=0:00:00.725, duration_ms=725, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:52:21], mode=BUILD, duration=0:00:00.105, duration_ms=105, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:52:28], mode=BUILD, duration=0:00:00.118, duration_ms=118, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:52:51], mode=BUILD, duration=0:00:00.119, duration_ms=119, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:53:17], mode=BUILD, duration=0:00:00.096, duration_ms=96, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:53:30], mode=BUILD, duration=0:00:00.104, duration_ms=104, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:53:35], mode=BUILD, duration=0:00:00.101, duration_ms=101, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:54:21], mode=PLATFORM_GENERATION, duration=0:00:06.185, duration_ms=6185, data={name=platform}
+timestamp=[2025-02-27 18:54:22], mode=BUILD, duration=0:00:00.971, duration_ms=971, data={name=PID_Controller_Application, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:56:13], mode=PLATFORM_CREATION, duration=0:00:01.093, duration_ms=1093, data={platform_source=dsa, os=freertos10_xilinx, processor=microblaze, platform=null}
+timestamp=[2025-02-27 18:56:49], mode=APP_CREATION, duration=0:00:00.710, duration_ms=710, data={name=applicationV2, project_type=sdk, os=freertos10_xilinx, processor=microblaze_0, runtime=C/C++, platform=platformV2, application_type=application}
+timestamp=[2025-02-27 18:57:17], mode=PLATFORM_GENERATION, duration=0:00:05.710, duration_ms=5710, data={name=platformV2}
+timestamp=[2025-02-27 18:57:18], mode=BUILD, duration=0:00:01.062, duration_ms=1062, data={name=applicationV2, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:57:32], mode=BUILD, duration=0:00:00.399, duration_ms=399, data={name=applicationV2, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:57:33], mode=BUILD, duration=0:00:00.104, duration_ms=104, data={name=applicationV2_system, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:57:39], mode=BUILD, duration=0:00:00.102, duration_ms=102, data={name=applicationV2, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:57:39], mode=BUILD, duration=0:00:00.092, duration_ms=92, data={name=applicationV2_system, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:57:56], mode=BUILD, duration=0:00:00.646, duration_ms=646, data={name=applicationV2, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:58:08], mode=BUILD, duration=0:00:00.530, duration_ms=530, data={name=applicationV2, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:59:04], mode=BUILD, duration=0:00:00.525, duration_ms=525, data={name=applicationV2, configuration=Debug, clean_build=false}
+timestamp=[2025-02-27 18:59:04], mode=BUILD, duration=0:00:00.106, duration_ms=106, data={name=applicationV2_system, configuration=Debug, clean_build=false}

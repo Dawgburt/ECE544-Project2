@@ -3,7 +3,7 @@
 	<name>PID_Controller_Application_system</name>
 	<comment></comment>
 	<projects>
-		<project>PID_Controller_Application</project>
+		<project>platform</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

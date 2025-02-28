@@ -1,0 +1,8 @@
+18:39:14 **** Clean-only build of configuration Debug for project PID_Controller_Application_system ****
+make clean 
+rm -rf ./_sds
+rm -rf package
+rm -f system.bif
+
+18:39:15 Build Finished (took 100ms)
+

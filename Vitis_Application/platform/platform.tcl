@@ -14,11 +14,7 @@ platform create -name {platform}\
 
 platform write
 platform generate -domains 
-platform active {platform}
-bsp reload
-catch {platform remove PID_Controller_Platform}
 platform generate
-catch {bsp regenerate}
-platform generate -domains freertos10_xilinx_domain 
-platform clean
-platform generate
+platform config -updatehw {C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/hdl/nexysa7fpga.xsa}
+platform generate -domains 
+catch {platform remove platform}

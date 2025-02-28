@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item key="sdx.custom.platform.repository.locations" value="C:\ECE544-EmbeddedSystemsFPGA\ECE544-ACTUAL-Project2\Vitis_Application\platform\export\platform"/>
-	<item key="sdx.custom.platform.repository.last.directory.dialog.location" value="C:\ECE544-EmbeddedSystemsFPGA\ECE544-ACTUAL-Project2\Vitis_Application\platform\export\platform"/>
+	<item key="sdx.custom.platform.repository.locations" value="C:\ECE544-EmbeddedSystemsFPGA\ECE544-ACTUAL-Project2\Vitis_Application\platformV2\export\platformV2"/>
+	<item key="sdx.custom.platform.repository.last.directory.dialog.location" value="C:\ECE544-EmbeddedSystemsFPGA\ECE544-ACTUAL-Project2\Vitis_Application\platformV2\export\platformV2"/>
 </section>
