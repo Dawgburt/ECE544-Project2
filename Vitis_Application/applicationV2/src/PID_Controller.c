@@ -191,7 +191,7 @@ void vPIDTask(void *pvParameters) {
 #endif
 
         }
-        vTaskDelay(pdMS_TO_TICKS(100));
+        vTaskDelay(pdMS_TO_TICKS(250));
     }
 }
 
@@ -203,48 +203,52 @@ void vDisplayTask(void *pvParameters) {
     xil_printf("DEBUG vDisplayTask: Lux: %d | Target: %d | PWM: %d\r\n",
                 (int)(current_lux * 100), (int)(target_lux), (int)(pwm_duty_cycle * 100));
 #endif
-        vTaskDelay(pdMS_TO_TICKS(1000)); // Update every second
+        vTaskDelay(pdMS_TO_TICKS(500)); // Update every second
     }
 }
-
 
 void vInputTask(void *pvParameters) {
     while (1) {
-        int btn_state = XGpio_DiscreteRead(&btns, 1); // Read Buttons
-        int sw_state = XGpio_DiscreteRead(&switches, 2); // Read Switches
+        int btn_state = XGpio_DiscreteRead(&btns, 1);
+        int sw_state = XGpio_DiscreteRead(&switches, 2);
 
+        //float step_size = 1.0;
         float *param_to_adjust = NULL;
 
-        #if _DEBUG
-            xil_printf("DEBUG vInputTask: Switch State: %d | Button State: %d | step_size: %d\r\n", sw_state, btn_state,
-            		(int)step_size);
-        #endif
+#if _DEBUG
+     xil_printf("DEBUG vInputTask: Switch State: %d | Button State: %d | step_size: %d\r\n", sw_state, btn_state,
+     		(int)step_size);
+ #endif
 
+     	//if (sw_state & SW1)
+     	//if (sw_state & SW2)
+     	//if (sw_state & SW3)
+     	if (sw_state & SW4) 			param_to_adjust = &target_lux;
 
+     	if (!(sw_state & (SW5 | SW6))) 	step_size = 1.0;
+        if (sw_state & SW5) 			step_size = 5.0;
+        if (sw_state & SW6) 			step_size = 10.0;
 
-            switch (sw_state) {
-                 // Step size based on Switches [5:4]
-                 case SW5: step_size = 5.0; break;
-                 case SW6: // Falls through
-                 case (SW5 | SW6): step_size = 10.0; break;
-                 default: step_size = 1.0; break;
-             }
-
+        if (sw_state & SW7) 						param_to_adjust = &pid.Kp;
+        if (sw_state & SW8) 						param_to_adjust = &pid.Ki;
+        if ((sw_state & SW7) && (sw_state & SW8)) 	param_to_adjust = &pid.Kd;
 
 
         if (param_to_adjust) {
-            if (btn_state & 0x04) *param_to_adjust += step_size; // BtnU
-            if (btn_state & 0x08) *param_to_adjust -= step_size; // BtnD
+            if (btn_state & 0x08) *param_to_adjust += step_size; //Button UP
+            if (btn_state & 0x04) *param_to_adjust -= step_size; //Button Down
         }
 
-#if _DEBUG
-    xil_printf("DEBUG vInputTask: Setpoint: %d | Kp: %d | Ki: %d | Kd: %d\r\n",
-                (int)(target_lux * 100), (int)(pid.Kp * 100), (int)(pid.Ki * 100), (int)(pid.Kd * 100));
-#endif
+        #if _DEBUG
+            xil_printf("DEBUG vInputTask: Setpoint: %d | Kp: %d | Ki: %d | Kd: %d\r\n",
+                        (int)(target_lux * 100), (int)(pid.Kp * 100), (int)(pid.Ki * 100), (int)(pid.Kd * 100));
+        #endif
 
-        vTaskDelay(pdMS_TO_TICKS(250));
+        vTaskDelay(pdMS_TO_TICKS(500));  // **Increased delay from 250ms to 500ms**
     }
 }
+
+
 
 
 XUartLite UartLite;
