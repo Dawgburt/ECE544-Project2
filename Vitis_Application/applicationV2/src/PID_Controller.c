@@ -66,6 +66,9 @@
 #include <math.h>
 #include "tsl2561.h"  // Custom TSL2561 driver
 #include "pid.h"      // Custom PID controller
+#include "xuartlite.h"
+
+#define _DEBUG 1
 
 // Peripheral Instances
 XIic i2c;
@@ -75,7 +78,7 @@ XGpio btns, switches, pwm;
 TaskHandle_t xSensorTask, xPIDTask, xDisplayTask, xInputTask;
 
 // Global Variables
-float target_lux = 100.0;   // Default target Lux
+float target_lux = 50.0;
 float current_lux = 0.0;    // Sensor reading
 float pwm_duty_cycle = 0.5; // PWM Duty cycle (0.0 - 1.0)
 
@@ -90,10 +93,29 @@ void vSensorTask(void *pvParameters);
 void vPIDTask(void *pvParameters);
 void vDisplayTask(void *pvParameters);
 void vInputTask(void *pvParameters);
+void init_uart();
 
 // === MAIN FUNCTION ===
 int main() {
-    xil_printf("Starting FreeRTOS PID Control Project...\n");
+    xil_printf("Starting FreeRTOS PID Control Project...\r\n");
+
+    // Initialize UART for debugging
+    init_uart();
+
+    // Initialize I2C (XIic)
+    int status = XIic_Initialize(&i2c, XPAR_IIC_0_DEVICE_ID);
+    if (status != XST_SUCCESS) {
+        xil_printf("ERROR: I2C Initialization Failed!\r\n");
+        return -1;
+    }
+
+    // Set I2C options for repeated start and master mode
+    XIic_SetOptions(&i2c, XII_REPEATED_START_OPTION | XII_SEND_10_BIT_OPTION);
+
+    // Start the I2C driver
+    XIic_Start(&i2c);
+
+    xil_printf("I2C Initialized Successfully\r\n");
 
     // Initialize Peripherals
     tsl2561_init(&i2c);
@@ -105,15 +127,20 @@ int main() {
     // Initialize PID
     pid_init(&pid, 1.0, 0.1, 0.05);  // Default Kp, Ki, Kd values
 
+#if _DEBUG
+    xil_printf("DEBUG: PID Controller Initialized - Kp: %.2f, Ki: %.2f, Kd: %.2f, Target Lux: %.2f\r\n",
+                pid.Kp, pid.Ki, pid.Kd, (int)target_lux);
+#endif
+
     // Create Queue
     xLuxQueue = xQueueCreate(5, sizeof(float));  // Reduce queue size to 3 elements
 
 
     // Create FreeRTOS Tasks
-    xTaskCreate(vSensorTask, "SensorTask", 124, NULL, 2, &xSensorTask);
-    xTaskCreate(vPIDTask, "PIDTask", 124, NULL, 3, &xPIDTask);
-    xTaskCreate(vDisplayTask, "DisplayTask", 124, NULL, 1, &xDisplayTask);
-    xTaskCreate(vInputTask, "InputTask", 124, NULL, 2, &xInputTask);
+    xTaskCreate(vSensorTask, "SensorTask", 512, NULL, 2, &xSensorTask);
+    xTaskCreate(vPIDTask, "PIDTask", 512, NULL, 3, &xPIDTask);
+    xTaskCreate(vDisplayTask, "DisplayTask", 512, NULL, 1, &xDisplayTask);
+    xTaskCreate(vInputTask, "InputTask", 512, NULL, 2, &xInputTask);
 
 
     // Start Scheduler
@@ -138,61 +165,69 @@ void vPIDTask(void *pvParameters) {
         if (xQueueReceive(xLuxQueue, &lux_input, portMAX_DELAY)) {
             pwm_duty_cycle = pid_compute(&pid, target_lux, lux_input);
             XGpio_DiscreteWrite(&pwm, 2, (int)(pwm_duty_cycle * 255));
+
+            #if _DEBUG
+                xil_printf("DEBUG: Lux: %.2f | Target: %.2f | PWM: %.2f\r\n",
+                            lux_input, target_lux, pwm_duty_cycle);
+            #endif
         }
-        vTaskDelay(pdMS_TO_TICKS(100)); // Run every 100ms
+        vTaskDelay(pdMS_TO_TICKS(100));
     }
 }
+
 
 // === DISPLAY TASK ===
 void vDisplayTask(void *pvParameters) {
     while (1) {
-        xil_printf("Lux: %.2f | Target: %.2f | PWM: %.2f\n", current_lux, target_lux, pwm_duty_cycle);
+        xil_printf("Lux: %.2f | Target: %.2f | PWM: %.2f\r\n", current_lux, target_lux, pwm_duty_cycle);
         vTaskDelay(pdMS_TO_TICKS(1000)); // Update every second
     }
 }
 
 
-// === INPUT TASK (Handles Buttons & Switches) ===
 void vInputTask(void *pvParameters) {
     while (1) {
-        int btn_state = XGpio_DiscreteRead(&btns, 1); // Read Buttons (Channel 1)
-        int sw_state = XGpio_DiscreteRead(&switches, 1); // Read Switches (Channel 1)
+        int btn_state = XGpio_DiscreteRead(&btns, 1); // Read Buttons
+        int sw_state = XGpio_DiscreteRead(&switches, 2); // Read Switches
 
-        float step_size = 1.0;  // Default increment size
-        float *param_to_adjust = NULL; // Pointer to selected parameter
+        #if _DEBUG
+            xil_printf("DEBUG: Switch State: %d | Button State: %d\r\n", sw_state, btn_state);
+        #endif
 
-        // Determine step size based on switches [5:4]
-        switch ((sw_state >> 4) & 0x3) {  // Extract bits [5:4]
-            case 0b00: step_size = 1.0;  break;
-            case 0b01: step_size = 5.0;  break;
-            case 0b10: step_size = 10.0; break;
-            case 0b11: step_size = 10.0; break;  // Any case where Switch[5] is set
-        }
+        float step_size = 1.0;
+        float *param_to_adjust = NULL;
 
-        // Determine which parameter is being adjusted based on switches [7:6] and [3]
-        switch ((sw_state >> 6) & 0x3) {  // Extract bits [7:6]
-            case 0b01: param_to_adjust = &pid.Kp; break;  // Adjust Kp
-            case 0b10: param_to_adjust = &pid.Ki; break;  // Adjust Ki
-            case 0b11: param_to_adjust = &pid.Kd; break;  // Adjust Kd
+        switch ((sw_state >> 6) & 0x3) {
+            case 0b01: param_to_adjust = &pid.Kp; break;
+            case 0b10: param_to_adjust = &pid.Ki; break;
+            case 0b11: param_to_adjust = &pid.Kd; break;
             default:
                 if (sw_state & 0x08)  // Switch[3] controls setpoint
                     param_to_adjust = &target_lux;
                 break;
         }
 
-        // Adjust selected parameter if a button is pressed
         if (param_to_adjust) {
-            if (btn_state & 0x01) *param_to_adjust += step_size; // Button Up (Increment)
-            if (btn_state & 0x02) *param_to_adjust -= step_size; // Button Down (Decrement)
+            if (btn_state & 0x01) *param_to_adjust += step_size; // BtnU
+            if (btn_state & 0x02) *param_to_adjust -= step_size; // BtnD
         }
 
-        // Enable/Disable PID components based on switches [2:0]
-        pid.Kp = (sw_state & 0x01) ? pid.Kp : 0.0;  // Switch[0] enables/disables P control
-        pid.Ki = (sw_state & 0x02) ? pid.Ki : 0.0;  // Switch[1] enables/disables I control
-        pid.Kd = (sw_state & 0x04) ? pid.Kd : 0.0;  // Switch[2] enables/disables D control
+        #if _DEBUG
+            xil_printf("DEBUG: Setpoint: %.2f | Kp: %.2f | Ki: %.2f | Kd: %.2f\n",
+                        target_lux, pid.Kp, pid.Ki, pid.Kd);
+        #endif
 
-        xil_printf("Setpoint: %.2f | Kp: %.2f | Ki: %.2f | Kd: %.2f | Step: %.1f\n", target_lux, pid.Kp, pid.Ki, pid.Kd, step_size);
+        vTaskDelay(pdMS_TO_TICKS(250));
+    }
+}
 
-        vTaskDelay(pdMS_TO_TICKS(250)); // Debounce delay
+
+XUartLite UartLite;
+#define UART_DEVICE_ID  XPAR_UARTLITE_0_DEVICE_ID
+
+void init_uart() {
+    int status = XUartLite_Initialize(&UartLite, UART_DEVICE_ID);
+    if (status != XST_SUCCESS) {
+        xil_printf("UART Init Failed\r\n");
     }
 }

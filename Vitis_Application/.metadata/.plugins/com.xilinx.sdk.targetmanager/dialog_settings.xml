@@ -1,3 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<item key="applicationV2_system-bitFile" value="${project_loc:applicationV2}/_ide/bitstream/nexysa7fpga.bit"/>
+	<item key="applicationV2_system-bmmFile" value="${project_loc:applicationV2}/_ide/bitstream/nexysa7fpga.mmi"/>
+	<item key="applicationV2_system-target" value="Local"/>
+	<item key="applicationV2_system-device" value="Auto Detect"/>
+	<item key="applicationV2_system-partial_bit" value="false"/>
+	<item key="applicationV2_system-skip_rev_check" value="false"/>
+	<item key="programfpga.sdxproject" value="applicationV2_system"/>
+	<item key="applicationV2_system-microblaze_0-initElf" value="bootloop"/>
+	<item key="devices_info_Local" value="{&quot;cables&quot;:[{&quot;name&quot;:&quot;Digilent Nexys A7 -100T 210292BB2FBAA&quot;,&quot;indexContextMap&quot;:{&quot;2&quot;:&quot;jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0&quot;}}]}"/>
 </section>

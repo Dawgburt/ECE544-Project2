@@ -8,13 +8,16 @@
 
 #include "pid.h"
 
-void pid_init(PIDController *pid, float Kp, float Ki, float Kd) {
-    pid->Kp = Kp;
-    pid->Ki = Ki;
-    pid->Kd = Kd;
-    pid->prev_error = 0.0;
+
+void pid_init(PIDController *pid, float kp, float ki, float kd) {
+    pid->Kp = kp;
+    pid->Ki = ki;
+    pid->Kd = kd;
     pid->integral = 0.0;
+    pid->prev_error = 0.0;
 }
+
+
 
 float pid_compute(PIDController *pid, float setpoint, float measured) {
     float error = setpoint - measured;

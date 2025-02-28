@@ -471,8 +471,8 @@
 #define PLATFORM_MB
  
 /******************************************************************/
-#define STDIN_BASEADDRESS 0x40600000
-#define STDOUT_BASEADDRESS 0x40600000
+#define STDIN_BASEADDRESS 0x41400000
+#define STDOUT_BASEADDRESS 0x41400000
 
 /******************************************************************/
 

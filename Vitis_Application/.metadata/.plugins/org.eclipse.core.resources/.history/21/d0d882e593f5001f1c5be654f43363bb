@@ -1,0 +1,164 @@
+/**
+ * @file tsl2561.c
+ * @brief Implementation file for TSL2561 luminosity sensor driver.
+ *
+ * This file contains the function definitions for initializing, reading data,
+ * and calculating lux values from the TSL2561 sensor.
+ *
+ * @author Phil Nevins (p.nevins971@gmail.com)
+ * @date 2025-02-20
+ */
+
+#include "tsl2561.h"
+#include "xil_printf.h"
+#include "sleep.h"
+
+// TSL2561 I2C Address (default 0x39, can also be 0x29 or 0x49)
+#define TSL2561_ADDR  0x39
+
+// TSL2561 Register Addresses
+#define TSL2561_COMMAND_BIT   0x80
+#define TSL2561_CONTROL_REG   0x00
+#define TSL2561_TIMING_REG    0x01
+#define TSL2561_ID_REG        0x0A
+#define TSL2561_DATA0_LOW     0x0C
+#define TSL2561_DATA0_HIGH    0x0D
+#define TSL2561_DATA1_LOW     0x0E
+#define TSL2561_DATA1_HIGH    0x0F
+
+// Power Control Values
+#define TSL2561_POWER_ON  0x03
+#define TSL2561_POWER_OFF 0x00
+
+// Function Prototypes (Local)
+static int tsl2561_write_register(XIic *i2c, u8 reg, u8 data);
+static int tsl2561_read_register(XIic *i2c, u8 reg, u8 *data);
+static uint16_t tsl2561_read_raw_data(XIic *i2c, u8 reg_low, u8 reg_high);
+
+/**
+ * @brief Initialize the TSL2561 sensor.
+ *
+ * Powers on the sensor, verifies the ID register, and configures the timing register.
+ *
+ * @param i2c Pointer to XIic instance.
+ */
+void tsl2561_init(XIic *i2c) {
+    int status;
+    u8 id = 0;
+
+    xil_printf("TSL2561: Initializing sensor...\n");
+
+    // Power on the sensor
+    status = tsl2561_write_register(i2c, TSL2561_COMMAND_BIT | TSL2561_CONTROL_REG, TSL2561_POWER_ON);
+    if (status != XST_SUCCESS) {
+        xil_printf("TSL2561: Failed to power on sensor\n");
+        return;
+    }
+
+    // Read ID register to verify sensor presence
+    status = tsl2561_read_register(i2c, TSL2561_COMMAND_BIT | TSL2561_ID_REG, &id);
+    if (status != XST_SUCCESS || (id & 0xF0) != 0x50) { // Expected ID should be 0x5X
+        xil_printf("TSL2561: Sensor not detected! ID=0x%02X\n", id);
+        return;
+    }
+    xil_printf("TSL2561: Sensor detected! ID=0x%02X\n", id);
+
+    // Configure the timing register (default: 402ms integration time)
+    status = tsl2561_write_register(i2c, TSL2561_COMMAND_BIT | TSL2561_TIMING_REG, 0x02);
+    if (status != XST_SUCCESS) {
+        xil_printf("TSL2561: Failed to configure timing register\n");
+    }
+
+    xil_printf("TSL2561: Initialization complete.\n");
+}
+
+/**
+ * @brief Reads the specified light channel (CH0 or CH1).
+ *
+ * @param i2c Pointer to XIic instance.
+ * @param channel TSL2561 channel (TSL2561_CHANNEL_0 or TSL2561_CHANNEL_1).
+ * @return uint16_t Raw ADC value from the sensor channel.
+ */
+uint16_t tsl2561_readChannel(XIic *i2c, tsl2561_channel_t channel) {
+    if (channel == TSL2561_CHANNEL_0) {
+        return tsl2561_read_raw_data(i2c, TSL2561_DATA0_LOW, TSL2561_DATA0_HIGH);
+    } else if (channel == TSL2561_CHANNEL_1) {
+        return tsl2561_read_raw_data(i2c, TSL2561_DATA1_LOW, TSL2561_DATA1_HIGH);
+    }
+    return 0;
+}
+
+/**
+ * @brief Calculates Lux from raw channel data using sensor coefficients.
+ *
+ * Uses the formula from the TSL2561 datasheet application section.
+ *
+ * @param ch0 Raw data from channel 0 (full spectrum).
+ * @param ch1 Raw data from channel 1 (infrared).
+ * @return float Calculated Lux value.
+ */
+float tsl2561_calculateLux(uint16_t ch0, uint16_t ch1) {
+    if (ch0 == 0) return 0.0; // Avoid division by zero
+
+    float ratio = (float)ch1 / (float)ch0;
+    float lux = 0.0;
+
+    if (ratio <= 0.5) {
+        lux = (0.0304 * ch0) - (0.062 * ch0 * pow(ratio, 1.4));
+    } else if (ratio <= 0.61) {
+        lux = (0.0224 * ch0) - (0.031 * ch1);
+    } else if (ratio <= 0.80) {
+        lux = (0.0128 * ch0) - (0.0153 * ch1);
+    } else if (ratio <= 1.30) {
+        lux = (0.00146 * ch0) - (0.00112 * ch1);
+    } else {
+        lux = 0.0;
+    }
+
+    return lux;
+}
+
+/**
+ * @brief Write to a register on the TSL2561 sensor.
+ *
+ * @param i2c Pointer to XIic instance.
+ * @param reg Register address to write to.
+ * @param data Data to write.
+ * @return XST_SUCCESS on success, XST_FAILURE otherwise.
+ */
+static int tsl2561_write_register(XIic *i2c, u8 reg, u8 data) {
+    u8 buffer[2] = { reg, data };
+    int status = XIic_Send(i2c->BaseAddress, TSL2561_ADDR, buffer, 2, XIIC_STOP);
+    return (status == 2) ? XST_SUCCESS : XST_FAILURE;
+}
+
+/**
+ * @brief Read a single byte from a register on the TSL2561 sensor.
+ *
+ * @param i2c Pointer to XIic instance.
+ * @param reg Register address to read from.
+ * @param data Pointer to store read data.
+ * @return XST_SUCCESS on success, XST_FAILURE otherwise.
+ */
+static int tsl2561_read_register(XIic *i2c, u8 reg, u8 *data) {
+    int status = XIic_Send(i2c->BaseAddress, TSL2561_ADDR, &reg, 1, XIIC_REPEATED_START);
+    if (status != 1) return XST_FAILURE;
+
+    status = XIic_Recv(i2c->BaseAddress, TSL2561_ADDR, data, 1, XIIC_STOP);
+    return (status == 1) ? XST_SUCCESS : XST_FAILURE;
+}
+
+/**
+ * @brief Reads a 16-bit value from two consecutive registers.
+ *
+ * @param i2c Pointer to XIic instance.
+ * @param reg_low Address of the lower byte register.
+ * @param reg_high Address of the higher byte register.
+ * @return uint16_t Combined 16-bit value.
+ */
+static uint16_t tsl2561_read_raw_data(XIic *i2c, u8 reg_low, u8 reg_high) {
+    u8 low, high;
+    if (tsl2561_read_register(i2c, TSL2561_COMMAND_BIT | reg_low, &low) != XST_SUCCESS) return 0;
+    if (tsl2561_read_register(i2c, TSL2561_COMMAND_BIT | reg_high, &high) != XST_SUCCESS) return 0;
+    return ((high << 8) | low);
+}

@@ -9,8 +9,8 @@ BEGIN OS
  PARAMETER SYSINTC_SPEC = *
  PARAMETER SYSTMR_DEV = *
  PARAMETER SYSTMR_SPEC = true
- PARAMETER stdin = axi_uartlite_0
- PARAMETER stdout = axi_uartlite_0
+ PARAMETER stdin = mdm_1
+ PARAMETER stdout = mdm_1
 END
 
 

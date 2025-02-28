@@ -16,3 +16,30 @@ platform write
 platform generate -domains 
 platform active {platformV2}
 platform generate
+platform active {platformV2}
+bsp reload
+bsp config stdin "mdm_1"
+bsp config stdout "mdm_1"
+bsp write
+bsp reload
+catch {bsp regenerate}
+platform generate -domains freertos10_xilinx_domain 
+bsp reload
+bsp config stdin "axi_uartlite_0"
+bsp config stdin "axi_uartlite_0"
+bsp config stdout "mdm_1"
+bsp write
+bsp reload
+catch {bsp regenerate}
+bsp config stdout "axi_uartlite_0"
+bsp write
+bsp reload
+catch {bsp regenerate}
+platform generate -domains freertos10_xilinx_domain 
+bsp config stdin "mdm_1"
+bsp config stdout "mdm_1"
+bsp write
+bsp reload
+catch {bsp regenerate}
+platform generate -domains freertos10_xilinx_domain 
+bsp reload
