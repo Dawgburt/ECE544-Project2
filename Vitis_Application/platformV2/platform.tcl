@@ -45,3 +45,5 @@ platform generate -domains freertos10_xilinx_domain
 bsp reload
 platform active {platformV2}
 platform generate -domains 
+platform active {platformV2}
+platform generate -domains 

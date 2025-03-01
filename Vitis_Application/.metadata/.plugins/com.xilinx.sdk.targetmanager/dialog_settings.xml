@@ -3,7 +3,7 @@
 	<item key="applicationV2_system-bitFile" value="${project_loc:applicationV2}/_ide/bitstream/nexysa7fpga.bit"/>
 	<item key="applicationV2_system-bmmFile" value="${project_loc:applicationV2}/_ide/bitstream/nexysa7fpga.mmi"/>
 	<item key="applicationV2_system-target" value="Local"/>
-	<item key="applicationV2_system-device" value="Auto Detect"/>
+	<item key="applicationV2_system-device" value="Digilent Nexys A7 -100T 210292BB2FBAA/2-xc7a100t"/>
 	<item key="applicationV2_system-partial_bit" value="false"/>
 	<item key="applicationV2_system-skip_rev_check" value="false"/>
 	<item key="programfpga.sdxproject" value="applicationV2_system"/>

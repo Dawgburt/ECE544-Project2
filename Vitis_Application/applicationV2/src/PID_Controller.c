@@ -67,6 +67,7 @@
 #include "tsl2561.h"  // Custom TSL2561 driver
 #include "pid.h"      // Custom PID controller
 #include "xuartlite.h"
+#include "nexys4io.h"
 
 #define _DEBUG 1
 // Define switch bit positions
@@ -139,7 +140,7 @@ int main() {
     tsl2561_init(&i2c);
     XGpio_Initialize(&btns, XPAR_AXI_GPIO_1_DEVICE_ID);
     XGpio_Initialize(&switches, XPAR_AXI_GPIO_1_DEVICE_ID);
-    XGpio_Initialize(&pwm, XPAR_AXI_GPIO_1_DEVICE_ID);
+    //XGpio_Initialize(&pwm, XPAR_AXI_GPIO_1_DEVICE_ID);
 
 
     // Initialize PID
@@ -157,9 +158,9 @@ int main() {
 
     // Create FreeRTOS Tasks
     xTaskCreate(vSensorTask, "SensorTask", 512, NULL, 2, &xSensorTask);
-    xTaskCreate(vPIDTask, "PIDTask", 512, NULL, 3, &xPIDTask);
+    xTaskCreate(vPIDTask, "PIDTask", 1024, NULL, 3, &xPIDTask);
     xTaskCreate(vDisplayTask, "DisplayTask", 512, NULL, 1, &xDisplayTask);
-    xTaskCreate(vInputTask, "InputTask", 512, NULL, 2, &xInputTask);
+    xTaskCreate(vInputTask, "InputTask", 1024, NULL, 2, &xInputTask);
 
 
     // Start Scheduler
@@ -183,7 +184,8 @@ void vPIDTask(void *pvParameters) {
     while (1) {
         if (xQueueReceive(xLuxQueue, &lux_input, portMAX_DELAY)) {
             pwm_duty_cycle = pid_compute(&pid, target_lux, lux_input);
-            XGpio_DiscreteWrite(&pwm, 2, (int)(pwm_duty_cycle * 255));
+           // XGpio_DiscreteWrite(&pwm, 2, (int)(pwm_duty_cycle * 255));
+            NX4IO_RGBLED_setRGB_DATA(2, 0x000000FF);  // Force max brightness on BLUE channel
 
 #if _DEBUG
     xil_printf("DEBUG vPIDTask: Lux(scaled by 100): %d | Target: %d | PWM(scaled by 100): %d\r\n",
@@ -207,6 +209,7 @@ void vDisplayTask(void *pvParameters) {
     }
 }
 
+
 void vInputTask(void *pvParameters) {
     while (1) {
         int btn_state = XGpio_DiscreteRead(&btns, 1);
@@ -220,9 +223,12 @@ void vInputTask(void *pvParameters) {
      		(int)step_size);
  #endif
 
-     	//if (sw_state & SW1)
+
+     	//if (!(sw_state & SW1)) pid.Kp = 0;
+     	//if (sw_state & SW1) pid.Kp = prev_Kp;
      	//if (sw_state & SW2)
      	//if (sw_state & SW3)
+
      	if (sw_state & SW4) 			param_to_adjust = &target_lux;
 
      	if (!(sw_state & (SW5 | SW6))) 	step_size = 1.0;
