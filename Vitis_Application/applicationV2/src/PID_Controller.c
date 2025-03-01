@@ -88,6 +88,11 @@
 #define SW15 (1 << 14)
 #define SW16 (1 << 15)
 
+// Nexys4IO Peripheral Definitions
+#define N4IO_DEVICE_ID          XPAR_NEXYS4IO_0_DEVICE_ID
+#define N4IO_BASEADDR           XPAR_NEXYS4IO_0_S00_AXI_BASEADDR
+#define N4IO_HIGHADDR           XPAR_NEXYS4IO_0_S00_AXI_HIGHADDR
+
 // Peripheral Instances
 XIic i2c;
 XGpio btns, switches, pwm;
@@ -112,21 +117,23 @@ void vSensorTask(void *pvParameters);
 void vPIDTask(void *pvParameters);
 void vDisplayTask(void *pvParameters);
 void vInputTask(void *pvParameters);
-void init_uart();
+void PrintToLEDs(float pwm_duty_cycle);
 
 // === MAIN FUNCTION ===
  int main() {
     xil_printf("Starting FreeRTOS PID Control Project...\r\n");
 
-    // Initialize UART for debugging
-    init_uart();
+
+    // Initialize Nexys4IO
+    NX4IO_initialize(N4IO_BASEADDR);
+
+
+    // Enable only the BLUE channel of RGB1
+    NX4IO_RGBLED_setChnlEn(RGB1, false, false, true);
 
     // Initialize I2C (XIic)
-    int status = XIic_Initialize(&i2c, XPAR_IIC_0_DEVICE_ID);
-    if (status != XST_SUCCESS) {
-        xil_printf("ERROR: I2C Initialization Failed!\r\n");
-        return -1;
-    }
+    XIic_Initialize(&i2c, XPAR_IIC_0_DEVICE_ID);
+
 
     // Set I2C options for repeated start and master mode
     XIic_SetOptions(&i2c, XII_REPEATED_START_OPTION | XII_SEND_10_BIT_OPTION);
@@ -142,6 +149,7 @@ void init_uart();
     XGpio_Initialize(&switches, XPAR_AXI_GPIO_1_DEVICE_ID);
 	XGpio_InterruptEnable( &btns, XGPIO_IR_CH1_MASK );
     //XGpio_Initialize(&pwm, XPAR_AXI_GPIO_1_DEVICE_ID);
+
 
 
     // Initialize PID
@@ -161,7 +169,7 @@ void init_uart();
     xTaskCreate(vSensorTask, "SensorTask", 1024, NULL, 2, &xSensorTask);
     xTaskCreate(vPIDTask, "PIDTask", 1024, NULL, 3, &xPIDTask);
     xTaskCreate(vDisplayTask, "DisplayTask", 512, NULL, 1, &xDisplayTask);
-    xTaskCreate(vInputTask, "InputTask", 1024, NULL, 2, &xInputTask);
+    xTaskCreate(vInputTask, "InputTask", 4096, NULL, 2, &xInputTask);
 
 
     // Start Scheduler
@@ -185,12 +193,12 @@ void vPIDTask(void *pvParameters) {
     while (1) {
         if (xQueueReceive(xLuxQueue, &lux_input, portMAX_DELAY)) {
             pwm_duty_cycle = pid_compute(&pid, target_lux, lux_input);
-           // XGpio_DiscreteWrite(&pwm, 2, (int)(pwm_duty_cycle * 255));
-            NX4IO_RGBLED_setRGB_DATA(2, 0x000000FF);  // Force max brightness on BLUE channel
+            NX4IO_RGBLED_setDutyCycle(RGB1, 0, 0, (int)pwm_duty_cycle);
+            //PrintToLEDs(pwm_duty_cycle);
 
 #if _DEBUG
-    xil_printf("DEBUG vPIDTask: Lux(scaled by 100): %d | Target: %d | PWM(scaled by 100): %d\r\n",
-                (int)(lux_input * 100), (int)(target_lux), (int)(pwm_duty_cycle * 100));
+    xil_printf("DEBUG vPIDTask: Lux(scaled by 100): %d | Target: %d | PWM: %d\r\n",
+                (int)(lux_input * 100), (int)(target_lux), (int)(pwm_duty_cycle));
 #endif
 
         }
@@ -258,12 +266,9 @@ void vInputTask(void *pvParameters) {
 
 
 
-XUartLite UartLite;
-#define UART_DEVICE_ID  XPAR_UARTLITE_0_DEVICE_ID
-
-void init_uart() {
-    int status = XUartLite_Initialize(&UartLite, UART_DEVICE_ID);
-    if (status != XST_SUCCESS) {
-        xil_printf("UART Init Failed\r\n");
-    }
+void PrintToLEDs(float pwm_duty_cycle){
+    NX4IO_SSEG_setDigit(SSEGHI, DIGIT7, (int)(pwm_duty_cycle / 100));  //Digit7
+    //NX4IO_SSEG_setDigit(SSEGHI, DIGIT6, (enum _NX4IO_charcodes)(pwm_duty_cycle_disp / 10));  //Digit6
+    //NX4IO_SSEG_setDigit(SSEGHI, DIGIT5, (enum _NX4IO_charcodes)(pwm_duty_cycle_disp % 10));  //Digit5
 }
+

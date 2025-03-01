@@ -443,3 +443,49 @@ timestamp=[2025-02-28 19:30:40], mode=BUILD, duration=0:00:00.522, duration_ms=5
 timestamp=[2025-02-28 19:31:11], mode=BUILD, duration=0:00:00.525, duration_ms=525, data={name=applicationV2, configuration=Debug, clean_build=false}
 timestamp=[2025-02-28 19:33:57], mode=BUILD, duration=0:00:00.101, duration_ms=101, data={name=applicationV2, configuration=Debug, clean_build=false}
 timestamp=[2025-02-28 19:35:03], mode=BUILD, duration=0:00:00.525, duration_ms=525, data={name=applicationV2, configuration=Debug, clean_build=false}
+timestamp=[2025-02-28 20:04:06], mode=WORKBENCH_START, duration=0:00:06.240, duration_ms=6240, data={}
+timestamp=[2025-02-28 20:04:07], mode=WORKBENCH_UI_INIT, duration=0:00:00.503, duration_ms=503, data={editors_count=13, platform_editors_count=7, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,applicationV2,applicationV2_system,platformV2}
+timestamp=[2025-02-28 20:04:07], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.287, duration_ms=287, data={}
+timestamp=[2025-02-28 20:06:47], mode=BUILD, duration=0:00:00.581, duration_ms=581, data={name=applicationV2, configuration=Debug, clean_build=false}
+timestamp=[2025-02-28 20:07:46], mode=BUILD, duration=0:00:00.111, duration_ms=111, data={name=applicationV2, configuration=Debug, clean_build=false}
+timestamp=[2025-02-28 20:08:12], mode=BUILD, duration=0:00:00.583, duration_ms=583, data={name=applicationV2, configuration=Debug, clean_build=false}
+timestamp=[2025-02-28 20:08:50], mode=BUILD, duration=0:00:00.224, duration_ms=224, data={name=applicationV2, configuration=Debug, clean_build=false}
+timestamp=[2025-02-28 20:09:02], mode=BUILD, duration=0:00:00.231, duration_ms=231, data={name=applicationV2, configuration=Debug, clean_build=false}
+timestamp=[2025-02-28 20:09:11], mode=BUILD, duration=0:00:00.534, duration_ms=534, data={name=applicationV2, configuration=Debug, clean_build=false}
+timestamp=[2025-02-28 20:11:21], mode=BUILD, duration=0:00:00.536, duration_ms=536, data={name=applicationV2, configuration=Debug, clean_build=false}
+timestamp=[2025-02-28 20:12:11], mode=BUILD, duration=0:00:00.226, duration_ms=226, data={name=applicationV2, configuration=Debug, clean_build=false}
+timestamp=[2025-02-28 20:12:23], mode=BUILD, duration=0:00:00.524, duration_ms=524, data={name=applicationV2, configuration=Debug, clean_build=false}
+timestamp=[2025-02-28 20:16:52], mode=BUILD, duration=0:00:00.473, duration_ms=473, data={name=applicationV2, configuration=Debug, clean_build=false}
+timestamp=[2025-02-28 20:17:04], mode=BUILD, duration=0:00:00.592, duration_ms=592, data={name=applicationV2, configuration=Debug, clean_build=false}
+timestamp=[2025-02-28 20:20:07], mode=BUILD, duration=0:00:00.523, duration_ms=523, data={name=applicationV2, configuration=Debug, clean_build=false}
+timestamp=[2025-02-28 20:20:58], mode=BUILD, duration=0:00:00.526, duration_ms=526, data={name=applicationV2, configuration=Debug, clean_build=false}
+timestamp=[2025-02-28 20:25:21], mode=BUILD, duration=0:00:00.530, duration_ms=530, data={name=applicationV2, configuration=Debug, clean_build=false}
+timestamp=[2025-02-28 20:26:57], mode=BUILD, duration=0:00:00.526, duration_ms=526, data={name=applicationV2, configuration=Debug, clean_build=false}
+timestamp=[2025-02-28 20:29:04], mode=BUILD, duration=0:00:00.523, duration_ms=523, data={name=applicationV2, configuration=Debug, clean_build=false}
+timestamp=[2025-02-28 20:30:28], mode=BUILD, duration=0:00:00.586, duration_ms=586, data={name=applicationV2, configuration=Debug, clean_build=false}
+timestamp=[2025-02-28 20:36:43], mode=BUILD, duration=0:00:00.227, duration_ms=227, data={name=applicationV2, configuration=Debug, clean_build=false}
+timestamp=[2025-02-28 20:37:05], mode=BUILD, duration=0:00:00.221, duration_ms=221, data={name=applicationV2, configuration=Debug, clean_build=false}
+timestamp=[2025-02-28 20:37:34], mode=BUILD, duration=0:00:00.230, duration_ms=230, data={name=applicationV2, configuration=Debug, clean_build=false}
+timestamp=[2025-02-28 20:37:46], mode=BUILD, duration=0:00:00.223, duration_ms=223, data={name=applicationV2, configuration=Debug, clean_build=false}
+timestamp=[2025-02-28 20:38:28], mode=BUILD, duration=0:00:00.531, duration_ms=531, data={name=applicationV2, configuration=Debug, clean_build=false}
+timestamp=[2025-02-28 20:39:21], mode=BUILD, duration=0:00:00.644, duration_ms=644, data={name=applicationV2, configuration=Debug, clean_build=false}
+timestamp=[2025-02-28 20:39:54], mode=BUILD, duration=0:00:00.596, duration_ms=596, data={name=applicationV2, configuration=Debug, clean_build=false}
+timestamp=[2025-02-28 20:40:59], mode=BUILD, duration=0:00:00.530, duration_ms=530, data={name=applicationV2, configuration=Debug, clean_build=false}
+timestamp=[2025-02-28 20:41:36], mode=BUILD, duration=0:00:00.522, duration_ms=522, data={name=applicationV2, configuration=Debug, clean_build=false}
+timestamp=[2025-02-28 20:43:33], mode=BUILD, duration=0:00:00.227, duration_ms=227, data={name=applicationV2, configuration=Debug, clean_build=false}
+timestamp=[2025-02-28 20:43:56], mode=BUILD, duration=0:00:00.527, duration_ms=527, data={name=applicationV2, configuration=Debug, clean_build=false}
+timestamp=[2025-02-28 20:44:12], mode=BUILD, duration=0:00:00.229, duration_ms=229, data={name=applicationV2, configuration=Debug, clean_build=false}
+timestamp=[2025-02-28 20:44:23], mode=BUILD, duration=0:00:00.582, duration_ms=582, data={name=applicationV2, configuration=Debug, clean_build=false}
+timestamp=[2025-02-28 20:44:49], mode=BUILD, duration=0:00:00.586, duration_ms=586, data={name=applicationV2, configuration=Debug, clean_build=false}
+timestamp=[2025-02-28 20:45:31], mode=BUILD, duration=0:00:00.514, duration_ms=514, data={name=applicationV2, configuration=Debug, clean_build=false}
+timestamp=[2025-02-28 20:48:35], mode=BUILD, duration=0:00:00.237, duration_ms=237, data={name=applicationV2, configuration=Debug, clean_build=false}
+timestamp=[2025-02-28 20:48:45], mode=BUILD, duration=0:00:00.219, duration_ms=219, data={name=applicationV2, configuration=Debug, clean_build=false}
+timestamp=[2025-02-28 20:48:54], mode=BUILD, duration=0:00:00.533, duration_ms=533, data={name=applicationV2, configuration=Debug, clean_build=false}
+timestamp=[2025-02-28 20:53:27], mode=BUILD, duration=0:00:00.515, duration_ms=515, data={name=applicationV2, configuration=Debug, clean_build=false}
+timestamp=[2025-02-28 20:54:16], mode=BUILD, duration=0:00:00.529, duration_ms=529, data={name=applicationV2, configuration=Debug, clean_build=false}
+timestamp=[2025-02-28 20:55:24], mode=BUILD, duration=0:00:00.530, duration_ms=530, data={name=applicationV2, configuration=Debug, clean_build=false}
+timestamp=[2025-02-28 20:55:29], mode=BUILD, duration=0:00:00.585, duration_ms=585, data={name=applicationV2, configuration=Debug, clean_build=false}
+timestamp=[2025-02-28 20:59:54], mode=WORKBENCH_START, duration=0:00:05.306, duration_ms=5306, data={}
+timestamp=[2025-02-28 20:59:55], mode=WORKBENCH_UI_INIT, duration=0:00:00.499, duration_ms=499, data={editors_count=17, platform_editors_count=11, projects_count=4, platform_projects_count=1, active_platform_editor=true, projects=RemoteSystemsTempFiles,applicationV2,applicationV2_system,platformV2}
+timestamp=[2025-02-28 20:59:56], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.279, duration_ms=279, data={}
+timestamp=[2025-02-28 21:05:14], mode=BUILD, duration=0:00:00.637, duration_ms=637, data={name=applicationV2, configuration=Debug, clean_build=false}

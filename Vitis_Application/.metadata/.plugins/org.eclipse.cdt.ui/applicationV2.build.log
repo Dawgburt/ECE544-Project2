@@ -1,9 +1,9 @@
-19:35:02 **** Incremental Build of configuration Debug for project applicationV2 ****
+21:05:13 **** Incremental Build of configuration Debug for project applicationV2 ****
 make all 
-'Building file: ../src/pid.c'
+'Building file: ../src/PID_Controller.c'
 'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/pid.o" -IC:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/platformV2/export/platformV2/sw/platformV2/freertos10_xilinx_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/pid.d" -MT"src/pid.o" -o "src/pid.o" "../src/pid.c"
-'Finished building: ../src/pid.c'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/PID_Controller.o" -IC:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/platformV2/export/platformV2/sw/platformV2/freertos10_xilinx_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/PID_Controller.d" -MT"src/PID_Controller.o" -o "src/PID_Controller.o" "../src/PID_Controller.c"
+'Finished building: ../src/PID_Controller.c'
 ' '
 'Building target: applicationV2.elf'
 'Invoking: MicroBlaze gcc linker'
@@ -13,9 +13,9 @@ mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUA
 'Invoking: MicroBlaze Print Size'
 mb-size applicationV2.elf  |tee "applicationV2.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  63792	    496	  66704	 130992	  1ffb0	applicationV2.elf
+  63904	    464	  66624	 130992	  1ffb0	applicationV2.elf
 'Finished building: applicationV2.elf.size'
 ' '
 
-19:35:03 Build Finished (took 520ms)
+21:05:14 Build Finished (took 604ms)
 
