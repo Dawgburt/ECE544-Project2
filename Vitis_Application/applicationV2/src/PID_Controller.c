@@ -123,34 +123,58 @@ void PrintToLEDs(float pwm_duty_cycle);
  int main() {
     xil_printf("Starting FreeRTOS PID Control Project...\r\n");
 
-
     // Initialize Nexys4IO
-    NX4IO_initialize(N4IO_BASEADDR);
+    int status;
 
+    status = NX4IO_initialize(N4IO_BASEADDR);
+    if (status == XST_SUCCESS) {
+        xil_printf("NX4IO successfully initialized.\r\n");
+    } else {
+        xil_printf("ERROR: NX4IO initialization failed! Status code: %d\r\n", status);
+        return XST_FAILURE;  // Exit the function or handle error accordingly
+    }
 
     // Enable only the BLUE channel of RGB1
     NX4IO_RGBLED_setChnlEn(RGB1, false, false, true);
 
     // Initialize I2C (XIic)
-    XIic_Initialize(&i2c, XPAR_IIC_0_DEVICE_ID);
-
+    status = XIic_Initialize(&i2c, XPAR_IIC_0_DEVICE_ID);
+    if (status != XST_SUCCESS) {
+        xil_printf("ERROR: I2C Initialization Failed!\r\n");
+        return XST_FAILURE;
+    }
 
     // Set I2C options for repeated start and master mode
     XIic_SetOptions(&i2c, XII_REPEATED_START_OPTION | XII_SEND_10_BIT_OPTION);
 
     // Start the I2C driver
-    XIic_Start(&i2c);
+    status = XIic_Start(&i2c);
+    if (status != XST_SUCCESS) {
+        xil_printf("ERROR: I2C Start Failed!\r\n");
+        return XST_FAILURE;
+    }
 
     xil_printf("I2C Initialized Successfully\r\n");
 
     // Initialize Peripherals
     tsl2561_init(&i2c);
-    XGpio_Initialize(&btns, XPAR_AXI_GPIO_1_DEVICE_ID);
-    XGpio_Initialize(&switches, XPAR_AXI_GPIO_1_DEVICE_ID);
-	XGpio_InterruptEnable( &btns, XGPIO_IR_CH1_MASK );
-    //XGpio_Initialize(&pwm, XPAR_AXI_GPIO_1_DEVICE_ID);
 
 
+    status = XGpio_Initialize(&btns, XPAR_AXI_GPIO_1_DEVICE_ID);
+    if (status != XST_SUCCESS) {
+        xil_printf("ERROR: GPIO (Buttons) Initialization Failed!\r\n");
+        return XST_FAILURE;
+    }
+
+    status = XGpio_Initialize(&switches, XPAR_AXI_GPIO_1_DEVICE_ID);
+    if (status != XST_SUCCESS) {
+        xil_printf("ERROR: GPIO (Switches) Initialization Failed!\r\n");
+        return XST_FAILURE;
+    }
+
+    XGpio_InterruptEnable(&btns, XGPIO_IR_CH1_MASK);
+
+    xil_printf("All Peripherals Initialized Successfully\r\n");
 
     // Initialize PID
     pid_init(&pid, 1.0, 0.1, 0.05);  // Default Kp, Ki, Kd values
@@ -160,17 +184,14 @@ void PrintToLEDs(float pwm_duty_cycle);
                 (int)(pid.Kp * 100), (int)(pid.Ki * 100), (int)(pid.Kd * 100), (int)(target_lux));
 #endif
 
-
     // Create Queue
-    xLuxQueue = xQueueCreate(5, sizeof(float));  // Reduce queue size to 3 elements
-
+    xLuxQueue = xQueueCreate(5, sizeof(float));
 
     // Create FreeRTOS Tasks
     xTaskCreate(vSensorTask, "SensorTask", 1024, NULL, 2, &xSensorTask);
     xTaskCreate(vPIDTask, "PIDTask", 1024, NULL, 3, &xPIDTask);
-    xTaskCreate(vDisplayTask, "DisplayTask", 512, NULL, 1, &xDisplayTask);
-    xTaskCreate(vInputTask, "InputTask", 4096, NULL, 2, &xInputTask);
-
+    xTaskCreate(vDisplayTask, "DisplayTask", 1024, NULL, 1, &xDisplayTask);
+    xTaskCreate(vInputTask, "InputTask", 1024, NULL, 2, &xInputTask);
 
     // Start Scheduler
     vTaskStartScheduler();
@@ -182,6 +203,12 @@ void PrintToLEDs(float pwm_duty_cycle);
 void vSensorTask(void *pvParameters) {
     while (1) {
         current_lux = tsl2561_readLux(&i2c);
+
+#if _DEBUG
+    xil_printf("DEBUG vSensorTask: Current_Lux(scaled by 100): %d\r\n",
+                (int)(current_lux * 100));
+#endif
+
         xQueueSend(xLuxQueue, &current_lux, portMAX_DELAY);
         vTaskDelay(pdMS_TO_TICKS(500)); // Read every 500ms
     }
@@ -221,45 +248,34 @@ void vDisplayTask(void *pvParameters) {
 
 void vInputTask(void *pvParameters) {
     while (1) {
-        int btn_state = XGpio_DiscreteRead(&btns, 1);
-        int sw_state = XGpio_DiscreteRead(&switches, 2);
+        int btn_state 			= 	XGpio_DiscreteRead(&btns, 1);
+        int sw_state 			= 	XGpio_DiscreteRead(&switches, 2);
+        float *param_to_adjust 	= 	NULL;
 
-        //float step_size = 1.0;
-        float *param_to_adjust = NULL;
-
-//#if _DEBUG
- //    xil_printf("DEBUG vInputTask: Switch State: %d | Button State: %d | step_size: %d\r\n", sw_state, btn_state,
- //    		(int)step_size);
-// #endif
-
-
-     	//if (!(sw_state & SW1)) pid.Kp = 0;
-     	//if (sw_state & SW1) pid.Kp = prev_Kp;
-     	//if (sw_state & SW2)
-     	//if (sw_state & SW3)
-
+        //No scaling for Kp
      	if (sw_state & SW4) 			param_to_adjust = &target_lux;
-
      	if (!(sw_state & (SW5 | SW6))) 	step_size = 1.0;
         if (sw_state & SW5) 			step_size = 5.0;
         if (sw_state & SW6) 			step_size = 10.0;
 
+        //Missing 0.1 scaling for Ki
+        if (sw_state & (SW5 | SW8))			step_size = 0.5;
+        if (sw_state & (SW6 | SW8))			step_size = 1.0;
+
+        //Missing all scaling for Kd
+
         if (sw_state & SW7) 						param_to_adjust = &pid.Kp;
         if (sw_state & SW8) 						param_to_adjust = &pid.Ki;
         if ((sw_state & SW7) && (sw_state & SW8)) 	param_to_adjust = &pid.Kd;
-
-
         if (param_to_adjust) {
-            if (btn_state & 0x08) *param_to_adjust += step_size; //Button UP
-            if (btn_state & 0x04) *param_to_adjust -= step_size; //Button Down
+            if (btn_state & 0x08) *param_to_adjust += step_size;
+            if (btn_state & 0x04) *param_to_adjust -= step_size;
         }
-
         #if _DEBUG
             xil_printf("DEBUG vInputTask: Setpoint: %d | Kp: %d | Ki: %d | Kd: %d\r\n",
                         (int)(target_lux * 100), (int)(pid.Kp * 100), (int)(pid.Ki * 100), (int)(pid.Kd * 100));
         #endif
-
-        vTaskDelay(pdMS_TO_TICKS(500));  // **Increased delay from 250ms to 500ms**
+        vTaskDelay(pdMS_TO_TICKS(1000));
     }
 }
 

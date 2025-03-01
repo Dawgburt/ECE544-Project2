@@ -47,3 +47,19 @@ platform active {platformV2}
 platform generate -domains 
 platform active {platformV2}
 platform generate -domains 
+platform active {platformV2}
+bsp reload
+bsp config total_heap_size "8192"
+bsp write
+bsp reload
+catch {bsp regenerate}
+platform generate -domains freertos10_xilinx_domain 
+bsp write
+platform generate -domains 
+bsp reload
+bsp config total_heap_size "8192"
+bsp config total_heap_size "16384"
+bsp write
+bsp reload
+catch {bsp regenerate}
+platform generate -domains freertos10_xilinx_domain 

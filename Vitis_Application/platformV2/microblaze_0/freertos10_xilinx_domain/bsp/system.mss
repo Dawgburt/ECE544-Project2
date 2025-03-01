@@ -11,6 +11,7 @@ BEGIN OS
  PARAMETER SYSTMR_SPEC = true
  PARAMETER stdin = mdm_1
  PARAMETER stdout = mdm_1
+ PARAMETER total_heap_size = 16384
 END
 
 

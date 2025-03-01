@@ -1,4 +1,4 @@
-21:05:13 **** Incremental Build of configuration Debug for project applicationV2 ****
+10:52:26 **** Incremental Build of configuration Debug for project applicationV2 ****
 make all 
 'Building file: ../src/PID_Controller.c'
 'Invoking: MicroBlaze gcc compiler'
@@ -13,9 +13,9 @@ mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUA
 'Invoking: MicroBlaze Print Size'
 mb-size applicationV2.elf  |tee "applicationV2.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  63904	    464	  66624	 130992	  1ffb0	applicationV2.elf
+  64648	    464	  50232	 115344	  1c290	applicationV2.elf
 'Finished building: applicationV2.elf.size'
 ' '
 
-21:05:14 Build Finished (took 604ms)
+10:52:26 Build Finished (took 515ms)
 
