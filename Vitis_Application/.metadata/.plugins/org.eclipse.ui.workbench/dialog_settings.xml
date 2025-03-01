@@ -12,8 +12,8 @@
 		<item key="org.eclipse.ui.internal.quickaccess.QuickAccessDialogDIALOG_USE_PERSISTED_SIZE" value="true"/>
 		<item key="org.eclipse.ui.internal.quickaccess.QuickAccessDialogDIALOG_USE_PERSISTED_LOCATION" value="false"/>
 		<list key="orderedElements">
-			<item value="/platformV2/export/platformV2/sw/platformV2/freertos10_xilinx_domain/bspinclude/include/xparameters.h"/>
 			<item value="/platformV2/export/platformV2/sw/platformV2/freertos10_xilinx_domain/bspinclude/include/FreeRTOSConfig.h"/>
+			<item value="/platformV2/export/platformV2/sw/platformV2/freertos10_xilinx_domain/bspinclude/include/xparameters.h"/>
 		</list>
 		<list key="orderedProviders">
 			<item value="org.eclipse.ui.ide/org.eclipse.ui.internal.ide.dialogs.OpenResourceQuickAccessComputer"/>
@@ -24,8 +24,8 @@
 			<item value="1"/>
 		</list>
 		<list key="textArray">
-			<item value="xparam"/>
 			<item value="freertos"/>
+			<item value="xparam"/>
 		</list>
 	</section>
 </section>

@@ -93,6 +93,11 @@
 #define N4IO_BASEADDR           XPAR_NEXYS4IO_0_S00_AXI_BASEADDR
 #define N4IO_HIGHADDR           XPAR_NEXYS4IO_0_S00_AXI_HIGHADDR
 
+//PID Default Values
+#define DEFAULT_Kp 1.0
+#define DEFAULT_Ki 0.1
+#define DEFAULT_Kd 0.05
+
 // Peripheral Instances
 XIic i2c;
 XGpio btns, switches, pwm;
@@ -101,6 +106,7 @@ XGpio btns, switches, pwm;
 TaskHandle_t xSensorTask, xPIDTask, xDisplayTask, xInputTask;
 
 // Global Variables
+float DEFAULT_lux = 100.0;
 float target_lux = 100.0;
 float current_lux = 0.0;    // Sensor reading
 float pwm_duty_cycle = 0.5; // PWM Duty cycle (0.0 - 1.0)
@@ -117,7 +123,7 @@ void vSensorTask(void *pvParameters);
 void vPIDTask(void *pvParameters);
 void vDisplayTask(void *pvParameters);
 void vInputTask(void *pvParameters);
-void PrintToLEDs(float pwm_duty_cycle);
+void PrintToLEDs(float setpoint, float current_lux);
 
 // === MAIN FUNCTION ===
  int main() {
@@ -182,16 +188,26 @@ void PrintToLEDs(float pwm_duty_cycle);
 #if _DEBUG
     xil_printf("DEBUG main(): PID Controller Initialized - Kp: %d, Ki: %d, Kd: %d, Target Lux: %d\r\n",
                 (int)(pid.Kp * 100), (int)(pid.Ki * 100), (int)(pid.Kd * 100), (int)(target_lux));
+    xil_printf("Free Heap Size: %d bytes\n", xPortGetFreeHeapSize());
 #endif
+
+
 
     // Create Queue
     xLuxQueue = xQueueCreate(5, sizeof(float));
 
     // Create FreeRTOS Tasks
-    xTaskCreate(vSensorTask, "SensorTask", 1024, NULL, 2, &xSensorTask);
-    xTaskCreate(vPIDTask, "PIDTask", 1024, NULL, 3, &xPIDTask);
-    xTaskCreate(vDisplayTask, "DisplayTask", 1024, NULL, 1, &xDisplayTask);
-    xTaskCreate(vInputTask, "InputTask", 1024, NULL, 2, &xInputTask);
+    xTaskCreate(vSensorTask, "SensorTask", 512, NULL, 2, &xSensorTask);
+    xTaskCreate(vPIDTask, "PIDTask", 768, NULL, 3, &xPIDTask);
+    xTaskCreate(vDisplayTask, "DisplayTask", 512, NULL, 1, &xDisplayTask);
+
+
+    BaseType_t xInputTaskStatus = xTaskCreate(vInputTask, "InputTask", 768, NULL, 3, &xInputTask);
+
+    if (xInputTaskStatus != pdPASS) {
+        xil_printf("ERROR: Failed to create vInputTask!\r\n");
+    }
+
 
     // Start Scheduler
     vTaskStartScheduler();
@@ -221,7 +237,6 @@ void vPIDTask(void *pvParameters) {
         if (xQueueReceive(xLuxQueue, &lux_input, portMAX_DELAY)) {
             pwm_duty_cycle = pid_compute(&pid, target_lux, lux_input);
             NX4IO_RGBLED_setDutyCycle(RGB1, 0, 0, (int)pwm_duty_cycle);
-            //PrintToLEDs(pwm_duty_cycle);
 
 #if _DEBUG
     xil_printf("DEBUG vPIDTask: Lux(scaled by 100): %d | Target: %d | PWM: %d\r\n",
@@ -237,6 +252,8 @@ void vPIDTask(void *pvParameters) {
 // === DISPLAY TASK ===
 void vDisplayTask(void *pvParameters) {
     while (1) {
+
+    	PrintToLEDs(target_lux, current_lux);
 #if _DEBUG
     xil_printf("DEBUG vDisplayTask: Lux: %d | Target: %d | PWM: %d\r\n",
                 (int)(current_lux * 100), (int)(target_lux), (int)(pwm_duty_cycle * 100));
@@ -247,44 +264,130 @@ void vDisplayTask(void *pvParameters) {
 
 
 void vInputTask(void *pvParameters) {
+    static float prev_Kp = 1.0, prev_Ki = 0.1, prev_Kd = 0.05;  // Stores last known values
+    static bool was_Kp_disabled = false, was_Ki_disabled = false, was_Kd_disabled = false;  // Track previous state
+
     while (1) {
-        int btn_state 			= 	XGpio_DiscreteRead(&btns, 1);
-        int sw_state 			= 	XGpio_DiscreteRead(&switches, 2);
-        float *param_to_adjust 	= 	NULL;
+        int btn_state = XGpio_DiscreteRead(&btns, 1);
+        int sw_state = XGpio_DiscreteRead(&switches, 2);
+        float *param_to_adjust = NULL;
 
-        //No scaling for Kp
-     	if (sw_state & SW4) 			param_to_adjust = &target_lux;
-     	if (!(sw_state & (SW5 | SW6))) 	step_size = 1.0;
-        if (sw_state & SW5) 			step_size = 5.0;
-        if (sw_state & SW6) 			step_size = 10.0;
-
-        //Missing 0.1 scaling for Ki
-        if (sw_state & (SW5 | SW8))			step_size = 0.5;
-        if (sw_state & (SW6 | SW8))			step_size = 1.0;
-
-        //Missing all scaling for Kd
-
-        if (sw_state & SW7) 						param_to_adjust = &pid.Kp;
-        if (sw_state & SW8) 						param_to_adjust = &pid.Ki;
-        if ((sw_state & SW7) && (sw_state & SW8)) 	param_to_adjust = &pid.Kd;
-        if (param_to_adjust) {
-            if (btn_state & 0x08) *param_to_adjust += step_size;
-            if (btn_state & 0x04) *param_to_adjust -= step_size;
+        // Setpoint adjustment (Switch[3])
+        if (sw_state & SW4) {
+            param_to_adjust = &target_lux;
+        } else {
+            // Select PID parameter to adjust (Switches [7:6])
+            switch ((sw_state >> 6) & 0x3) { // Extract bits [7:6]
+                case 0b01: param_to_adjust = &pid.Kp; break; // Adjust Kp
+                case 0b10: param_to_adjust = &pid.Ki; break; // Adjust Ki
+                case 0b11: param_to_adjust = &pid.Kd; break; // Adjust Kd
+            }
         }
+
+        // Determine step size based on Switches [5:4]
+        switch ((sw_state >> 4) & 0x3) { // Extract bits [5:4]
+            case 0b00: step_size = 1.0; break;
+            case 0b01: step_size = 5.0; break;
+            case 0b10: // Falls through
+            case 0b11: step_size = 10.0; break;
+        }
+
+        // Scale step size for Ki and Kd
+        if (param_to_adjust == &pid.Ki) {
+            step_size *= 0.1;
+        } else if (param_to_adjust == &pid.Kd) {
+            step_size *= 0.05;
+        }
+
+        // Enable/Disable PID control terms based on Switches [2:0]
+        if (sw_state & SW1) {
+            if (was_Kp_disabled) {  // Restore only if it was previously disabled
+                pid.Kp = prev_Kp;
+                was_Kp_disabled = false;
+            }
+        } else {
+            if (!was_Kp_disabled) {  // Save only once when switching off
+                prev_Kp = pid.Kp;
+                pid.Kp = 0.0;
+                was_Kp_disabled = true;
+            }
+        }
+
+        if (sw_state & SW2) {
+            if (was_Ki_disabled) {  // Restore only if it was previously disabled
+                pid.Ki = prev_Ki;
+                was_Ki_disabled = false;
+            }
+        } else {
+            if (!was_Ki_disabled) {  // Save only once when switching off
+                prev_Ki = pid.Ki;
+                pid.Ki = 0.0;
+                was_Ki_disabled = true;
+            }
+        }
+
+        if (sw_state & SW3) {
+            if (was_Kd_disabled) {  // Restore only if it was previously disabled
+                pid.Kd = prev_Kd;
+                was_Kd_disabled = false;
+            }
+        } else {
+            if (!was_Kd_disabled) {  // Save only once when switching off
+                prev_Kd = pid.Kd;
+                pid.Kd = 0.0;
+                was_Kd_disabled = true;
+            }
+        }
+
+        // Adjust selected parameter
+        if (param_to_adjust) {
+            if (btn_state & 0x08) *param_to_adjust += step_size; //BtnU
+            if (btn_state & 0x04) *param_to_adjust -= step_size; //BtnD
+        }
+
+       if (btn_state & 0x10) { pid.Kp = DEFAULT_Kp; pid.Ki = DEFAULT_Ki; pid.Kd = DEFAULT_Kd; } //BtnC
+       if (btn_state & 0x01) { target_lux = DEFAULT_lux; } //BtnR
+
         #if _DEBUG
-            xil_printf("DEBUG vInputTask: Setpoint: %d | Kp: %d | Ki: %d | Kd: %d\r\n",
-                        (int)(target_lux * 100), (int)(pid.Kp * 100), (int)(pid.Ki * 100), (int)(pid.Kd * 100));
+        xil_printf("DEBUG vInputTask: Setpoint: %d | Kp: %d | Ki: %d | Kd: %d | btn_state: %d\r\n",
+                   (int)(target_lux), (int)(pid.Kp * 100), (int)(pid.Ki * 100), (int)(pid.Kd * 100), btn_state);
         #endif
-        vTaskDelay(pdMS_TO_TICKS(1000));
+
+        vTaskDelay(pdMS_TO_TICKS(3000));
     }
 }
 
 
+void PrintToLEDs(float setpoint, float current_lux) {
+    int setpoint_scaled = (int)(setpoint);      // Scale setpoint for display
+    int lux_scaled = (int)(current_lux * 100);        // Scale current lux for display
 
+    // Extract individual digits for setpoint
+    int setpoint_ones = setpoint_scaled % 10;
+    int setpoint_tens = (setpoint_scaled / 10) % 10;
+    int setpoint_hundreds = (setpoint_scaled / 100) % 10;
 
-void PrintToLEDs(float pwm_duty_cycle){
-    NX4IO_SSEG_setDigit(SSEGHI, DIGIT7, (int)(pwm_duty_cycle / 100));  //Digit7
-    //NX4IO_SSEG_setDigit(SSEGHI, DIGIT6, (enum _NX4IO_charcodes)(pwm_duty_cycle_disp / 10));  //Digit6
-    //NX4IO_SSEG_setDigit(SSEGHI, DIGIT5, (enum _NX4IO_charcodes)(pwm_duty_cycle_disp % 10));  //Digit5
+    // Extract individual digits for current lux
+    int lux_ones = lux_scaled % 10;
+    int lux_tens = (lux_scaled / 10) % 10;
+    int lux_hundreds = (lux_scaled / 100) % 10;
+
+    // Setpoint: Digits[7:5]
+    NX4IO_SSEG_setDigit(SSEGHI, DIGIT7, (enum _NX4IO_charcodes)setpoint_hundreds); // Hundreds place
+    NX4IO_SSEG_setDigit(SSEGHI, DIGIT6, (enum _NX4IO_charcodes)setpoint_tens);     // Tens place
+    NX4IO_SSEG_setDigit(SSEGHI, DIGIT5, (enum _NX4IO_charcodes)setpoint_ones);     // Ones place
+
+    // Blank Digit[4]
+    NX4IO_SSEG_setDigit(SSEGHI, DIGIT4, CC_BLANK);
+
+    // Current Lux: Digits[3:1]
+    NX4IO_SSEG_setDigit(SSEGLO, DIGIT3, (enum _NX4IO_charcodes)lux_hundreds); // Hundreds place
+    NX4IO_SSEG_setDigit(SSEGLO, DIGIT2, (enum _NX4IO_charcodes)lux_tens);     // Tens place
+    NX4IO_SSEG_setDigit(SSEGLO, DIGIT1, (enum _NX4IO_charcodes)lux_ones);     // Ones place
+
+    // Blank Digit[0]
+    NX4IO_SSEG_setDigit(SSEGLO, DIGIT0, CC_BLANK);
 }
+
+
 

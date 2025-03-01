@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="NEXYS4IO"/>
+		<item key="selection" value="HEAP"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="HEAP"/>
+			<item value="Assert failed"/>
+			<item value="Assert failed in file"/>
+			<item value="Malloc"/>
+			<item value="vApplicationMallockFailedHook"/>
+			<item value="vApplicationMallockFailedHook()"/>
 			<item value="NEXYS4IO"/>
 			<item value="NEXYS"/>
 			<item value="pwm"/>
@@ -17,14 +23,13 @@
 			<item value="XPAR_RGB1"/>
 			<item value="XPAR_GPIO_0"/>
 			<item value="configTOTAL_HEAP_SIZE"/>
-			<item value="XPAR_AXI_GPIO"/>
 		</list>
 		<list key="replacehistory">
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="1006"/>
-		<item key="DIALOG_Y_ORIGIN" value="164"/>
+		<item key="DIALOG_X_ORIGIN" value="1337"/>
+		<item key="DIALOG_Y_ORIGIN" value="156"/>
 		<item key="DIALOG_WIDTH" value="284"/>
 		<item key="DIALOG_HEIGHT" value="426"/>
 		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|5|0|Segoe UI"/>

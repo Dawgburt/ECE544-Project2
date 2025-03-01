@@ -11394,3 +11394,1162 @@ con
 ----------------End of Script----------------
 
 10:52:53 INFO  : Launch script is exported to file 'C:\ECE544-EmbeddedSystemsFPGA\ECE544-ACTUAL-Project2\Vitis_Application\applicationV2_system\_ide\scripts\debugger_applicationv2-default.tcl'
+10:55:22 INFO  : Checking for BSP changes to sync application flags for project 'applicationV2'...
+10:55:25 INFO  : Disconnected from the channel tcfchan#15.
+10:55:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:55:27 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292BB2FBAA' is selected.
+10:55:27 INFO  : 'jtag frequency' command is executed.
+10:55:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0"}' command is executed.
+10:55:29 INFO  : Device configured successfully with "C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/_ide/bitstream/download.bit"
+10:55:29 INFO  : Context for processor 'microblaze_0' is selected.
+10:55:29 INFO  : Hardware design and registers information is loaded from 'C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/platformV2/export/platformV2/hw/nexysa7fpga.xsa'.
+10:55:29 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+10:55:29 INFO  : Context for processor 'microblaze_0' is selected.
+10:55:29 INFO  : System reset is completed.
+10:55:32 INFO  : 'after 3000' command is executed.
+10:55:32 INFO  : Context for processor 'microblaze_0' is selected.
+10:55:34 INFO  : The application 'C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/Debug/applicationV2.elf' is downloaded to processor 'microblaze_0'.
+10:55:34 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0"}
+fpga -file C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/platformV2/export/platformV2/hw/nexysa7fpga.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/Debug/applicationV2.elf
+----------------End of Script----------------
+
+10:55:35 INFO  : Context for processor 'microblaze_0' is selected.
+10:55:36 INFO  : 'con' command is executed.
+10:55:36 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+10:55:36 INFO  : Launch script is exported to file 'C:\ECE544-EmbeddedSystemsFPGA\ECE544-ACTUAL-Project2\Vitis_Application\applicationV2_system\_ide\scripts\debugger_applicationv2-default.tcl'
+10:56:24 INFO  : Checking for BSP changes to sync application flags for project 'applicationV2'...
+10:56:34 INFO  : Disconnected from the channel tcfchan#16.
+10:56:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:56:35 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292BB2FBAA' is selected.
+10:56:35 INFO  : 'jtag frequency' command is executed.
+10:56:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0"}' command is executed.
+10:56:37 INFO  : Device configured successfully with "C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/_ide/bitstream/download.bit"
+10:56:38 INFO  : Context for processor 'microblaze_0' is selected.
+10:56:38 INFO  : Hardware design and registers information is loaded from 'C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/platformV2/export/platformV2/hw/nexysa7fpga.xsa'.
+10:56:38 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+10:56:38 INFO  : Context for processor 'microblaze_0' is selected.
+10:56:38 INFO  : System reset is completed.
+10:56:41 INFO  : 'after 3000' command is executed.
+10:56:41 INFO  : Context for processor 'microblaze_0' is selected.
+10:56:42 INFO  : The application 'C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/Debug/applicationV2.elf' is downloaded to processor 'microblaze_0'.
+10:56:42 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0"}
+fpga -file C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/platformV2/export/platformV2/hw/nexysa7fpga.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/Debug/applicationV2.elf
+----------------End of Script----------------
+
+10:56:43 INFO  : Context for processor 'microblaze_0' is selected.
+10:56:44 INFO  : 'con' command is executed.
+10:56:44 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+10:56:44 INFO  : Launch script is exported to file 'C:\ECE544-EmbeddedSystemsFPGA\ECE544-ACTUAL-Project2\Vitis_Application\applicationV2_system\_ide\scripts\debugger_applicationv2-default.tcl'
+10:57:37 INFO  : Checking for BSP changes to sync application flags for project 'applicationV2'...
+10:57:44 INFO  : Disconnected from the channel tcfchan#17.
+10:57:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:57:45 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292BB2FBAA' is selected.
+10:57:45 INFO  : 'jtag frequency' command is executed.
+10:57:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0"}' command is executed.
+10:57:47 INFO  : Device configured successfully with "C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/_ide/bitstream/download.bit"
+10:57:48 INFO  : Context for processor 'microblaze_0' is selected.
+10:57:48 INFO  : Hardware design and registers information is loaded from 'C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/platformV2/export/platformV2/hw/nexysa7fpga.xsa'.
+10:57:48 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+10:57:48 INFO  : Context for processor 'microblaze_0' is selected.
+10:57:48 INFO  : System reset is completed.
+10:57:51 INFO  : 'after 3000' command is executed.
+10:57:51 INFO  : Context for processor 'microblaze_0' is selected.
+10:57:53 INFO  : The application 'C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/Debug/applicationV2.elf' is downloaded to processor 'microblaze_0'.
+10:57:53 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0"}
+fpga -file C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/platformV2/export/platformV2/hw/nexysa7fpga.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/Debug/applicationV2.elf
+----------------End of Script----------------
+
+10:57:54 INFO  : Context for processor 'microblaze_0' is selected.
+10:57:55 INFO  : 'con' command is executed.
+10:57:55 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+10:57:55 INFO  : Launch script is exported to file 'C:\ECE544-EmbeddedSystemsFPGA\ECE544-ACTUAL-Project2\Vitis_Application\applicationV2_system\_ide\scripts\debugger_applicationv2-default.tcl'
+10:58:38 INFO  : Checking for BSP changes to sync application flags for project 'applicationV2'...
+10:58:47 INFO  : Disconnected from the channel tcfchan#18.
+10:58:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:58:48 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292BB2FBAA' is selected.
+10:58:48 INFO  : 'jtag frequency' command is executed.
+10:58:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0"}' command is executed.
+10:58:51 INFO  : Device configured successfully with "C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/_ide/bitstream/download.bit"
+10:58:51 INFO  : Context for processor 'microblaze_0' is selected.
+10:58:51 INFO  : Hardware design and registers information is loaded from 'C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/platformV2/export/platformV2/hw/nexysa7fpga.xsa'.
+10:58:51 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+10:58:51 INFO  : Context for processor 'microblaze_0' is selected.
+10:58:51 INFO  : System reset is completed.
+10:58:54 INFO  : 'after 3000' command is executed.
+10:58:54 INFO  : Context for processor 'microblaze_0' is selected.
+10:58:56 INFO  : The application 'C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/Debug/applicationV2.elf' is downloaded to processor 'microblaze_0'.
+10:58:56 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0"}
+fpga -file C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/platformV2/export/platformV2/hw/nexysa7fpga.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/Debug/applicationV2.elf
+----------------End of Script----------------
+
+10:58:57 INFO  : Context for processor 'microblaze_0' is selected.
+10:58:58 INFO  : 'con' command is executed.
+10:58:58 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+10:58:58 INFO  : Launch script is exported to file 'C:\ECE544-EmbeddedSystemsFPGA\ECE544-ACTUAL-Project2\Vitis_Application\applicationV2_system\_ide\scripts\debugger_applicationv2-default.tcl'
+11:00:27 INFO  : Checking for BSP changes to sync application flags for project 'applicationV2'...
+11:00:41 INFO  : Checking for BSP changes to sync application flags for project 'applicationV2'...
+11:00:55 INFO  : Bit file 'C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/_ide/bitstream/download.bit' is generated.
+11:00:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:00:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0"}' command is executed.
+11:00:59 INFO  : Device configured successfully with "C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/_ide/bitstream/download.bit"
+11:01:11 INFO  : Disconnected from the channel tcfchan#19.
+11:01:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:01:13 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292BB2FBAA' is selected.
+11:01:13 INFO  : 'jtag frequency' command is executed.
+11:01:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0"}' command is executed.
+11:01:15 INFO  : Device configured successfully with "C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/_ide/bitstream/download.bit"
+11:01:15 INFO  : Context for processor 'microblaze_0' is selected.
+11:01:15 INFO  : Hardware design and registers information is loaded from 'C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/platformV2/export/platformV2/hw/nexysa7fpga.xsa'.
+11:01:16 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+11:01:16 INFO  : Context for processor 'microblaze_0' is selected.
+11:01:16 INFO  : System reset is completed.
+11:01:19 INFO  : 'after 3000' command is executed.
+11:01:19 INFO  : Context for processor 'microblaze_0' is selected.
+11:01:21 INFO  : The application 'C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/Debug/applicationV2.elf' is downloaded to processor 'microblaze_0'.
+11:01:21 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0"}
+fpga -file C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/platformV2/export/platformV2/hw/nexysa7fpga.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/Debug/applicationV2.elf
+----------------End of Script----------------
+
+11:01:22 INFO  : Context for processor 'microblaze_0' is selected.
+11:01:22 INFO  : 'con' command is executed.
+11:01:22 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+11:01:22 INFO  : Launch script is exported to file 'C:\ECE544-EmbeddedSystemsFPGA\ECE544-ACTUAL-Project2\Vitis_Application\applicationV2_system\_ide\scripts\debugger_applicationv2-default.tcl'
+11:03:11 INFO  : Checking for BSP changes to sync application flags for project 'applicationV2'...
+11:03:15 INFO  : Disconnected from the channel tcfchan#20.
+11:03:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:03:16 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292BB2FBAA' is selected.
+11:03:16 INFO  : 'jtag frequency' command is executed.
+11:03:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0"}' command is executed.
+11:03:18 INFO  : Device configured successfully with "C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/_ide/bitstream/download.bit"
+11:03:18 INFO  : Context for processor 'microblaze_0' is selected.
+11:03:18 INFO  : Hardware design and registers information is loaded from 'C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/platformV2/export/platformV2/hw/nexysa7fpga.xsa'.
+11:03:19 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+11:03:19 INFO  : Context for processor 'microblaze_0' is selected.
+11:03:19 INFO  : System reset is completed.
+11:03:22 INFO  : 'after 3000' command is executed.
+11:03:22 INFO  : Context for processor 'microblaze_0' is selected.
+11:03:24 INFO  : The application 'C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/Debug/applicationV2.elf' is downloaded to processor 'microblaze_0'.
+11:03:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0"}
+fpga -file C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/platformV2/export/platformV2/hw/nexysa7fpga.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/Debug/applicationV2.elf
+----------------End of Script----------------
+
+11:03:25 INFO  : Context for processor 'microblaze_0' is selected.
+11:03:25 INFO  : 'con' command is executed.
+11:03:25 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+11:03:25 INFO  : Launch script is exported to file 'C:\ECE544-EmbeddedSystemsFPGA\ECE544-ACTUAL-Project2\Vitis_Application\applicationV2_system\_ide\scripts\debugger_applicationv2-default.tcl'
+11:04:58 INFO  : Checking for BSP changes to sync application flags for project 'applicationV2'...
+11:05:02 INFO  : Disconnected from the channel tcfchan#21.
+11:05:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:05:04 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292BB2FBAA' is selected.
+11:05:04 INFO  : 'jtag frequency' command is executed.
+11:05:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0"}' command is executed.
+11:05:06 INFO  : Device configured successfully with "C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/_ide/bitstream/download.bit"
+11:05:06 INFO  : Context for processor 'microblaze_0' is selected.
+11:05:06 INFO  : Hardware design and registers information is loaded from 'C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/platformV2/export/platformV2/hw/nexysa7fpga.xsa'.
+11:05:07 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+11:05:07 INFO  : Context for processor 'microblaze_0' is selected.
+11:05:07 INFO  : System reset is completed.
+11:05:10 INFO  : 'after 3000' command is executed.
+11:05:10 INFO  : Context for processor 'microblaze_0' is selected.
+11:05:11 INFO  : The application 'C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/Debug/applicationV2.elf' is downloaded to processor 'microblaze_0'.
+11:05:11 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0"}
+fpga -file C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/platformV2/export/platformV2/hw/nexysa7fpga.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/Debug/applicationV2.elf
+----------------End of Script----------------
+
+11:05:12 INFO  : Context for processor 'microblaze_0' is selected.
+11:05:13 INFO  : 'con' command is executed.
+11:05:13 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+11:05:13 INFO  : Launch script is exported to file 'C:\ECE544-EmbeddedSystemsFPGA\ECE544-ACTUAL-Project2\Vitis_Application\applicationV2_system\_ide\scripts\debugger_applicationv2-default.tcl'
+11:05:34 INFO  : Checking for BSP changes to sync application flags for project 'applicationV2'...
+11:05:40 INFO  : Disconnected from the channel tcfchan#22.
+11:05:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:05:41 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292BB2FBAA' is selected.
+11:05:41 INFO  : 'jtag frequency' command is executed.
+11:05:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0"}' command is executed.
+11:05:44 INFO  : Device configured successfully with "C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/_ide/bitstream/download.bit"
+11:05:44 INFO  : Context for processor 'microblaze_0' is selected.
+11:05:44 INFO  : Hardware design and registers information is loaded from 'C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/platformV2/export/platformV2/hw/nexysa7fpga.xsa'.
+11:05:44 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+11:05:44 INFO  : Context for processor 'microblaze_0' is selected.
+11:05:44 INFO  : System reset is completed.
+11:05:47 INFO  : 'after 3000' command is executed.
+11:05:47 INFO  : Context for processor 'microblaze_0' is selected.
+11:05:49 INFO  : The application 'C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/Debug/applicationV2.elf' is downloaded to processor 'microblaze_0'.
+11:05:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0"}
+fpga -file C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/platformV2/export/platformV2/hw/nexysa7fpga.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/Debug/applicationV2.elf
+----------------End of Script----------------
+
+11:05:50 INFO  : Context for processor 'microblaze_0' is selected.
+11:05:50 INFO  : 'con' command is executed.
+11:05:50 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+11:05:50 INFO  : Launch script is exported to file 'C:\ECE544-EmbeddedSystemsFPGA\ECE544-ACTUAL-Project2\Vitis_Application\applicationV2_system\_ide\scripts\debugger_applicationv2-default.tcl'
+11:06:22 INFO  : Checking for BSP changes to sync application flags for project 'applicationV2'...
+11:06:29 INFO  : Disconnected from the channel tcfchan#23.
+11:06:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:06:30 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292BB2FBAA' is selected.
+11:06:30 INFO  : 'jtag frequency' command is executed.
+11:06:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0"}' command is executed.
+11:06:32 INFO  : Device configured successfully with "C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/_ide/bitstream/download.bit"
+11:06:33 INFO  : Context for processor 'microblaze_0' is selected.
+11:06:33 INFO  : Hardware design and registers information is loaded from 'C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/platformV2/export/platformV2/hw/nexysa7fpga.xsa'.
+11:06:33 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+11:06:33 INFO  : Context for processor 'microblaze_0' is selected.
+11:06:33 INFO  : System reset is completed.
+11:06:36 INFO  : 'after 3000' command is executed.
+11:06:36 INFO  : Context for processor 'microblaze_0' is selected.
+11:06:37 INFO  : The application 'C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/Debug/applicationV2.elf' is downloaded to processor 'microblaze_0'.
+11:06:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0"}
+fpga -file C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/platformV2/export/platformV2/hw/nexysa7fpga.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/Debug/applicationV2.elf
+----------------End of Script----------------
+
+11:06:38 INFO  : Context for processor 'microblaze_0' is selected.
+11:06:39 INFO  : 'con' command is executed.
+11:06:39 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+11:06:39 INFO  : Launch script is exported to file 'C:\ECE544-EmbeddedSystemsFPGA\ECE544-ACTUAL-Project2\Vitis_Application\applicationV2_system\_ide\scripts\debugger_applicationv2-default.tcl'
+11:07:33 INFO  : Checking for BSP changes to sync application flags for project 'applicationV2'...
+11:07:39 INFO  : Disconnected from the channel tcfchan#24.
+11:07:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:07:40 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292BB2FBAA' is selected.
+11:07:40 INFO  : 'jtag frequency' command is executed.
+11:07:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0"}' command is executed.
+11:07:42 INFO  : Device configured successfully with "C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/_ide/bitstream/download.bit"
+11:07:43 INFO  : Context for processor 'microblaze_0' is selected.
+11:07:43 INFO  : Hardware design and registers information is loaded from 'C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/platformV2/export/platformV2/hw/nexysa7fpga.xsa'.
+11:07:43 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+11:07:43 INFO  : Context for processor 'microblaze_0' is selected.
+11:07:43 INFO  : System reset is completed.
+11:07:46 INFO  : 'after 3000' command is executed.
+11:07:46 INFO  : Context for processor 'microblaze_0' is selected.
+11:07:48 INFO  : The application 'C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/Debug/applicationV2.elf' is downloaded to processor 'microblaze_0'.
+11:07:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0"}
+fpga -file C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/platformV2/export/platformV2/hw/nexysa7fpga.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/Debug/applicationV2.elf
+----------------End of Script----------------
+
+11:07:49 INFO  : Context for processor 'microblaze_0' is selected.
+11:07:49 INFO  : 'con' command is executed.
+11:07:49 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+11:07:49 INFO  : Launch script is exported to file 'C:\ECE544-EmbeddedSystemsFPGA\ECE544-ACTUAL-Project2\Vitis_Application\applicationV2_system\_ide\scripts\debugger_applicationv2-default.tcl'
+11:08:22 INFO  : Disconnected from the channel tcfchan#25.
+11:08:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:08:23 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292BB2FBAA' is selected.
+11:08:23 INFO  : 'jtag frequency' command is executed.
+11:08:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0"}' command is executed.
+11:08:26 INFO  : Device configured successfully with "C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/_ide/bitstream/download.bit"
+11:08:26 INFO  : Context for processor 'microblaze_0' is selected.
+11:08:26 INFO  : Hardware design and registers information is loaded from 'C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/platformV2/export/platformV2/hw/nexysa7fpga.xsa'.
+11:08:27 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+11:08:27 INFO  : Context for processor 'microblaze_0' is selected.
+11:08:27 INFO  : System reset is completed.
+11:08:30 INFO  : 'after 3000' command is executed.
+11:08:30 INFO  : Context for processor 'microblaze_0' is selected.
+11:08:31 INFO  : The application 'C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/Debug/applicationV2.elf' is downloaded to processor 'microblaze_0'.
+11:08:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0"}
+fpga -file C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/platformV2/export/platformV2/hw/nexysa7fpga.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/Debug/applicationV2.elf
+----------------End of Script----------------
+
+11:08:32 INFO  : Context for processor 'microblaze_0' is selected.
+11:08:33 INFO  : 'con' command is executed.
+11:08:33 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+11:08:33 INFO  : Launch script is exported to file 'C:\ECE544-EmbeddedSystemsFPGA\ECE544-ACTUAL-Project2\Vitis_Application\applicationV2_system\_ide\scripts\debugger_applicationv2-default.tcl'
+11:09:47 INFO  : Checking for BSP changes to sync application flags for project 'applicationV2'...
+11:09:50 INFO  : Disconnected from the channel tcfchan#26.
+11:09:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:09:52 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292BB2FBAA' is selected.
+11:09:52 INFO  : 'jtag frequency' command is executed.
+11:09:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0"}' command is executed.
+11:09:55 INFO  : Device configured successfully with "C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/_ide/bitstream/download.bit"
+11:09:55 INFO  : Context for processor 'microblaze_0' is selected.
+11:09:55 INFO  : Hardware design and registers information is loaded from 'C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/platformV2/export/platformV2/hw/nexysa7fpga.xsa'.
+11:09:56 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+11:09:56 INFO  : Context for processor 'microblaze_0' is selected.
+11:09:56 INFO  : System reset is completed.
+11:09:59 INFO  : 'after 3000' command is executed.
+11:09:59 INFO  : Context for processor 'microblaze_0' is selected.
+11:10:00 INFO  : The application 'C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/Debug/applicationV2.elf' is downloaded to processor 'microblaze_0'.
+11:10:00 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0"}
+fpga -file C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/platformV2/export/platformV2/hw/nexysa7fpga.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/Debug/applicationV2.elf
+----------------End of Script----------------
+
+11:10:01 INFO  : Context for processor 'microblaze_0' is selected.
+11:10:02 INFO  : 'con' command is executed.
+11:10:02 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+11:10:02 INFO  : Launch script is exported to file 'C:\ECE544-EmbeddedSystemsFPGA\ECE544-ACTUAL-Project2\Vitis_Application\applicationV2_system\_ide\scripts\debugger_applicationv2-default.tcl'
+11:11:36 INFO  : Checking for BSP changes to sync application flags for project 'applicationV2'...
+11:11:39 INFO  : Disconnected from the channel tcfchan#27.
+11:11:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:11:40 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292BB2FBAA' is selected.
+11:11:40 INFO  : 'jtag frequency' command is executed.
+11:11:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0"}' command is executed.
+11:11:43 INFO  : Device configured successfully with "C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/_ide/bitstream/download.bit"
+11:11:43 INFO  : Context for processor 'microblaze_0' is selected.
+11:11:43 INFO  : Hardware design and registers information is loaded from 'C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/platformV2/export/platformV2/hw/nexysa7fpga.xsa'.
+11:11:44 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+11:11:44 INFO  : Context for processor 'microblaze_0' is selected.
+11:11:44 INFO  : System reset is completed.
+11:11:47 INFO  : 'after 3000' command is executed.
+11:11:47 INFO  : Context for processor 'microblaze_0' is selected.
+11:11:48 INFO  : The application 'C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/Debug/applicationV2.elf' is downloaded to processor 'microblaze_0'.
+11:11:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0"}
+fpga -file C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/platformV2/export/platformV2/hw/nexysa7fpga.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/Debug/applicationV2.elf
+----------------End of Script----------------
+
+11:11:49 INFO  : Context for processor 'microblaze_0' is selected.
+11:11:50 INFO  : 'con' command is executed.
+11:11:50 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+11:11:50 INFO  : Launch script is exported to file 'C:\ECE544-EmbeddedSystemsFPGA\ECE544-ACTUAL-Project2\Vitis_Application\applicationV2_system\_ide\scripts\debugger_applicationv2-default.tcl'
+11:14:51 INFO  : Checking for BSP changes to sync application flags for project 'applicationV2'...
+11:14:59 INFO  : Disconnected from the channel tcfchan#28.
+11:15:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:15:00 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292BB2FBAA' is selected.
+11:15:00 INFO  : 'jtag frequency' command is executed.
+11:15:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0"}' command is executed.
+11:15:02 INFO  : Device configured successfully with "C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/_ide/bitstream/download.bit"
+11:15:03 INFO  : Context for processor 'microblaze_0' is selected.
+11:15:03 INFO  : Hardware design and registers information is loaded from 'C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/platformV2/export/platformV2/hw/nexysa7fpga.xsa'.
+11:15:03 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+11:15:03 INFO  : Context for processor 'microblaze_0' is selected.
+11:15:03 INFO  : System reset is completed.
+11:15:06 INFO  : 'after 3000' command is executed.
+11:15:06 INFO  : Context for processor 'microblaze_0' is selected.
+11:15:08 INFO  : The application 'C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/Debug/applicationV2.elf' is downloaded to processor 'microblaze_0'.
+11:15:08 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0"}
+fpga -file C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/platformV2/export/platformV2/hw/nexysa7fpga.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/Debug/applicationV2.elf
+----------------End of Script----------------
+
+11:15:09 INFO  : Context for processor 'microblaze_0' is selected.
+11:15:09 INFO  : 'con' command is executed.
+11:15:09 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+11:15:09 INFO  : Launch script is exported to file 'C:\ECE544-EmbeddedSystemsFPGA\ECE544-ACTUAL-Project2\Vitis_Application\applicationV2_system\_ide\scripts\debugger_applicationv2-default.tcl'
+11:17:44 INFO  : Checking for BSP changes to sync application flags for project 'applicationV2'...
+11:17:47 INFO  : Disconnected from the channel tcfchan#29.
+11:17:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:17:49 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292BB2FBAA' is selected.
+11:17:49 INFO  : 'jtag frequency' command is executed.
+11:17:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0"}' command is executed.
+11:17:51 INFO  : Device configured successfully with "C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/_ide/bitstream/download.bit"
+11:17:51 INFO  : Context for processor 'microblaze_0' is selected.
+11:17:51 INFO  : Hardware design and registers information is loaded from 'C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/platformV2/export/platformV2/hw/nexysa7fpga.xsa'.
+11:17:52 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+11:17:52 INFO  : Context for processor 'microblaze_0' is selected.
+11:17:52 INFO  : System reset is completed.
+11:17:55 INFO  : 'after 3000' command is executed.
+11:17:55 INFO  : Context for processor 'microblaze_0' is selected.
+11:17:56 INFO  : The application 'C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/Debug/applicationV2.elf' is downloaded to processor 'microblaze_0'.
+11:17:56 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0"}
+fpga -file C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/platformV2/export/platformV2/hw/nexysa7fpga.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/Debug/applicationV2.elf
+----------------End of Script----------------
+
+11:17:57 INFO  : Context for processor 'microblaze_0' is selected.
+11:17:58 INFO  : 'con' command is executed.
+11:17:58 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+11:17:58 INFO  : Launch script is exported to file 'C:\ECE544-EmbeddedSystemsFPGA\ECE544-ACTUAL-Project2\Vitis_Application\applicationV2_system\_ide\scripts\debugger_applicationv2-default.tcl'
+11:18:37 INFO  : Disconnected from the channel tcfchan#30.
+11:18:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:18:39 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292BB2FBAA' is selected.
+11:18:39 INFO  : 'jtag frequency' command is executed.
+11:18:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0"}' command is executed.
+11:18:42 INFO  : Device configured successfully with "C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/_ide/bitstream/download.bit"
+11:18:42 INFO  : Context for processor 'microblaze_0' is selected.
+11:18:42 INFO  : Hardware design and registers information is loaded from 'C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/platformV2/export/platformV2/hw/nexysa7fpga.xsa'.
+11:18:42 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+11:18:42 INFO  : Context for processor 'microblaze_0' is selected.
+11:18:42 INFO  : System reset is completed.
+11:18:45 INFO  : 'after 3000' command is executed.
+11:18:45 INFO  : Context for processor 'microblaze_0' is selected.
+11:18:47 INFO  : The application 'C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/Debug/applicationV2.elf' is downloaded to processor 'microblaze_0'.
+11:18:47 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0"}
+fpga -file C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/platformV2/export/platformV2/hw/nexysa7fpga.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/Debug/applicationV2.elf
+----------------End of Script----------------
+
+11:18:48 INFO  : Context for processor 'microblaze_0' is selected.
+11:18:49 INFO  : 'con' command is executed.
+11:18:49 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+11:18:49 INFO  : Launch script is exported to file 'C:\ECE544-EmbeddedSystemsFPGA\ECE544-ACTUAL-Project2\Vitis_Application\applicationV2_system\_ide\scripts\debugger_applicationv2-default.tcl'
+11:40:10 INFO  : Checking for BSP changes to sync application flags for project 'applicationV2'...
+11:40:14 INFO  : Disconnected from the channel tcfchan#31.
+11:40:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:40:16 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292BB2FBAA' is selected.
+11:40:16 INFO  : 'jtag frequency' command is executed.
+11:40:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0"}' command is executed.
+11:40:18 INFO  : Device configured successfully with "C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/_ide/bitstream/download.bit"
+11:40:18 INFO  : Context for processor 'microblaze_0' is selected.
+11:40:18 INFO  : Hardware design and registers information is loaded from 'C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/platformV2/export/platformV2/hw/nexysa7fpga.xsa'.
+11:40:19 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+11:40:19 INFO  : Context for processor 'microblaze_0' is selected.
+11:40:19 INFO  : System reset is completed.
+11:40:22 INFO  : 'after 3000' command is executed.
+11:40:22 INFO  : Context for processor 'microblaze_0' is selected.
+11:40:23 INFO  : The application 'C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/Debug/applicationV2.elf' is downloaded to processor 'microblaze_0'.
+11:40:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0"}
+fpga -file C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/platformV2/export/platformV2/hw/nexysa7fpga.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/Debug/applicationV2.elf
+----------------End of Script----------------
+
+11:40:25 INFO  : Context for processor 'microblaze_0' is selected.
+11:40:26 INFO  : 'con' command is executed.
+11:40:26 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+11:40:26 INFO  : Launch script is exported to file 'C:\ECE544-EmbeddedSystemsFPGA\ECE544-ACTUAL-Project2\Vitis_Application\applicationV2_system\_ide\scripts\debugger_applicationv2-default.tcl'
+11:44:29 INFO  : Checking for BSP changes to sync application flags for project 'applicationV2'...
+11:44:33 INFO  : Disconnected from the channel tcfchan#32.
+11:44:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:44:34 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292BB2FBAA' is selected.
+11:44:34 INFO  : 'jtag frequency' command is executed.
+11:44:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0"}' command is executed.
+11:44:37 INFO  : Device configured successfully with "C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/_ide/bitstream/download.bit"
+11:44:37 INFO  : Context for processor 'microblaze_0' is selected.
+11:44:37 INFO  : Hardware design and registers information is loaded from 'C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/platformV2/export/platformV2/hw/nexysa7fpga.xsa'.
+11:44:37 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+11:44:37 INFO  : Context for processor 'microblaze_0' is selected.
+11:44:37 INFO  : System reset is completed.
+11:44:40 INFO  : 'after 3000' command is executed.
+11:44:40 INFO  : Context for processor 'microblaze_0' is selected.
+11:44:42 INFO  : The application 'C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/Debug/applicationV2.elf' is downloaded to processor 'microblaze_0'.
+11:44:42 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0"}
+fpga -file C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/platformV2/export/platformV2/hw/nexysa7fpga.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/Debug/applicationV2.elf
+----------------End of Script----------------
+
+11:44:43 INFO  : Context for processor 'microblaze_0' is selected.
+11:44:43 INFO  : 'con' command is executed.
+11:44:43 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+11:44:43 INFO  : Launch script is exported to file 'C:\ECE544-EmbeddedSystemsFPGA\ECE544-ACTUAL-Project2\Vitis_Application\applicationV2_system\_ide\scripts\debugger_applicationv2-default.tcl'
+11:46:49 INFO  : Checking for BSP changes to sync application flags for project 'applicationV2'...
+11:47:01 INFO  : Disconnected from the channel tcfchan#33.
+11:47:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:47:03 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292BB2FBAA' is selected.
+11:47:03 INFO  : 'jtag frequency' command is executed.
+11:47:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0"}' command is executed.
+11:47:05 INFO  : Device configured successfully with "C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/_ide/bitstream/download.bit"
+11:47:05 INFO  : Context for processor 'microblaze_0' is selected.
+11:47:05 INFO  : Hardware design and registers information is loaded from 'C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/platformV2/export/platformV2/hw/nexysa7fpga.xsa'.
+11:47:05 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+11:47:05 INFO  : Context for processor 'microblaze_0' is selected.
+11:47:05 INFO  : System reset is completed.
+11:47:08 INFO  : 'after 3000' command is executed.
+11:47:08 INFO  : Context for processor 'microblaze_0' is selected.
+11:47:10 INFO  : The application 'C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/Debug/applicationV2.elf' is downloaded to processor 'microblaze_0'.
+11:47:10 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0"}
+fpga -file C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/platformV2/export/platformV2/hw/nexysa7fpga.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/Debug/applicationV2.elf
+----------------End of Script----------------
+
+11:47:12 INFO  : Context for processor 'microblaze_0' is selected.
+11:47:12 INFO  : 'con' command is executed.
+11:47:12 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+11:47:12 INFO  : Launch script is exported to file 'C:\ECE544-EmbeddedSystemsFPGA\ECE544-ACTUAL-Project2\Vitis_Application\applicationV2_system\_ide\scripts\debugger_applicationv2-default.tcl'
+11:50:22 INFO  : Checking for BSP changes to sync application flags for project 'applicationV2'...
+11:50:24 INFO  : Disconnected from the channel tcfchan#34.
+11:50:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:50:26 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292BB2FBAA' is selected.
+11:50:26 INFO  : 'jtag frequency' command is executed.
+11:50:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0"}' command is executed.
+11:50:29 INFO  : Device configured successfully with "C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/_ide/bitstream/download.bit"
+11:50:29 INFO  : Context for processor 'microblaze_0' is selected.
+11:50:29 INFO  : Hardware design and registers information is loaded from 'C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/platformV2/export/platformV2/hw/nexysa7fpga.xsa'.
+11:50:29 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+11:50:29 INFO  : Context for processor 'microblaze_0' is selected.
+11:50:29 INFO  : System reset is completed.
+11:50:32 INFO  : 'after 3000' command is executed.
+11:50:32 INFO  : Context for processor 'microblaze_0' is selected.
+11:50:34 INFO  : The application 'C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/Debug/applicationV2.elf' is downloaded to processor 'microblaze_0'.
+11:50:34 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0"}
+fpga -file C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/platformV2/export/platformV2/hw/nexysa7fpga.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/Debug/applicationV2.elf
+----------------End of Script----------------
+
+11:50:35 INFO  : Context for processor 'microblaze_0' is selected.
+11:50:35 INFO  : 'con' command is executed.
+11:50:35 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+11:50:35 INFO  : Launch script is exported to file 'C:\ECE544-EmbeddedSystemsFPGA\ECE544-ACTUAL-Project2\Vitis_Application\applicationV2_system\_ide\scripts\debugger_applicationv2-default.tcl'
+11:51:52 INFO  : Checking for BSP changes to sync application flags for project 'applicationV2'...
+11:51:55 INFO  : Disconnected from the channel tcfchan#35.
+11:51:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:51:57 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292BB2FBAA' is selected.
+11:51:57 INFO  : 'jtag frequency' command is executed.
+11:51:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0"}' command is executed.
+11:51:59 INFO  : Device configured successfully with "C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/_ide/bitstream/download.bit"
+11:52:00 INFO  : Context for processor 'microblaze_0' is selected.
+11:52:00 INFO  : Hardware design and registers information is loaded from 'C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/platformV2/export/platformV2/hw/nexysa7fpga.xsa'.
+11:52:00 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+11:52:00 INFO  : Context for processor 'microblaze_0' is selected.
+11:52:00 INFO  : System reset is completed.
+11:52:03 INFO  : 'after 3000' command is executed.
+11:52:03 INFO  : Context for processor 'microblaze_0' is selected.
+11:52:05 INFO  : The application 'C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/Debug/applicationV2.elf' is downloaded to processor 'microblaze_0'.
+11:52:05 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0"}
+fpga -file C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/platformV2/export/platformV2/hw/nexysa7fpga.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/Debug/applicationV2.elf
+----------------End of Script----------------
+
+11:52:06 INFO  : Context for processor 'microblaze_0' is selected.
+11:52:06 INFO  : 'con' command is executed.
+11:52:06 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+11:52:06 INFO  : Launch script is exported to file 'C:\ECE544-EmbeddedSystemsFPGA\ECE544-ACTUAL-Project2\Vitis_Application\applicationV2_system\_ide\scripts\debugger_applicationv2-default.tcl'
+11:54:14 INFO  : Checking for BSP changes to sync application flags for project 'applicationV2'...
+11:54:57 INFO  : Checking for BSP changes to sync application flags for project 'applicationV2'...
+11:55:05 INFO  : Disconnected from the channel tcfchan#36.
+11:55:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:55:06 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292BB2FBAA' is selected.
+11:55:06 INFO  : 'jtag frequency' command is executed.
+11:55:06 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0"}' command is executed.
+11:55:08 INFO  : Device configured successfully with "C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/_ide/bitstream/download.bit"
+11:55:09 INFO  : Context for processor 'microblaze_0' is selected.
+11:55:09 INFO  : Hardware design and registers information is loaded from 'C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/platformV2/export/platformV2/hw/nexysa7fpga.xsa'.
+11:55:09 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+11:55:09 INFO  : Context for processor 'microblaze_0' is selected.
+11:55:09 INFO  : System reset is completed.
+11:55:12 INFO  : 'after 3000' command is executed.
+11:55:12 INFO  : Context for processor 'microblaze_0' is selected.
+11:55:14 INFO  : The application 'C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/Debug/applicationV2.elf' is downloaded to processor 'microblaze_0'.
+11:55:14 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0"}
+fpga -file C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/platformV2/export/platformV2/hw/nexysa7fpga.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/Debug/applicationV2.elf
+----------------End of Script----------------
+
+11:55:15 INFO  : Context for processor 'microblaze_0' is selected.
+11:55:15 INFO  : 'con' command is executed.
+11:55:15 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+11:55:15 INFO  : Launch script is exported to file 'C:\ECE544-EmbeddedSystemsFPGA\ECE544-ACTUAL-Project2\Vitis_Application\applicationV2_system\_ide\scripts\debugger_applicationv2-default.tcl'
+11:56:29 INFO  : Checking for BSP changes to sync application flags for project 'applicationV2'...
+11:56:39 INFO  : Disconnected from the channel tcfchan#37.
+11:56:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:56:40 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292BB2FBAA' is selected.
+11:56:40 INFO  : 'jtag frequency' command is executed.
+11:56:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0"}' command is executed.
+11:56:43 INFO  : Device configured successfully with "C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/_ide/bitstream/download.bit"
+11:56:44 INFO  : Context for processor 'microblaze_0' is selected.
+11:56:44 INFO  : Hardware design and registers information is loaded from 'C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/platformV2/export/platformV2/hw/nexysa7fpga.xsa'.
+11:56:44 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+11:56:44 INFO  : Context for processor 'microblaze_0' is selected.
+11:56:44 INFO  : System reset is completed.
+11:56:47 INFO  : 'after 3000' command is executed.
+11:56:47 INFO  : Context for processor 'microblaze_0' is selected.
+11:56:49 INFO  : The application 'C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/Debug/applicationV2.elf' is downloaded to processor 'microblaze_0'.
+11:56:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0"}
+fpga -file C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/platformV2/export/platformV2/hw/nexysa7fpga.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/Debug/applicationV2.elf
+----------------End of Script----------------
+
+11:56:50 INFO  : Context for processor 'microblaze_0' is selected.
+11:56:50 INFO  : 'con' command is executed.
+11:56:50 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+11:56:50 INFO  : Launch script is exported to file 'C:\ECE544-EmbeddedSystemsFPGA\ECE544-ACTUAL-Project2\Vitis_Application\applicationV2_system\_ide\scripts\debugger_applicationv2-default.tcl'
+11:58:06 INFO  : Checking for BSP changes to sync application flags for project 'applicationV2'...
+11:58:34 INFO  : Disconnected from the channel tcfchan#38.
+11:58:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:58:35 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292BB2FBAA' is selected.
+11:58:35 INFO  : 'jtag frequency' command is executed.
+11:58:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0"}' command is executed.
+11:58:37 INFO  : Device configured successfully with "C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/_ide/bitstream/download.bit"
+11:58:37 INFO  : Context for processor 'microblaze_0' is selected.
+11:58:37 INFO  : Hardware design and registers information is loaded from 'C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/platformV2/export/platformV2/hw/nexysa7fpga.xsa'.
+11:58:38 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+11:58:38 INFO  : Context for processor 'microblaze_0' is selected.
+11:58:38 INFO  : System reset is completed.
+11:58:41 INFO  : 'after 3000' command is executed.
+11:58:41 INFO  : Context for processor 'microblaze_0' is selected.
+11:58:42 INFO  : The application 'C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/Debug/applicationV2.elf' is downloaded to processor 'microblaze_0'.
+11:58:42 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0"}
+fpga -file C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/platformV2/export/platformV2/hw/nexysa7fpga.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/Debug/applicationV2.elf
+----------------End of Script----------------
+
+11:58:44 INFO  : Context for processor 'microblaze_0' is selected.
+11:58:44 INFO  : 'con' command is executed.
+11:58:44 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+11:58:44 INFO  : Launch script is exported to file 'C:\ECE544-EmbeddedSystemsFPGA\ECE544-ACTUAL-Project2\Vitis_Application\applicationV2_system\_ide\scripts\debugger_applicationv2-default.tcl'
+12:00:25 INFO  : Checking for BSP changes to sync application flags for project 'applicationV2'...
+12:00:29 INFO  : Disconnected from the channel tcfchan#39.
+12:00:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:00:31 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292BB2FBAA' is selected.
+12:00:31 INFO  : 'jtag frequency' command is executed.
+12:00:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0"}' command is executed.
+12:00:34 INFO  : Device configured successfully with "C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/_ide/bitstream/download.bit"
+12:00:34 INFO  : Context for processor 'microblaze_0' is selected.
+12:00:34 INFO  : Hardware design and registers information is loaded from 'C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/platformV2/export/platformV2/hw/nexysa7fpga.xsa'.
+12:00:34 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+12:00:34 INFO  : Context for processor 'microblaze_0' is selected.
+12:00:34 INFO  : System reset is completed.
+12:00:37 INFO  : 'after 3000' command is executed.
+12:00:37 INFO  : Context for processor 'microblaze_0' is selected.
+12:00:39 INFO  : The application 'C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/Debug/applicationV2.elf' is downloaded to processor 'microblaze_0'.
+12:00:39 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0"}
+fpga -file C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/platformV2/export/platformV2/hw/nexysa7fpga.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/Debug/applicationV2.elf
+----------------End of Script----------------
+
+12:00:40 INFO  : Context for processor 'microblaze_0' is selected.
+12:00:40 INFO  : 'con' command is executed.
+12:00:40 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+12:00:40 INFO  : Launch script is exported to file 'C:\ECE544-EmbeddedSystemsFPGA\ECE544-ACTUAL-Project2\Vitis_Application\applicationV2_system\_ide\scripts\debugger_applicationv2-default.tcl'
+12:02:23 INFO  : Checking for BSP changes to sync application flags for project 'applicationV2'...
+12:02:38 INFO  : Checking for BSP changes to sync application flags for project 'applicationV2'...
+12:02:53 INFO  : Checking for BSP changes to sync application flags for project 'applicationV2'...
+12:02:56 INFO  : Disconnected from the channel tcfchan#40.
+12:02:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:02:58 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292BB2FBAA' is selected.
+12:02:58 INFO  : 'jtag frequency' command is executed.
+12:02:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0"}' command is executed.
+12:03:00 INFO  : Device configured successfully with "C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/_ide/bitstream/download.bit"
+12:03:01 INFO  : Context for processor 'microblaze_0' is selected.
+12:03:01 INFO  : Hardware design and registers information is loaded from 'C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/platformV2/export/platformV2/hw/nexysa7fpga.xsa'.
+12:03:01 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+12:03:01 INFO  : Context for processor 'microblaze_0' is selected.
+12:03:01 INFO  : System reset is completed.
+12:03:04 INFO  : 'after 3000' command is executed.
+12:03:04 INFO  : Context for processor 'microblaze_0' is selected.
+12:03:05 INFO  : The application 'C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/Debug/applicationV2.elf' is downloaded to processor 'microblaze_0'.
+12:03:05 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0"}
+fpga -file C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/platformV2/export/platformV2/hw/nexysa7fpga.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/Debug/applicationV2.elf
+----------------End of Script----------------
+
+12:03:06 INFO  : Context for processor 'microblaze_0' is selected.
+12:03:07 INFO  : 'con' command is executed.
+12:03:07 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+12:03:07 INFO  : Launch script is exported to file 'C:\ECE544-EmbeddedSystemsFPGA\ECE544-ACTUAL-Project2\Vitis_Application\applicationV2_system\_ide\scripts\debugger_applicationv2-default.tcl'
+12:05:46 INFO  : Checking for BSP changes to sync application flags for project 'applicationV2'...
+12:05:54 INFO  : Disconnected from the channel tcfchan#41.
+12:05:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:05:55 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292BB2FBAA' is selected.
+12:05:55 INFO  : 'jtag frequency' command is executed.
+12:05:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0"}' command is executed.
+12:05:58 INFO  : Device configured successfully with "C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/_ide/bitstream/download.bit"
+12:05:58 INFO  : Context for processor 'microblaze_0' is selected.
+12:05:58 INFO  : Hardware design and registers information is loaded from 'C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/platformV2/export/platformV2/hw/nexysa7fpga.xsa'.
+12:05:58 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+12:05:58 INFO  : Context for processor 'microblaze_0' is selected.
+12:05:58 INFO  : System reset is completed.
+12:06:01 INFO  : 'after 3000' command is executed.
+12:06:01 INFO  : Context for processor 'microblaze_0' is selected.
+12:06:03 INFO  : The application 'C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/Debug/applicationV2.elf' is downloaded to processor 'microblaze_0'.
+12:06:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0"}
+fpga -file C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/platformV2/export/platformV2/hw/nexysa7fpga.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/Debug/applicationV2.elf
+----------------End of Script----------------
+
+12:06:04 INFO  : Context for processor 'microblaze_0' is selected.
+12:06:05 INFO  : 'con' command is executed.
+12:06:05 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+12:06:05 INFO  : Launch script is exported to file 'C:\ECE544-EmbeddedSystemsFPGA\ECE544-ACTUAL-Project2\Vitis_Application\applicationV2_system\_ide\scripts\debugger_applicationv2-default.tcl'
+12:09:21 INFO  : Checking for BSP changes to sync application flags for project 'applicationV2'...
+12:10:10 INFO  : Checking for BSP changes to sync application flags for project 'applicationV2'...
+12:10:15 INFO  : Disconnected from the channel tcfchan#42.
+12:10:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:10:16 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292BB2FBAA' is selected.
+12:10:16 INFO  : 'jtag frequency' command is executed.
+12:10:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0"}' command is executed.
+12:10:18 INFO  : Device configured successfully with "C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/_ide/bitstream/download.bit"
+12:10:19 INFO  : Context for processor 'microblaze_0' is selected.
+12:10:19 INFO  : Hardware design and registers information is loaded from 'C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/platformV2/export/platformV2/hw/nexysa7fpga.xsa'.
+12:10:19 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+12:10:19 INFO  : Context for processor 'microblaze_0' is selected.
+12:10:19 INFO  : System reset is completed.
+12:10:22 INFO  : 'after 3000' command is executed.
+12:10:22 INFO  : Context for processor 'microblaze_0' is selected.
+12:10:24 INFO  : The application 'C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/Debug/applicationV2.elf' is downloaded to processor 'microblaze_0'.
+12:10:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0"}
+fpga -file C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/platformV2/export/platformV2/hw/nexysa7fpga.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/Debug/applicationV2.elf
+----------------End of Script----------------
+
+12:10:25 INFO  : Context for processor 'microblaze_0' is selected.
+12:10:25 INFO  : 'con' command is executed.
+12:10:25 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+12:10:25 INFO  : Launch script is exported to file 'C:\ECE544-EmbeddedSystemsFPGA\ECE544-ACTUAL-Project2\Vitis_Application\applicationV2_system\_ide\scripts\debugger_applicationv2-default.tcl'
+12:11:17 INFO  : Checking for BSP changes to sync application flags for project 'applicationV2'...
+12:11:21 INFO  : Disconnected from the channel tcfchan#43.
+12:11:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:11:22 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292BB2FBAA' is selected.
+12:11:22 INFO  : 'jtag frequency' command is executed.
+12:11:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0"}' command is executed.
+12:11:25 INFO  : Device configured successfully with "C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/_ide/bitstream/download.bit"
+12:11:25 INFO  : Context for processor 'microblaze_0' is selected.
+12:11:25 INFO  : Hardware design and registers information is loaded from 'C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/platformV2/export/platformV2/hw/nexysa7fpga.xsa'.
+12:11:25 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+12:11:25 INFO  : Context for processor 'microblaze_0' is selected.
+12:11:25 INFO  : System reset is completed.
+12:11:28 INFO  : 'after 3000' command is executed.
+12:11:28 INFO  : Context for processor 'microblaze_0' is selected.
+12:11:30 INFO  : The application 'C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/Debug/applicationV2.elf' is downloaded to processor 'microblaze_0'.
+12:11:30 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0"}
+fpga -file C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/platformV2/export/platformV2/hw/nexysa7fpga.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/Debug/applicationV2.elf
+----------------End of Script----------------
+
+12:11:31 INFO  : Context for processor 'microblaze_0' is selected.
+12:11:31 INFO  : 'con' command is executed.
+12:11:31 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+12:11:31 INFO  : Launch script is exported to file 'C:\ECE544-EmbeddedSystemsFPGA\ECE544-ACTUAL-Project2\Vitis_Application\applicationV2_system\_ide\scripts\debugger_applicationv2-default.tcl'
+12:13:23 INFO  : Checking for BSP changes to sync application flags for project 'applicationV2'...
+12:13:28 INFO  : Checking for BSP changes to sync application flags for project 'applicationV2'...
+12:13:35 INFO  : Checking for BSP changes to sync application flags for project 'applicationV2'...
+12:13:49 INFO  : Checking for BSP changes to sync application flags for project 'applicationV2'...
+12:13:59 INFO  : Disconnected from the channel tcfchan#44.
+12:14:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:14:00 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292BB2FBAA' is selected.
+12:14:00 INFO  : 'jtag frequency' command is executed.
+12:14:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0"}' command is executed.
+12:14:03 INFO  : Device configured successfully with "C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/_ide/bitstream/download.bit"
+12:14:04 INFO  : Context for processor 'microblaze_0' is selected.
+12:14:04 INFO  : Hardware design and registers information is loaded from 'C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/platformV2/export/platformV2/hw/nexysa7fpga.xsa'.
+12:14:04 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+12:14:04 INFO  : Context for processor 'microblaze_0' is selected.
+12:14:04 INFO  : System reset is completed.
+12:14:07 INFO  : 'after 3000' command is executed.
+12:14:07 INFO  : Context for processor 'microblaze_0' is selected.
+12:14:09 INFO  : The application 'C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/Debug/applicationV2.elf' is downloaded to processor 'microblaze_0'.
+12:14:09 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0"}
+fpga -file C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/platformV2/export/platformV2/hw/nexysa7fpga.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/Debug/applicationV2.elf
+----------------End of Script----------------
+
+12:14:10 INFO  : Context for processor 'microblaze_0' is selected.
+12:14:10 INFO  : 'con' command is executed.
+12:14:10 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+12:14:10 INFO  : Launch script is exported to file 'C:\ECE544-EmbeddedSystemsFPGA\ECE544-ACTUAL-Project2\Vitis_Application\applicationV2_system\_ide\scripts\debugger_applicationv2-default.tcl'
+12:18:48 INFO  : Checking for BSP changes to sync application flags for project 'applicationV2'...
+12:18:55 INFO  : Disconnected from the channel tcfchan#45.
+12:18:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:18:56 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292BB2FBAA' is selected.
+12:18:56 INFO  : 'jtag frequency' command is executed.
+12:18:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0"}' command is executed.
+12:18:59 INFO  : Device configured successfully with "C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/_ide/bitstream/download.bit"
+12:18:59 INFO  : Context for processor 'microblaze_0' is selected.
+12:18:59 INFO  : Hardware design and registers information is loaded from 'C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/platformV2/export/platformV2/hw/nexysa7fpga.xsa'.
+12:18:59 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+12:18:59 INFO  : Context for processor 'microblaze_0' is selected.
+12:18:59 INFO  : System reset is completed.
+12:19:02 INFO  : 'after 3000' command is executed.
+12:19:02 INFO  : Context for processor 'microblaze_0' is selected.
+12:19:04 INFO  : The application 'C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/Debug/applicationV2.elf' is downloaded to processor 'microblaze_0'.
+12:19:04 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0"}
+fpga -file C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/platformV2/export/platformV2/hw/nexysa7fpga.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/applicationV2/Debug/applicationV2.elf
+----------------End of Script----------------
+
+12:19:05 INFO  : Context for processor 'microblaze_0' is selected.
+12:19:05 INFO  : 'con' command is executed.
+12:19:05 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+12:19:05 INFO  : Launch script is exported to file 'C:\ECE544-EmbeddedSystemsFPGA\ECE544-ACTUAL-Project2\Vitis_Application\applicationV2_system\_ide\scripts\debugger_applicationv2-default.tcl'
+12:24:14 INFO  : Checking for BSP changes to sync application flags for project 'applicationV2'...
+12:24:25 INFO  : Disconnected from the channel tcfchan#46.
