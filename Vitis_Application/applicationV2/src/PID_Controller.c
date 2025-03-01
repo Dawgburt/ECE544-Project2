@@ -115,7 +115,7 @@ void vInputTask(void *pvParameters);
 void init_uart();
 
 // === MAIN FUNCTION ===
-int main() {
+ int main() {
     xil_printf("Starting FreeRTOS PID Control Project...\r\n");
 
     // Initialize UART for debugging
@@ -140,6 +140,7 @@ int main() {
     tsl2561_init(&i2c);
     XGpio_Initialize(&btns, XPAR_AXI_GPIO_1_DEVICE_ID);
     XGpio_Initialize(&switches, XPAR_AXI_GPIO_1_DEVICE_ID);
+	XGpio_InterruptEnable( &btns, XGPIO_IR_CH1_MASK );
     //XGpio_Initialize(&pwm, XPAR_AXI_GPIO_1_DEVICE_ID);
 
 
@@ -157,7 +158,7 @@ int main() {
 
 
     // Create FreeRTOS Tasks
-    xTaskCreate(vSensorTask, "SensorTask", 512, NULL, 2, &xSensorTask);
+    xTaskCreate(vSensorTask, "SensorTask", 1024, NULL, 2, &xSensorTask);
     xTaskCreate(vPIDTask, "PIDTask", 1024, NULL, 3, &xPIDTask);
     xTaskCreate(vDisplayTask, "DisplayTask", 512, NULL, 1, &xDisplayTask);
     xTaskCreate(vInputTask, "InputTask", 1024, NULL, 2, &xInputTask);
@@ -218,10 +219,10 @@ void vInputTask(void *pvParameters) {
         //float step_size = 1.0;
         float *param_to_adjust = NULL;
 
-#if _DEBUG
-     xil_printf("DEBUG vInputTask: Switch State: %d | Button State: %d | step_size: %d\r\n", sw_state, btn_state,
-     		(int)step_size);
- #endif
+//#if _DEBUG
+ //    xil_printf("DEBUG vInputTask: Switch State: %d | Button State: %d | step_size: %d\r\n", sw_state, btn_state,
+ //    		(int)step_size);
+// #endif
 
 
      	//if (!(sw_state & SW1)) pid.Kp = 0;
