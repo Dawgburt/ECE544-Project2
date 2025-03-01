@@ -19,26 +19,33 @@ void pid_init(PIDController *pid, float kp, float ki, float kd) {
 
 
 
-#define INTEGRAL_LIMIT 10.0  // Adjust this limit as needed
+#define INTEGRAL_LIMIT 100.0   // Limit the integral term
+#define OUTPUT_MIN 0.0         // Minimum duty cycle (0%)
+#define OUTPUT_MAX 255.0       // Maximum duty cycle (100%)
 
 float pid_compute(PIDController *pid, float setpoint, float measured) {
-    float error = setpoint - measured;
+    float error = setpoint - measured;   // Difference between target and actual
+    pid->integral += error * 0.01;       // Accumulate error for integral term (smaller factor for smoother changes)
 
     // Prevent integral windup
-    pid->integral += error;
     if (pid->integral > INTEGRAL_LIMIT) pid->integral = INTEGRAL_LIMIT;
     if (pid->integral < -INTEGRAL_LIMIT) pid->integral = -INTEGRAL_LIMIT;
 
-    float derivative = error - pid->prev_error;
+    float derivative = (error - pid->prev_error) * 0.01; // Change in error
     pid->prev_error = error;
 
+    // Compute PID output
     float output = (pid->Kp * error) + (pid->Ki * pid->integral) + (pid->Kd * derivative);
 
-    // Ensure output is within a valid range for PWM
-    if (output > 255.0) output = 255.0;
-    if (output < 0.0) output = 0.0;
+    // Ensure output stays within the valid range (0-255)
+    if (output > OUTPUT_MAX) output = OUTPUT_MAX;
+    if (output < OUTPUT_MIN) output = OUTPUT_MIN;
 
-
-    return output;
+    return output;  // Now properly scaled duty cycle (0-255)
 }
+
+
+
+
+
 

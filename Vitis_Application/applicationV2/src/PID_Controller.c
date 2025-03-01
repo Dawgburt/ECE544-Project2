@@ -94,9 +94,9 @@
 #define N4IO_HIGHADDR           XPAR_NEXYS4IO_0_S00_AXI_HIGHADDR
 
 //PID Default Values
-#define DEFAULT_Kp 1.0
-#define DEFAULT_Ki 0.1
-#define DEFAULT_Kd 0.05
+#define DEFAULT_Kp 1
+#define DEFAULT_Ki 0.5
+#define DEFAULT_Kd 0.1
 
 // Peripheral Instances
 XIic i2c;
@@ -183,7 +183,7 @@ void PrintToLEDs(float setpoint, float current_lux);
     xil_printf("All Peripherals Initialized Successfully\r\n");
 
     // Initialize PID
-    pid_init(&pid, 1.0, 0.1, 0.05);  // Default Kp, Ki, Kd values
+    pid_init(&pid, DEFAULT_Kp, DEFAULT_Ki, DEFAULT_Kd);  // Default Kp, Ki, Kd values
 
 #if _DEBUG
     xil_printf("DEBUG main(): PID Controller Initialized - Kp: %d, Ki: %d, Kd: %d, Target Lux: %d\r\n",
@@ -226,7 +226,7 @@ void vSensorTask(void *pvParameters) {
 #endif
 
         xQueueSend(xLuxQueue, &current_lux, portMAX_DELAY);
-        vTaskDelay(pdMS_TO_TICKS(500)); // Read every 500ms
+        vTaskDelay(pdMS_TO_TICKS(250));
     }
 }
 
@@ -236,7 +236,8 @@ void vPIDTask(void *pvParameters) {
     while (1) {
         if (xQueueReceive(xLuxQueue, &lux_input, portMAX_DELAY)) {
             pwm_duty_cycle = pid_compute(&pid, target_lux, lux_input);
-            NX4IO_RGBLED_setDutyCycle(RGB1, 0, 0, (int)pwm_duty_cycle);
+
+            NX4IO_RGBLED_setDutyCycle(RGB1, 0, 0, (int)((pwm_duty_cycle / 250.0) * 100));
 
 #if _DEBUG
     xil_printf("DEBUG vPIDTask: Lux(scaled by 100): %d | Target: %d | PWM: %d\r\n",
@@ -244,7 +245,7 @@ void vPIDTask(void *pvParameters) {
 #endif
 
         }
-        vTaskDelay(pdMS_TO_TICKS(250));
+        vTaskDelay(pdMS_TO_TICKS(20));
     }
 }
 
@@ -256,7 +257,7 @@ void vDisplayTask(void *pvParameters) {
     	PrintToLEDs(target_lux, current_lux);
 #if _DEBUG
     xil_printf("DEBUG vDisplayTask: Lux: %d | Target: %d | PWM: %d\r\n",
-                (int)(current_lux * 100), (int)(target_lux), (int)(pwm_duty_cycle * 100));
+                (int)(current_lux * 100), (int)(target_lux), (int)(pwm_duty_cycle));
 #endif
         vTaskDelay(pdMS_TO_TICKS(500)); // Update every second
     }
@@ -346,14 +347,22 @@ void vInputTask(void *pvParameters) {
         }
 
        if (btn_state & 0x10) { pid.Kp = DEFAULT_Kp; pid.Ki = DEFAULT_Ki; pid.Kd = DEFAULT_Kd; } //BtnC
-       if (btn_state & 0x01) { target_lux = DEFAULT_lux; } //BtnR
+
+
+       if (btn_state & 0x01) {  // Btn16 is pressed (assuming it's mapped correctly)
+           target_lux = DEFAULT_lux;      // Reset setpoint to 100
+           pid.integral = 0.0;     // Reset integral term to prevent windup
+           pid.prev_error = 0.0;   // Reset previous error to prevent jumps
+           xil_printf("PID Reset: Setpoint = %d, Integral = 0, Prev Error = 0\r\n", (int)target_lux);
+       }
+
 
         #if _DEBUG
         xil_printf("DEBUG vInputTask: Setpoint: %d | Kp: %d | Ki: %d | Kd: %d | btn_state: %d\r\n",
                    (int)(target_lux), (int)(pid.Kp * 100), (int)(pid.Ki * 100), (int)(pid.Kd * 100), btn_state);
         #endif
 
-        vTaskDelay(pdMS_TO_TICKS(3000));
+        vTaskDelay(pdMS_TO_TICKS(500));
     }
 }
 
