@@ -1,13 +1,13 @@
 Nothing to build in platform 'platformV2'
 
-12:08:48 **** Incremental Build of configuration Debug for project applicationV2 ****
+15:34:50 **** Incremental Build of configuration Debug for project applicationV2 ****
 make all 
 'Building file: ../src/PID_Controller.c'
 'Invoking: MicroBlaze gcc compiler'
 mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/PID_Controller.o" -IC:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUAL-Project2/Vitis_Application/platformV2/export/platformV2/sw/platformV2/freertos10_xilinx_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/PID_Controller.d" -MT"src/PID_Controller.o" -o "src/PID_Controller.o" "../src/PID_Controller.c"
 ../src/PID_Controller.c: In function 'vPIDTask':
-../src/PID_Controller.c:235:11: warning: unused variable 'lux_input' [-Wunused-variable]
-  235 |     float lux_input;
+../src/PID_Controller.c:241:11: warning: unused variable 'lux_input' [-Wunused-variable]
+  241 |     float lux_input;
       |           ^~~~~~~~~
 'Finished building: ../src/PID_Controller.c'
 ' '
@@ -19,9 +19,9 @@ mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUA
 'Invoking: MicroBlaze Print Size'
 mb-size applicationV2.elf  |tee "applicationV2.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  68040	    480	  50240	 118760	  1cfe8	applicationV2.elf
+  68112	    480	  50240	 118832	  1d030	applicationV2.elf
 'Finished building: applicationV2.elf.size'
 ' '
-12:08:49 **** Incremental Build of configuration Debug for project applicationV2_system ****
+15:34:50 **** Incremental Build of configuration Debug for project applicationV2_system ****
 make all 
 Skipping SD card image generation. Reason: "The system project only has applications for microblaze processors."

@@ -66,3 +66,5 @@ platform generate -domains freertos10_xilinx_domain
 platform active {platformV2}
 platform generate -domains 
 platform generate
+platform active {platformV2}
+platform generate -domains 

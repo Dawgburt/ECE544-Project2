@@ -10,7 +10,11 @@
  * The controller operates in a closed-loop system using FreeRTOS tasks and
  * queues for real-time adjustments based on ambient light changes.
  *
- * @section Switch Configuration
+ * @section Hardware Configuration
+ * The Nexys A7 board is used for real-time PID control, with user inputs
+ * from slide switches and buttons.
+ *
+ * @subsection Switch Configuration
  * The slide switches on the Nexys A7 board are used to adjust the setpoint and
  * tune the PID control parameters (Kp, Ki, Kd).
  *
@@ -20,9 +24,9 @@
  *   - `11`  Adjust **Kd** (Derivative Gain).
  *
  * - **Switches [5:4]**: Control the step size for increments/decrements.
- *   - `00`  Change by �1 per button press.
- *   - `01`  Change by �5 per button press.
- *   - `1x`  Change by �10 per button press.
+ *   - `00`  Change by 1 per button press.
+ *   - `01`  Change by 5 per button press.
+ *   - `1x`  Change by 10 per button press.
  *
  * - **Switch [3]**: Selects whether the **setpoint** is being adjusted.
  *   - `1` Buttons modify the **setpoint**.
@@ -39,7 +43,7 @@
  *     - `0`  Disable P control.
  *     - `1`  Enable P control.
  *
- * @section Button Configuration
+ * @subsection Button Configuration
  * - **BtnU (Up Button)**: Increments the selected parameter.
  * - **BtnD (Down Button)**: Decrements the selected parameter.
  *
@@ -49,10 +53,12 @@
  *
  * @notes
  * 21-FEB-2025  PN  Started implementation of PID controller for LED brightness control.
- * 					ChatGPT assisted with debugging build issues and making templates for functions
- * 24-FEB-2025	PN	Updated vInputTask with a case statement for switch and button functionality
+ *                 	ChatGPT assisted with debugging build issues and making templates for functions.
+ * 24-FEB-2025  PN  Updated vInputTask with a case statement for switch and button functionality.
+ * 25-FEB-2025  PN  Implemented anti-windup in PID controller, ensured PWM scales correctly.
+ *                 	Adjusted sensor reading frequency for improved control response.
+ * 1-MAR-2025	PN	Tuning complete. Debugging complete. Works as expected but is not "perfect"
  */
-
 
 #include <stdio.h>
 #include "xparameters.h"
@@ -94,9 +100,9 @@
 #define N4IO_HIGHADDR           XPAR_NEXYS4IO_0_S00_AXI_HIGHADDR
 
 //PID Default Values
-#define DEFAULT_Kp 1
-#define DEFAULT_Ki 0.5
-#define DEFAULT_Kd 0.1
+#define DEFAULT_Kp 4.8828125
+#define DEFAULT_Ki 0.244140625
+#define DEFAULT_Kd 6.103515625	//Reducing makes LED transitions more visible
 
 // Peripheral Instances
 XIic i2c;
@@ -106,9 +112,9 @@ XGpio btns, switches, pwm;
 TaskHandle_t xSensorTask, xPIDTask, xDisplayTask, xInputTask;
 
 // Global Variables
-float DEFAULT_lux = 100.0;
-float target_lux = 100.0;
-float current_lux = 0.0;    // Sensor reading
+float DEFAULT_lux = 50;
+float target_lux = 50;
+float current_lux;    // Sensor reading
 float pwm_duty_cycle = 0.5; // PWM Duty cycle (0.0 - 1.0)
 float step_size = 1.0;
 
@@ -247,12 +253,12 @@ void vPIDTask(void *pvParameters) {
 
 #if _DEBUG
             xil_printf("DEBUG vPIDTask: Setpoint: %d | Current Lux: %d | PID Output: %d | PWM: %d%%\r\n",
-            		(int)target_lux, (int)current_lux, (int)pwm_duty_cycle, (int)((pwm_duty_cycle / 255.0) * 100));
+            		(int)target_lux, (int)(current_lux*100), (int)pwm_duty_cycle, (int)((pwm_duty_cycle / 255.0) * 100));
 
 #endif
 
         }
-        vTaskDelay(pdMS_TO_TICKS(20));
+        vTaskDelay(pdMS_TO_TICKS(25));
     }
 }
 
@@ -303,9 +309,16 @@ void vInputTask(void *pvParameters) {
         // Scale step size for Ki and Kd
         if (param_to_adjust == &pid.Ki) {
             step_size *= 0.1;
-        } else if (param_to_adjust == &pid.Kd) {
-            step_size *= 0.05;
         }
+
+        //else if (param_to_adjust == &target_lux) {
+        //	step_size *= 0.5;
+        //}
+
+
+        //else if (param_to_adjust == &pid.Kd) {
+        //    step_size *= 0.05;
+        //}
 
         // Enable/Disable PID control terms based on Switches [2:0]
         if (sw_state & SW1) {
@@ -375,8 +388,12 @@ void vInputTask(void *pvParameters) {
 
 // === PRINT TO LEDS FUNCTION ===
 void PrintToLEDs(float setpoint, float current_lux) {
-    int setpoint_scaled = (int)(setpoint);      // Scale setpoint for display
-    int lux_scaled = (int)(current_lux * 100);        // Scale current lux for display
+    int setpoint_scaled = (int)(setpoint*2);      // Scale setpoint for display
+
+    int lux_scaled_up = (int)(current_lux * 1000);        // Scale current lux for display
+    int lux_scaled = (int)((lux_scaled_up / 255.0) * 100);
+    if (lux_scaled > 255) lux_scaled = 255;
+    if (lux_scaled < 0) lux_scaled = 0;
 
     // Extract individual digits for setpoint
     int setpoint_ones = setpoint_scaled % 10;
@@ -404,6 +421,5 @@ void PrintToLEDs(float setpoint, float current_lux) {
     // Blank Digit[0]
     NX4IO_SSEG_setDigit(SSEGLO, DIGIT0, CC_BLANK);
 }
-
 
 
