@@ -1,0 +1,54 @@
+#include "pid.h"
+#include "xil_printf.h"
+#include "FreeRTOS.h"
+#include "task.h"
+
+#define INTEGRAL_LIMIT 100.0   // Limit the integral term
+#define OUTPUT_MIN 0.0         // Minimum duty cycle (0%)
+#define OUTPUT_MAX 255.0       // Maximum duty cycle (100%)
+
+void pid_init(PIDController *pid, float kp, float ki, float kd) {
+    pid->Kp = kp * 2.0;
+    pid->Ki = ki * 1.5;
+    pid->Kd = kd;
+    pid->integral = 0.0;
+    pid->prev_error = 0.0;
+    pid->prev_time = xTaskGetTickCount(); // Get initial FreeRTOS time in ticks
+}
+
+float pid_compute(PIDController *pid, float setpoint, float measured) {
+    float error = setpoint - measured;
+
+    // Get current FreeRTOS time in milliseconds
+    TickType_t current_time = xTaskGetTickCount();
+
+    // Compute dt in seconds
+    float dt = (current_time - pid->prev_time) / 1000.0; // Convert ms to seconds
+    if (dt <= 0.0) dt = 0.01;
+    pid->prev_time = current_time;
+
+    // Accumulate error for integral term with adaptive scaling
+    pid->integral += error * dt;
+
+    // Prevent integral windup
+    if (pid->integral > INTEGRAL_LIMIT) pid->integral = INTEGRAL_LIMIT;
+    if (pid->integral < -INTEGRAL_LIMIT) pid->integral = -INTEGRAL_LIMIT;
+
+    // Derivative term using dt
+    float derivative = (error - pid->prev_error) / dt;
+    pid->prev_error = error;
+
+    // Compute PID output
+    float output = (pid->Kp * error) + (pid->Ki * pid->integral) + (pid->Kd * derivative);
+
+    // Ensure output stays within range (0-255)
+    if (output > OUTPUT_MAX) output = OUTPUT_MAX;
+    if (output < OUTPUT_MIN) output = OUTPUT_MIN;
+
+#if _DEBUG
+    xil_printf("DEBUG PID.c: Error=%.2f, Integral=%.2f, Derivative=%.2f, Output=%.2f, dt=%.5f\r\n",
+               error, pid->integral, derivative, output, dt);
+#endif
+
+    return output;
+}

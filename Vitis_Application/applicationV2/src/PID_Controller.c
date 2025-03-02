@@ -234,14 +234,21 @@ void vSensorTask(void *pvParameters) {
 void vPIDTask(void *pvParameters) {
     float lux_input;
     while (1) {
-        if (xQueueReceive(xLuxQueue, &lux_input, portMAX_DELAY)) {
-            pwm_duty_cycle = pid_compute(&pid, target_lux, lux_input);
+        if (xQueueReceive(xLuxQueue, &current_lux, portMAX_DELAY)) {
+             pwm_duty_cycle = pid_compute(&pid, target_lux, current_lux);
 
-            NX4IO_RGBLED_setDutyCycle(RGB1, 0, 0, (int)((pwm_duty_cycle / 250.0) * 100));
+             // Convert PID output to 0-100% range
+             int pwm_percentage = (int)((pwm_duty_cycle / 255.0) * 100);
+             if (pwm_percentage > 100) pwm_percentage = 100;
+             if (pwm_percentage < 0) pwm_percentage = 0;
+
+             // Force apply the new PWM value
+             NX4IO_RGBLED_setDutyCycle(RGB1, 0, 0, pwm_percentage);
 
 #if _DEBUG
-    xil_printf("DEBUG vPIDTask: Lux(scaled by 100): %d | Target: %d | PWM: %d\r\n",
-                (int)(lux_input * 100), (int)(target_lux), (int)(pwm_duty_cycle));
+            xil_printf("DEBUG vPIDTask: Setpoint: %d | Current Lux: %d | PID Output: %d | PWM: %d%%\r\n",
+            		(int)target_lux, (int)current_lux, (int)pwm_duty_cycle, (int)((pwm_duty_cycle / 255.0) * 100));
+
 #endif
 
         }
@@ -256,14 +263,14 @@ void vDisplayTask(void *pvParameters) {
 
     	PrintToLEDs(target_lux, current_lux);
 #if _DEBUG
-    xil_printf("DEBUG vDisplayTask: Lux: %d | Target: %d | PWM: %d\r\n",
+    xil_printf("DEBUG vDisplayTask: Lux: %d | Target: %d | pid_output: %d\r\n",
                 (int)(current_lux * 100), (int)(target_lux), (int)(pwm_duty_cycle));
 #endif
         vTaskDelay(pdMS_TO_TICKS(500)); // Update every second
     }
 }
 
-
+// === INPUT TASK ===
 void vInputTask(void *pvParameters) {
     static float prev_Kp = 1.0, prev_Ki = 0.1, prev_Kd = 0.05;  // Stores last known values
     static bool was_Kp_disabled = false, was_Ki_disabled = false, was_Kd_disabled = false;  // Track previous state
@@ -366,7 +373,7 @@ void vInputTask(void *pvParameters) {
     }
 }
 
-
+// === PRINT TO LEDS FUNCTION ===
 void PrintToLEDs(float setpoint, float current_lux) {
     int setpoint_scaled = (int)(setpoint);      // Scale setpoint for display
     int lux_scaled = (int)(current_lux * 100);        // Scale current lux for display
