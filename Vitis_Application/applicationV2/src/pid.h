@@ -1,19 +1,16 @@
-/*
- * pid.h
- *
- *  Created on: Feb 24, 2025
- *      Author: pnevi
- */
-
 #ifndef PID_H
 #define PID_H
 
 typedef struct {
-    float Kp, Ki, Kd;
-    float prev_error, integral;
+    float Kp;
+    float Ki;
+    float Kd;
+    float integral;
+    float prev_error;
+    unsigned long prev_time; // Added to track previous timestamp
 } PIDController;
 
-void pid_init(PIDController *pid, float Kp, float Ki, float Kd);
+void pid_init(PIDController *pid, float kp, float ki, float kd);
 float pid_compute(PIDController *pid, float setpoint, float measured);
 
-#endif
+#endif // PID_H
