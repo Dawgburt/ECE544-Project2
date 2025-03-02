@@ -118,6 +118,9 @@ float tsl2561_calculateLux(uint16_t ch0, uint16_t ch1) {
         lux = (0.00146 * ch0) - (0.00112 * ch1);
     }
 
+    // Ensure lux calculation does not overestimate brightness
+    if (lux > 1000) lux = 999;  // Clamp max lux to prevent extreme values
+
     return lux;
 }
 

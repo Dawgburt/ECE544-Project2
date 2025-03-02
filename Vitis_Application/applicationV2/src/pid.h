@@ -1,3 +1,14 @@
+/**
+ * @file pid.h
+ * @brief Header file for PID driver.
+ *
+ * This file provides the function prototypes, macros, and data types
+ * necessary for running the PID functions in pid.c
+ *
+ * @author Phil Nevins
+ * @date 2025-02-21
+ */
+
 #ifndef PID_H
 #define PID_H
 
