@@ -20,9 +20,9 @@
  *   - `11`  Adjust **Kd** (Derivative Gain).
  *
  * - **Switches [5:4]**: Control the step size for increments/decrements.
- *   - `00`  Change by �1 per button press.
- *   - `01`  Change by �5 per button press.
- *   - `1x`  Change by �10 per button press.
+ *   - `00`  Change by 1 per button press.
+ *   - `01`  Change by 5 per button press.
+ *   - `1x`  Change by 10 per button press.
  *
  * - **Switch [3]**: Selects whether the **setpoint** is being adjusted.
  *   - `1` Buttons modify the **setpoint**.
@@ -94,9 +94,9 @@
 #define N4IO_HIGHADDR           XPAR_NEXYS4IO_0_S00_AXI_HIGHADDR
 
 //PID Default Values
-#define DEFAULT_Kp 1
-#define DEFAULT_Ki 0.5
-#define DEFAULT_Kd 0.1
+#define DEFAULT_Kp 7
+#define DEFAULT_Ki 1.5
+#define DEFAULT_Kd 0.000005	//Reducing makes LED transitions more visible
 
 // Peripheral Instances
 XIic i2c;
@@ -252,7 +252,7 @@ void vPIDTask(void *pvParameters) {
 #endif
 
         }
-        vTaskDelay(pdMS_TO_TICKS(20));
+        vTaskDelay(pdMS_TO_TICKS(500));
     }
 }
 
@@ -375,18 +375,18 @@ void vInputTask(void *pvParameters) {
 
 // === PRINT TO LEDS FUNCTION ===
 void PrintToLEDs(float setpoint, float current_lux) {
-    int setpoint_scaled = (int)(setpoint);      // Scale setpoint for display
-    int lux_scaled = (int)(current_lux * 100);        // Scale current lux for display
+    int setpoint_scaled = (uint32_t)(setpoint);      // Scale setpoint for display
+    int lux_scaled = (uint32_t)(current_lux * 100);        // Scale current lux for display
 
     // Extract individual digits for setpoint
-    int setpoint_ones = setpoint_scaled % 10;
-    int setpoint_tens = (setpoint_scaled / 10) % 10;
-    int setpoint_hundreds = (setpoint_scaled / 100) % 10;
+    uint32_t setpoint_ones = setpoint_scaled % 10;
+    uint32_t setpoint_tens = (setpoint_scaled / 10) % 10;
+    uint32_t setpoint_hundreds = (setpoint_scaled / 100) % 10;
 
     // Extract individual digits for current lux
-    int lux_ones = lux_scaled % 10;
-    int lux_tens = (lux_scaled / 10) % 10;
-    int lux_hundreds = (lux_scaled / 100) % 10;
+    uint32_t lux_ones = lux_scaled % 10;
+    uint32_t lux_tens = (lux_scaled / 10) % 10;
+    uint32_t lux_hundreds = (lux_scaled / 100) % 10;
 
     // Setpoint: Digits[7:5]
     NX4IO_SSEG_setDigit(SSEGHI, DIGIT7, (enum _NX4IO_charcodes)setpoint_hundreds); // Hundreds place
@@ -404,6 +404,5 @@ void PrintToLEDs(float setpoint, float current_lux) {
     // Blank Digit[0]
     NX4IO_SSEG_setDigit(SSEGLO, DIGIT0, CC_BLANK);
 }
-
 
 

@@ -8,8 +8,8 @@
 #define OUTPUT_MAX 255.0       // Maximum duty cycle (100%)
 
 void pid_init(PIDController *pid, float kp, float ki, float kd) {
-    pid->Kp = kp * 4.0;
-    pid->Ki = ki * 2.0 ;
+    pid->Kp = kp;
+    pid->Ki = ki;
     pid->Kd = kd;
     pid->integral = 0.0;
     pid->prev_error = 0.0;
