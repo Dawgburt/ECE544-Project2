@@ -5,8 +5,11 @@
  * This file contains the function definitions for initializing, reading data,
  * and calculating lux values from the TSL2561 sensor.
  *
- * @author Phil Nevins
+ * @author Phil Nevins (p.nevins971@gmail.com)
+ * @author Nick A (nick.allmeyer@pdx.edu)
+ *
  * @date 2025-02-21
+ * Doxygen comments generated via ChatGPT.
  */
 
 #include "tsl2561.h"

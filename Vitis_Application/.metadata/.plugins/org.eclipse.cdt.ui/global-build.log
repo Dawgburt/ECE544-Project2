@@ -1,6 +1,6 @@
 Nothing to build in platform 'platformV2'
 
-15:34:50 **** Incremental Build of configuration Debug for project applicationV2 ****
+13:04:54 **** Incremental Build of configuration Debug for project applicationV2 ****
 make all 
 'Building file: ../src/PID_Controller.c'
 'Invoking: MicroBlaze gcc compiler'
@@ -19,9 +19,6 @@ mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/ECE544-EmbeddedSystemsFPGA/ECE544-ACTUA
 'Invoking: MicroBlaze Print Size'
 mb-size applicationV2.elf  |tee "applicationV2.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  68112	    480	  50240	 118832	  1d030	applicationV2.elf
+  68300	    480	  50244	 119024	  1d0f0	applicationV2.elf
 'Finished building: applicationV2.elf.size'
 ' '
-15:34:50 **** Incremental Build of configuration Debug for project applicationV2_system ****
-make all 
-Skipping SD card image generation. Reason: "The system project only has applications for microblaze processors."

@@ -48,7 +48,7 @@
  * - **BtnD (Down Button)**: Decrements the selected parameter.
  *
  * @author Phil Nevins (p.nevins971@gmail.com)
- * @author [Partner's Name]
+ * @author Nick A (nick.allmeyer@pdx.edu)
  * @date 2025-02-21
  *
  * @notes
@@ -76,6 +76,7 @@
 #include "nexys4io.h"
 
 #define _DEBUG 1
+
 // Define switch bit positions
 #define SW1  (1 << 0)
 #define SW2  (1 << 1)
@@ -197,8 +198,6 @@ void PrintToLEDs(float setpoint, float current_lux);
     xil_printf("Free Heap Size: %d bytes\n", xPortGetFreeHeapSize());
 #endif
 
-
-
     // Create Queue
     xLuxQueue = xQueueCreate(5, sizeof(float));
 
@@ -206,14 +205,7 @@ void PrintToLEDs(float setpoint, float current_lux);
     xTaskCreate(vSensorTask, "SensorTask", 512, NULL, 2, &xSensorTask);
     xTaskCreate(vPIDTask, "PIDTask", 768, NULL, 3, &xPIDTask);
     xTaskCreate(vDisplayTask, "DisplayTask", 512, NULL, 1, &xDisplayTask);
-
-
-    BaseType_t xInputTaskStatus = xTaskCreate(vInputTask, "InputTask", 768, NULL, 3, &xInputTask);
-
-    if (xInputTaskStatus != pdPASS) {
-        xil_printf("ERROR: Failed to create vInputTask!\r\n");
-    }
-
+    xTaskCreate(vInputTask, "InputTask", 768, NULL, 3, &xInputTask);
 
     // Start Scheduler
     vTaskStartScheduler();
@@ -221,7 +213,11 @@ void PrintToLEDs(float setpoint, float current_lux);
     while (1); // Should never reach here
 }
 
-// === SENSOR TASK ===
+ /**
+  * @brief FreeRTOS task for reading sensor data and updating luminosity values.
+  *
+  * @param pvParameters Unused parameter for FreeRTOS task compatibility.
+  */
 void vSensorTask(void *pvParameters) {
     while (1) {
         current_lux = tsl2561_readLux(&i2c);
@@ -236,7 +232,11 @@ void vSensorTask(void *pvParameters) {
     }
 }
 
-// === PID CONTROL TASK ===
+/**
+ * @brief FreeRTOS task for computing PID output and adjusting LED brightness.
+ *
+ * @param pvParameters Unused parameter for FreeRTOS task compatibility.
+ */
 void vPIDTask(void *pvParameters) {
     float lux_input;
     while (1) {
@@ -252,9 +252,8 @@ void vPIDTask(void *pvParameters) {
              NX4IO_RGBLED_setDutyCycle(RGB1, 0, 0, pwm_percentage);
 
 #if _DEBUG
-            xil_printf("DEBUG vPIDTask: Setpoint: %d | Current Lux: %d | PID Output: %d | PWM: %d%%\r\n",
-            		(int)target_lux, (int)(current_lux*100), (int)pwm_duty_cycle, (int)((pwm_duty_cycle / 255.0) * 100));
-
+    xil_printf("DEBUG vPIDTask: Setpoint: %d | Current Lux: %d | PID Output: %d | PWM: %d%%\r\n",
+            	(int)target_lux, (int)(current_lux*100), (int)pwm_duty_cycle, (int)((pwm_duty_cycle / 255.0) * 100));
 #endif
 
         }
@@ -263,7 +262,11 @@ void vPIDTask(void *pvParameters) {
 }
 
 
-// === DISPLAY TASK ===
+/**
+ * @brief FreeRTOS task for displaying values to the 7-segment display.
+ *
+ * @param pvParameters Unused parameter for FreeRTOS task compatibility.
+ */
 void vDisplayTask(void *pvParameters) {
     while (1) {
 
@@ -276,7 +279,11 @@ void vDisplayTask(void *pvParameters) {
     }
 }
 
-// === INPUT TASK ===
+/**
+ * @brief FreeRTOS task for handling user input via switches and buttons.
+ *
+ * @param pvParameters Unused parameter for FreeRTOS task compatibility.
+ */
 void vInputTask(void *pvParameters) {
     static float prev_Kp = 1.0, prev_Ki = 0.1, prev_Kd = 0.05;  // Stores last known values
     static bool was_Kp_disabled = false, was_Ki_disabled = false, was_Kd_disabled = false;  // Track previous state
@@ -311,14 +318,9 @@ void vInputTask(void *pvParameters) {
             step_size *= 0.1;
         }
 
-        //else if (param_to_adjust == &target_lux) {
-        //	step_size *= 0.5;
-        //}
-
-
-        //else if (param_to_adjust == &pid.Kd) {
-        //    step_size *= 0.05;
-        //}
+        else if (param_to_adjust == &pid.Kd) {
+            step_size *= 0.05;
+        }
 
         // Enable/Disable PID control terms based on Switches [2:0]
         if (sw_state & SW1) {
@@ -369,7 +371,7 @@ void vInputTask(void *pvParameters) {
        if (btn_state & 0x10) { pid.Kp = DEFAULT_Kp; pid.Ki = DEFAULT_Ki; pid.Kd = DEFAULT_Kd; } //BtnC
 
 
-       if (btn_state & 0x01) {  // Btn16 is pressed (assuming it's mapped correctly)
+       if (btn_state & 0x01) {
            target_lux = DEFAULT_lux;      // Reset setpoint to 100
            pid.integral = 0.0;     // Reset integral term to prevent windup
            pid.prev_error = 0.0;   // Reset previous error to prevent jumps
@@ -377,10 +379,10 @@ void vInputTask(void *pvParameters) {
        }
 
 
-        #if _DEBUG
-        xil_printf("DEBUG vInputTask: Setpoint: %d | Kp: %d | Ki: %d | Kd: %d | btn_state: %d\r\n",
-                   (int)(target_lux), (int)(pid.Kp * 100), (int)(pid.Ki * 100), (int)(pid.Kd * 100), btn_state);
-        #endif
+#if _DEBUG
+    xil_printf("DEBUG vInputTask: Setpoint: %d | Kp: %d | Ki: %d | Kd: %d | btn_state: %d\r\n",
+               (int)(target_lux), (int)(pid.Kp * 100), (int)(pid.Ki * 100), (int)(pid.Kd * 100), btn_state);
+#endif
 
         vTaskDelay(pdMS_TO_TICKS(500));
     }
@@ -388,10 +390,11 @@ void vInputTask(void *pvParameters) {
 
 // === PRINT TO LEDS FUNCTION ===
 void PrintToLEDs(float setpoint, float current_lux) {
-    int setpoint_scaled = (int)(setpoint*2);      // Scale setpoint for display
+    int setpoint_scaled = (int)(setpoint);      // Scale setpoint for display
 
     int lux_scaled_up = (int)(current_lux * 1000);        // Scale current lux for display
     int lux_scaled = (int)((lux_scaled_up / 255.0) * 100);
+    lux_scaled = lux_scaled / 2;
     if (lux_scaled > 255) lux_scaled = 255;
     if (lux_scaled < 0) lux_scaled = 0;
 
