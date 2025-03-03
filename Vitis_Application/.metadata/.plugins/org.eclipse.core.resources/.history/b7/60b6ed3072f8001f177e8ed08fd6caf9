@@ -1,0 +1,39 @@
+/**
+ * @file tsl2561.c
+ * @brief Implementation file for TSL2561 luminosity sensor driver.
+ *
+ * This file contains the function definitions for initializing, reading data,
+ * and calculating lux values from the TSL2561 sensor.
+ *
+ * @author Phil Nevins
+ * @date 2025-02-21
+ *
+ * @notes
+ * Doxygen comments generated via ChatGPT.
+ */
+
+#include "tsl2561.h"
+#include "xil_printf.h"
+#include "sleep.h"
+#include <math.h>
+
+/**
+ * @brief Initialize the TSL2561 sensor.
+ *
+ * @param i2c Pointer to the XIic instance for I2C communication.
+ */
+void tsl2561_init(XIic *i2c) {
+    xil_printf("Initializing TSL2561 Sensor...\r\n");
+}
+
+/**
+ * @brief Read the current lux value from the sensor.
+ *
+ * @param i2c Pointer to the XIic instance for I2C communication.
+ * @return Computed lux value.
+ */
+float tsl2561_readLux(XIic *i2c) {
+    uint16_t ch0 = tsl2561_readChannel(i2c, TSL2561_CHANNEL_0);
+    uint16_t ch1 = tsl2561_readChannel(i2c, TSL2561_CHANNEL_1);
+    return tsl2561_calculateLux(ch0, ch1);
+}

@@ -22,14 +22,11 @@
  * The controller updates periodically and applies corrections to the LED brightness via PWM control.
  *
  * @author Phil Nevins (p.nevins971@gmail.com)
- * @author [Partner's Name]
+ * @author Nick A (nick.allmeyer@pdx.edu)
  * @date 2025-02-21
  *
  * @notes
- * 21-FEB-2025  PN  Created initial implementation of PID control logic.
- * 24-FEB-2025  PN  Added integral windup prevention and ensured proper scaling of PID output.
- * 25-FEB-2025  PN  Adjusted derivative term for smoother response, ensured PWM updates immediately.
- * 01-MAR-2025	PN	Tuning and debugging complete
+ * Doxygen comments generated via ChatGPT.
  */
 
 #include "pid.h"
@@ -41,6 +38,14 @@
 #define OUTPUT_MIN 0.0         // Minimum duty cycle (0%)
 #define OUTPUT_MAX 255.0       // Maximum duty cycle (100%)
 
+/**
+ * @brief Initializes the PID controller with given gain parameters.
+ *
+ * @param pid Pointer to the PIDController structure.
+ * @param kp Proportional gain.
+ * @param ki Integral gain.
+ * @param kd Derivative gain.
+ */
 void pid_init(PIDController *pid, float kp, float ki, float kd) {
     pid->Kp = kp;
     pid->Ki = ki;
@@ -50,6 +55,14 @@ void pid_init(PIDController *pid, float kp, float ki, float kd) {
     pid->prev_time = xTaskGetTickCount(); // Get initial FreeRTOS time in ticks
 }
 
+/**
+ * @brief Computes the PID control output based on the setpoint and measured value.
+ *
+ * @param pid Pointer to the PIDController structure.
+ * @param setpoint Desired target value.
+ * @param measured Actual measured value.
+ * @return Computed PID output.
+ */
 float pid_compute(PIDController *pid, float setpoint, float measured) {
     float error = setpoint - measured;
 
