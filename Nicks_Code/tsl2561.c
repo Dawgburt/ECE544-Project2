@@ -177,7 +177,6 @@ float tsl2561_calculateLux(uint16_t ch0, uint16_t ch1)
 	//Print and return lux value
 	//Must be cast to int to print
 	xil_printf("Lux value (int): %d\r\n", (int) lux_value);
-	usleep(ONE_SECOND);
 	return lux_value;
 }
 
